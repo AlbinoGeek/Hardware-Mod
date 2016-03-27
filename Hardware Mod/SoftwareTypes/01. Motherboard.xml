@@ -1,0 +1,403 @@
+<SoftwareType>
+  <Name>Motherboard</Name>
+  <Category>Hardware</Category>
+  <Description>Create your own motherboard</Description>
+  <Categories>
+    <Category Name="Default">
+      <Description></Description>
+      <Unlock>1960</Unlock>
+      <Popularity>1</Popularity>
+      <TimeScale>1</TimeScale>
+      <Retention>0.9</Retention>
+      <Iterative>0.1</Iterative>
+      <NameGenerator>names</NameGenerator>
+    </Category>
+  </Categories>
+  <Unlock>1960</Unlock>
+  <Random>0</Random>
+  <Popularity>1</Popularity>
+  <OSSpecific>FALSE</OSSpecific>
+  <OneClient>FALSE</OneClient>
+  <InHouse>TRUE</InHouse>
+  <NameGenerator>names</NameGenerator>
+  <Features>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>BIOS</Name>
+      <Category>System</Category>
+      <Description>Saves basic configuration and let's people name their computer.</Description>
+      <Unlock>1960</Unlock>
+      <DevTime>2</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>5</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.1</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="FALSE">
+      <Name>UEFI</Name>
+      <Category>System</Category>
+      <Description>I don't even know why.</Description>
+      <Unlock>2005</Unlock>
+      <DevTime>2</DevTime>
+      <Innovation>15</Innovation>
+      <Usability>0</Usability>
+      <Stability>0</Stability>
+      <CodeArt>0.1</CodeArt>
+      <Dependency Software="Motherboard">BIOS</Dependency>
+    </Feature>
+	<Feature Forced="TRUE">
+      <Name>CPU Socket</Name>
+      <Category>Physical</Category>
+      <Description>Somewhere to shove the processor.</Description>
+      <Unlock>1960</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>5</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.2</CodeArt>
+    </Feature>
+	<Feature From="CPU Socket" Forced="FALSE" Vital="FALSE">
+      <Name>Dual CPU</Name>
+      <Category>Physical</Category>
+      <Description>TWICE THE PROCESSORS</Description>
+      <Unlock>1999</Unlock>
+      <DevTime>8</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>10</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.5</CodeArt>
+    </Feature>
+	<Feature From="Dual CPU" Forced="FALSE" Vital="FALSE">
+      <Name>Quad CPU</Name>
+      <Category>Physical</Category>
+      <Description>FOUR THE PROCESSORS</Description>
+      <Unlock>2006</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>30</Innovation>
+      <Usability>10</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.5</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>Overclocking</Name>
+      <Category>System</Category>
+      <Description>Design the motherboard to overclock.</Description>
+      <Unlock>1983</Unlock>
+      <DevTime>8</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>20</Usability>
+      <Stability>0</Stability>
+      <CodeArt>0.9</CodeArt>
+      <Dependency Software="Motherboard">CPU Socket</Dependency>
+    </Feature>
+    <Feature Forced="FALSE" Vital="FALSE">
+      <Name>+50%</Name>
+      <Category>Physical</Category>
+      <Description>Design the motherboard to overclock.</Description>
+      <Unlock>1983</Unlock>
+      <DevTime>18</DevTime>
+      <Innovation>40</Innovation>
+      <Usability>40</Usability>
+      <Stability>0</Stability>
+      <CodeArt>0.9</CodeArt>
+      <Dependency Software="Motherboard">Overclocking</Dependency>
+    </Feature>
+    <Feature Forced="FALSE" Vital="FALSE">
+      <Name>Water Cooling</Name>
+      <Category>Physical</Category>
+      <Description>Helps stabilize overclocking</Description>
+      <Unlock>1992</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>0</Usability>
+      <Stability>20</Stability>
+      <CodeArt>0.9</CodeArt>
+      <Dependency Software="Motherboard">Overclocking</Dependency>
+    </Feature>
+	<Feature Forced="FALSE" Vital="FALSE">
+      <Name>Nitrogen Cooling</Name>
+      <Category>Physical</Category>
+      <Description>Try not to freeze yourself</Description>
+      <Unlock>2016</Unlock>
+      <DevTime>24</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>0</Usability>
+      <Stability>30</Stability>
+      <CodeArt>0.8</CodeArt>
+      <Dependency Software="Motherboard">Water Cooling</Dependency>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>Battery</Name>
+      <Category>Physical</Category>
+      <Description>Lets the system keep tra ck of time while off.</Description>
+      <Unlock>1960</Unlock>
+      <DevTime>1</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>5</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.9</CodeArt>
+    </Feature>
+	<Feature Forced="FALSE" VITAL="TRUE">
+      <Name>14k Modem</Name>
+      <Category>Network</Category>
+      <Description>THIS MAKES YOU THEIR ISP, WATCH YOUR BANDWIDTH</Description>
+      <Unlock>1990</Unlock>
+      <DevTime>60</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>5</Usability>
+      <Stability>0</Stability>
+      <CodeArt>1</CodeArt>
+      <Server>0.0006</Server>
+    </Feature>
+	<Feature From="14k Modem" Forced="FALSE" VITAL="TRUE">
+      <Name>56k Modem</Name>
+      <Category>Network</Category>
+      <Description>Upgrade everyone's modems to 56k</Description>
+      <Unlock>1994</Unlock>
+      <DevTime>36</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>30</Usability>
+      <Stability>10</Stability>
+      <CodeArt>1</CodeArt>
+      <Server>0.003</Server>
+    </Feature>
+	<Feature From="56k Modem" Forced="FALSE" VITAL="TRUE">
+      <Name>Broadband</Name>
+      <Category>Network</Category>
+      <Description>Upgrade everyone's modems to Broadband</Description>
+      <Unlock>1996</Unlock>
+      <DevTime>36</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>30</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+      <Server>0.012</Server>
+    </Feature>
+	<Feature From="Broadband" Forced="FALSE" VITAL="TRUE">
+      <Name>Cable</Name>
+      <Category>Network</Category>
+      <Description>Upgrade everyone's modems to Cable</Description>
+      <Unlock>2006</Unlock>
+      <DevTime>36</DevTime>
+      <Innovation>40</Innovation>
+      <Usability>50</Usability>
+      <Stability>20</Stability>
+      <CodeArt>1</CodeArt>
+      <Server>0.032</Server>
+    </Feature>
+	<Feature From="Cable" Forced="FALSE" VITAL="TRUE">
+      <Name>Fiber</Name>
+      <Category>Network</Category>
+      <Description>FASTER THAN LIGHT: FTL</Description>
+      <Unlock>2010</Unlock>
+      <DevTime>72</DevTime>
+      <Innovation>80</Innovation>
+      <Usability>100</Usability>
+      <Stability>40</Stability>
+      <CodeArt>1</CodeArt>
+      <Server>0.07</Server>
+    </Feature>
+    <Feature Forced="TRUE">
+      <Name>RAM Slots</Name>
+      <Category>Physical</Category>
+      <Description>Somewhere to shove the memory.</Description>
+      <Unlock>1960</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>5</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.8</CodeArt>
+    </Feature>
+    <Feature From="RAM Slots" Forced="FALSE" Vital="TRUE">
+      <Name>DDR2</Name>
+      <Category>Physical</Category>
+      <Description>Waaaaay faster!</Description>
+      <Unlock>2003</Unlock>
+      <DevTime>5</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>15</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.7</CodeArt>
+    </Feature>
+    <Feature From="DDR2" Forced="FALSE" Vital="TRUE">
+      <Name>DDR3</Name>
+      <Category>Physical</Category>
+      <Description>Waaaaaaaaaaaaaaay faster!</Description>
+      <Unlock>2007</Unlock>
+      <DevTime>8</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>20</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.7</CodeArt>
+    </Feature>
+    <Feature From="DDR3" Forced="FALSE" Vital="FALSE">
+      <Name>DDR4</Name>
+      <Category>Physical</Category>
+      <Description>Waaaaaaaaaaaaaaaaaaaaaay faster!</Description>
+      <Unlock>2014</Unlock>
+      <DevTime>8</DevTime>
+      <Innovation>15</Innovation>
+      <Usability>20</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.7</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>PCI Slots</Name>
+      <Category>Physical</Category>
+      <Description>Somewhere to shove extra features.</Description>
+      <Unlock>1992</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>10</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.6</CodeArt>
+    </Feature>
+    <Feature From="PCI Slots" Forced="FALSE" Vital="TRUE">
+      <Name>PCI Express</Name>
+      <Category>Physical</Category>
+      <Description>Much faster than PCI.</Description>
+      <Unlock>2004</Unlock>
+      <DevTime>5</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>10</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.5</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="FALSE">
+      <Name>SLI Support</Name>
+      <Category>2D</Category>
+      <Description>Allows for the use of multiple graphics cards.</Description>
+      <Unlock>2004</Unlock>
+      <DevTime>10</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>20</Usability>
+      <Stability>0</Stability>
+      <CodeArt>0.5</CodeArt>
+      <Dependency Software="Motherboard">PCI Express</Dependency>
+    </Feature>
+    <Feature From="SLI Support" Forced="FALSE" Vital="FALSE">
+      <Name>Quad SLI</Name>
+      <Category>3D</Category>
+      <Description>Now you can fit four graphics cards.</Description>
+      <Unlock>2008</Unlock>
+      <DevTime>14</DevTime>
+      <Innovation>30</Innovation>
+      <Usability>10</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.5</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="FALSE">
+      <Name>Fan Control</Name>
+      <Category>Physical</Category>
+      <Description>The system can use fans to cool down.</Description>
+      <Unlock>1960</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>10</Usability>
+      <Stability>20</Stability>
+      <CodeArt>0.5</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>Connectors</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1960</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>5</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="FALSE">
+      <Name>Speaker</Name>
+      <Category>Audio</Category>
+      <Description>Certain beeps help for debugging.</Description>
+      <Unlock>1960</Unlock>
+      <DevTime>2</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>20</Usability>
+      <Stability>15</Stability>
+      <CodeArt>0.8</CodeArt>
+      <Dependency Software="Motherboard">Connectors</Dependency>
+    </Feature>
+    <Feature From="Speaker" Forced="FALSE" Vital="FALSE">
+      <Name>5.1 Audio</Name>
+      <Category>Audio</Category>
+      <Description>More realistic sound positioning.</Description>
+      <Unlock>1983</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>10</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.8</CodeArt>
+    </Feature>
+    <Feature From="5.1 Audio" Forced="FALSE" Vital="FALSE">
+      <Name>7.1 Audio</Name>
+      <Category>Audio</Category>
+      <Description>Even More realistic sound positioning.</Description>
+      <Unlock>1988</Unlock>
+      <DevTime>8</DevTime>
+      <Innovation>25</Innovation>
+      <Usability>10</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.9</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>Universal Bus</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1996</Unlock>
+      <DevTime>5</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>10</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.5</CodeArt>
+      <Dependency Software="Motherboard">Connectors</Dependency>
+    </Feature>
+    <Feature From="Universal Bus" Forced="FALSE" Vital="TRUE">
+      <Name>Universal Bus 2</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>2000</Unlock>
+      <DevTime>8</DevTime>
+      <Innovation>15</Innovation>
+      <Usability>10</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.5</CodeArt>
+    </Feature>
+    <Feature From="Universal Bus 2" Forced="FALSE" Vital="TRUE">
+      <Name>Universal Bus 3</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>2008</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>15</Innovation>
+      <Usability>15</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.3</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>LED Indicators</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1970</Unlock>
+      <DevTime>2</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>5</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.9</CodeArt>
+      <Dependency Software="Motherboard">Connectors</Dependency>
+    </Feature>
+    <Feature Forced="FALSE" Vital="FALSE">
+      <Name>RGB Lights</Name>
+      <Category>Physical</Category>
+      <Description>Ooooooh Flashy</Description>
+      <Unlock>1990</Unlock>
+      <DevTime>2</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>30</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.1</CodeArt>
+      <Dependency Software="Motherboard">LED Indicators</Dependency>
+    </Feature>
+  </Features>
+</SoftwareType>

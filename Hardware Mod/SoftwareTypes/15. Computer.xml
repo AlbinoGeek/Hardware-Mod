@@ -1,0 +1,74 @@
+<SoftwareType>
+  <Name>Computer</Name>
+  <Category>Hardware</Category>
+  <Description>Create your own Computer</Description>
+  <Categories>
+    <Category Name="Default">
+      <Description></Description>
+      <Unlock>1960</Unlock>
+      <Popularity>1</Popularity>
+      <TimeScale>1</TimeScale>
+      <Retention>0.8</Retention>
+      <Iterative>0.6</Iterative>
+      <NameGenerator>names</NameGenerator>
+    </Category>
+  </Categories>
+  <Unlock>1960</Unlock>
+  <Random>0</Random>
+  <Popularity>1</Popularity>
+  <OSSpecific>FALSE</OSSpecific>
+  <OneClient>FALSE</OneClient>
+  <InHouse>FALSE</InHouse>
+  <NameGenerator>names</NameGenerator>
+  <Features>
+    <Feature Forced="TRUE">
+      <Name>Motherboard</Name>
+      <Category>Physical</Category>
+      <Description>Needs a Motherboard</Description>
+      <Unlock>1960</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>5</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0</CodeArt>
+      <Dependency Software="Motherboard">CPU Socket</Dependency>
+    </Feature>
+    <Feature Forced="TRUE">
+      <Name>Processor</Name>
+      <Category>Physical</Category>
+      <Description>Needs a Processor</Description>
+      <Unlock>1960</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>5</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.25</CodeArt>
+      <Dependency Software="Processor">Control Unit</Dependency>
+    </Feature>
+    <Feature Forced="FALSE">
+      <Name>Second CPU</Name>
+      <Category>Physical</Category>
+      <Description>Doubles the Processing</Description>
+      <Unlock>1999</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>20</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.9</CodeArt>
+      <Dependency Software="Computer">Processor</Dependency>
+      <Dependency Software="Motherboard">Dual CPU</Dependency>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>Graphics Card</Name>
+      <Category>Physical</Category>
+      <Description>Needs a Graphics Card</Description>
+      <Unlock>1992</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>15</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.25</CodeArt>
+      <Dependency Software="Graphics Card">GPU</Dependency>
+    </Feature>
+  </Features>
+</SoftwareType>

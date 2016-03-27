@@ -1,0 +1,160 @@
+<SoftwareType>
+  <Name>Graphics Card</Name>
+  <Category>Hardware</Category>
+  <Description>Create your own PCI Graphics Card</Description>
+  <Categories>
+    <Category Name="Default">
+      <Description></Description>
+      <Unlock>1992</Unlock>
+      <Popularity>0.5</Popularity>
+      <TimeScale>1</TimeScale>
+      <Retention>0.7</Retention>
+      <Iterative>0.9</Iterative>
+      <NameGenerator>names</NameGenerator>
+    </Category>
+  </Categories>
+  <Unlock>1992</Unlock>
+  <Random>0.25</Random>
+  <Popularity>0.5</Popularity>
+  <OSSpecific>FALSE</OSSpecific>
+  <OneClient>FALSE</OneClient>
+  <InHouse>TRUE</InHouse>
+  <NameGenerator>names</NameGenerator>
+  <Features>
+    <Feature Forced="TRUE">
+      <Name>GPU</Name>
+      <Category>Physical</Category>
+      <Description>It makes it go</Description>
+      <Unlock>1992</Unlock>
+      <DevTime>9</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>20</Usability>
+      <Stability>10</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>PCI Interface</Name>
+      <Category>Physical</Category>
+      <Description>It plugs into a PCI Slot!</Description>
+      <Unlock>1992</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>0</Innovation>
+      <Usability>10</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Motherboard">PCI Slots</Dependency>
+    </Feature>
+    <Feature From="PCI Interface" Forced="FALSE" Vital="TRUE">
+      <Name>PCI Express</Name>
+      <Category>Physical</Category>
+      <Description>PCI Express is much faster!</Description>
+      <Unlock>2004</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>10</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Motherboard">PCI Express</Dependency>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>Heatsink</Name>
+      <Category>Physical</Category>
+      <Description>Giant block of copper</Description>
+      <Unlock>1992</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>0</Innovation>
+      <Usability>0</Usability>
+      <Stability>20</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="Heatsink" Forced="FALSE" Vital="TRUE">
+      <Name>Heatpipes</Name>
+      <Category>Physical</Category>
+      <Description>A more intricated block of copper</Description>
+      <Unlock>2006</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>0</Usability>
+      <Stability>20</Stability>
+      <CodeArt>0.5</CodeArt>
+    </Feature>
+    <Feature From="Heatpipes" Forced="FALSE" Vital="TRUE">
+      <Name>Heat Fins</Name>
+      <Category>Physical</Category>
+      <Description>A sophisticated intricated for your block of copper</Description>
+      <Unlock>2010</Unlock>
+      <DevTime>24</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>0</Usability>
+      <Stability>20</Stability>
+      <CodeArt>0.2</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="FALSE">
+      <Name>Fans</Name>
+      <Category>Physical</Category>
+      <Description>More intelligent cooling for your egg pan.</Description>
+      <Unlock>1993</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>0</Innovation>
+      <Usability>10</Usability>
+      <Stability>40</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Graphics Card">Heatsink</Dependency>
+    </Feature>
+    <Feature From="Fans" Forced="FALSE" Vital="FALSE">
+      <Name>Water Cooling</Name>
+      <Category>Physical</Category>
+      <Description>Pass your water cooling into your graphics card.</Description>
+      <Unlock>1996</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>0</Usability>
+      <Stability>40</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="Water Cooling" Forced="FALSE" Vital="FALSE">
+      <Name>Nitrogen</Name>
+      <Category>Physical</Category>
+      <Description>Don't freeze.</Description>
+      <Unlock>2016</Unlock>
+      <DevTime>24</DevTime>
+      <Innovation>40</Innovation>
+      <Usability>0</Usability>
+      <Stability>10</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Forced="TRUE">
+      <Name>Graphics Memory</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1992</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>0</Innovation>
+      <Usability>5</Usability>
+      <Stability>0</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="Graphics Memory" Forced="FALSE" Vital="TRUE">
+      <Name>GDDR3</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2004</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>0</Usability>
+      <Stability>0</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="GDDR3" Forced="FALSE" Vital="TRUE">
+      <Name>GDDR5</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2008</Unlock>
+      <DevTime>24</DevTime>
+      <Innovation>40</Innovation>
+      <Usability>0</Usability>
+      <Stability>10</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+  </Features>
+</SoftwareType>

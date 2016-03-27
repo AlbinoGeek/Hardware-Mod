@@ -1,0 +1,129 @@
+<SoftwareType>
+  <Name>Processor</Name>
+  <Category>Hardware</Category>
+  <Description>Create your own Processor</Description>
+  <Categories>
+    <Category Name="Default">
+      <Description></Description>
+      <Unlock>1960</Unlock>
+      <Popularity>0.5</Popularity>
+      <TimeScale>1</TimeScale>
+      <Retention>0.6</Retention>
+      <Iterative>0.9</Iterative>
+      <NameGenerator>names</NameGenerator>
+    </Category>
+  </Categories>
+  <Unlock>1960</Unlock>
+  <Random>0.5</Random>
+  <Popularity>0.5</Popularity>
+  <OSSpecific>FALSE</OSSpecific>
+  <OneClient>FALSE</OneClient>
+  <InHouse>TRUE</InHouse>
+  <NameGenerator>names</NameGenerator>
+  <Features>
+    <Feature Forced="TRUE">
+      <Name>Control Unit</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1960</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>0</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Forced="TRUE">
+      <Name>Math Unit</Name>
+      <Category>Physical</Category>
+      <Description>The Main Brain</Description>
+      <Unlock>1960</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>0</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="FALSE">
+      <Name>Divider</Name>
+      <Category>System</Category>
+      <Description>Division without the thinking</Description>
+      <Unlock>1980</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>40</Innovation>
+      <Usability>10</Usability>
+      <Stability>0</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Processor">Math Unit</Dependency>
+    </Feature>
+    <Feature Forced="TRUE">
+      <Name>Logic Unit</Name>
+      <Category>System</Category>
+      <Description>The Other Main Brain</Description>
+      <Unlock>1960</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>0</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="FALSE">
+      <Name>Predicter</Name>
+      <Category>System</Category>
+      <Description>Can be used to improve logic</Description>
+      <Unlock>1983</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>30</Innovation>
+      <Usability>10</Usability>
+      <Stability>20</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Processor">Logic Unit</Dependency>
+    </Feature>
+    <Feature Forced="FALSE" Vital="FALSE">
+      <Name>Fetcher</Name>
+      <Category>System</Category>
+      <Description>Orders instructions better</Description>
+      <Unlock>1985</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>40</Innovation>
+      <Usability>20</Usability>
+      <Stability>10</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Processor">Predicter</Dependency>
+    </Feature>
+    <Feature Forced="TRUE">
+      <Name>Registers</Name>
+      <Category>Physical</Category>
+      <Description>Short Storage</Description>
+      <Unlock>1960</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>0</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="FALSE">
+      <Name>Caches</Name>
+      <Category>Physical</Category>
+      <Description>Levels of caches help a lot</Description>
+      <Unlock>1975</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>10</Usability>
+      <Stability>10</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Processor">Registers</Dependency>
+    </Feature>
+    <Feature Forced="FALSE" Vital="FALSE">
+      <Name>L2/L3</Name>
+      <Category>Physical</Category>
+      <Description>More caches</Description>
+      <Unlock>1990</Unlock>
+      <DevTime>9</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>40</Usability>
+      <Stability>10</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Processor">Caches</Dependency>
+    </Feature>
+  </Features>
+</SoftwareType>
