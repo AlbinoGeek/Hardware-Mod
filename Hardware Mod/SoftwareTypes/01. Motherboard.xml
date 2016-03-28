@@ -5,7 +5,7 @@
   <Categories>
     <Category Name="Default">
       <Description></Description>
-      <Unlock>1960</Unlock>
+      <Unlock>0</Unlock>
       <Popularity>1</Popularity>
       <TimeScale>1</TimeScale>
       <Retention>0.8</Retention>
@@ -13,7 +13,7 @@
       <NameGenerator>names</NameGenerator>
     </Category>
   </Categories>
-  <Unlock>1960</Unlock>
+  <Unlock>0</Unlock>
   <Random>0</Random>
   <Popularity>1</Popularity>
   <OSSpecific>FALSE</OSSpecific>
@@ -25,7 +25,7 @@
       <Name>Battery</Name>
       <Category>Physical</Category>
       <Description>Lets the system keep tra ck of time while off.</Description>
-      <Unlock>1960</Unlock>
+      <Unlock>0</Unlock>
       <DevTime>1</DevTime>
       <Innovation>5</Innovation>
       <Usability>5</Usability>
@@ -36,7 +36,7 @@
       <Name>BIOS</Name>
       <Category>System</Category>
       <Description>Saves basic configuration and let's people name their computer.</Description>
-      <Unlock>1960</Unlock>
+      <Unlock>0</Unlock>
       <DevTime>2</DevTime>
       <Innovation>10</Innovation>
       <Usability>5</Usability>
@@ -71,7 +71,7 @@
       <Name>CPU Socket</Name>
       <Category>Physical</Category>
       <Description>Somewhere to shove the processor.</Description>
-      <Unlock>1960</Unlock>
+      <Unlock>0</Unlock>
       <DevTime>6</DevTime>
       <Innovation>5</Innovation>
       <Usability>5</Usability>
@@ -234,7 +234,7 @@
       <Name>RAM Slots</Name>
       <Category>Physical</Category>
       <Description>Somewhere to shove the memory.</Description>
-      <Unlock>1960</Unlock>
+      <Unlock>0</Unlock>
       <DevTime>6</DevTime>
       <Innovation>5</Innovation>
       <Usability>5</Usability>
@@ -344,7 +344,7 @@
       <Name>Fan Control</Name>
       <Category>Physical</Category>
       <Description>The system can use fans to cool down.</Description>
-      <Unlock>1960</Unlock>
+      <Unlock>0</Unlock>
       <DevTime>3</DevTime>
       <Innovation>10</Innovation>
       <Usability>10</Usability>
@@ -355,7 +355,7 @@
       <Name>Connectors</Name>
       <Category>Physical</Category>
       <Description></Description>
-      <Unlock>1960</Unlock>
+      <Unlock>0</Unlock>
       <DevTime>3</DevTime>
       <Innovation>5</Innovation>
       <Usability>5</Usability>
@@ -366,7 +366,7 @@
       <Name>Speaker</Name>
       <Category>Audio</Category>
       <Description>Certain beeps help for debugging.</Description>
-      <Unlock>1960</Unlock>
+      <Unlock>0</Unlock>
       <DevTime>2</DevTime>
       <Innovation>10</Innovation>
       <Usability>20</Usability>
