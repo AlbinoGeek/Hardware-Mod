@@ -1,0 +1,238 @@
+<SoftwareType>
+  <Name>Storage</Name>
+  <Category>Hardware</Category>
+  <Description>Create storage for your Computers</Description>
+  <Categories>
+    <Category Name="Hard Drive">
+      <Description>The slow spinning kind</Description>
+      <Unlock>0</Unlock>
+      <Popularity>0.5</Popularity>
+      <TimeScale>0.5</TimeScale>
+      <Retention>0.4</Retention>
+      <Iterative>0.9</Iterative>
+      <NameGenerator>names</NameGenerator>
+    </Category>
+  </Categories>
+  <Unlock>0</Unlock>
+  <Random>0.3</Random>
+  <Popularity>0.5</Popularity>
+  <OSSpecific>FALSE</OSSpecific>
+  <OneClient>FALSE</OneClient>
+  <InHouse>TRUE</InHouse>
+  <NameGenerator>names</NameGenerator>
+  <Features>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>Error Detection</Name>
+      <Category>System</Category>
+      <Description>Attempts to detect errors at the controller level.</Description>
+      <Unlock>1970</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>10</Usability>
+      <Stability>10</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="Error Detection" Forced="FALSE" Vital="TRUE">
+      <Name>Error Prediction</Name>
+      <Category>System</Category>
+      <Description>Attempts to predict when a drive will fail, saving your data in the process by warning you about an imminent failure ahead of time.</Description>
+      <Unlock>1980</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>20</Usability>
+      <Stability>20</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>Error Correction</Name>
+      <Category>System</Category>
+      <Description>Attempts to correct detected errors.</Description>
+      <Unlock>1985</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>20</Usability>
+      <Stability>20</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Storage">Error Prediction</Dependency>
+    </Feature>
+    <Feature From="Error Prediction" Forced="FALSE" Vital="TRUE">
+      <Name>SMART Reporting</Name>
+      <Category>System</Category>
+      <Description>Logs errors and reports them in a meaningful way, for debuggers.</Description>
+      <Unlock>1995</Unlock>
+      <DevTime>24</DevTime>
+      <Innovation>40</Innovation>
+      <Usability>20</Usability>
+      <Stability>40</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Forced="TRUE">
+      <Name>Hardwired</Name>
+      <Category>Physical</Category>
+      <Description>Literally sold pre-installed in the computer, unreplacable</Description>
+      <Unlock>0</Unlock>
+      <DevTime>1</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>5</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.7</CodeArt>
+    </Feature>
+    <Feature From="Hardwired" Forced="FALSE" Vital="TRUE">
+      <Name>SCSI</Name>
+      <Category>Physical</Category>
+      <Description>Finally, replacable harddrives.</Description>
+      <Unlock>1986</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>10</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.6</CodeArt>
+    </Feature>
+    <Feature From="SCSI" Forced="FALSE" Vital="TRUE">
+      <Name>P-ATA</Name>
+      <Category>Physical</Category>
+      <Description>A faster, less stable connection.</Description>
+      <Unlock>1998</Unlock>
+      <DevTime>9</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>20</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.8</CodeArt>
+    </Feature>
+    <Feature From="P-ATA" Forced="FALSE" Vital="TRUE">
+      <Name>S-ATA</Name>
+      <Category>Physical</Category>
+      <Description>Half the price of P-ATA, and faster.</Description>
+      <Unlock>2003</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>30</Innovation>
+      <Usability>40</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.8</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>SATA 3G</Name>
+      <Category>System</Category>
+      <Description>A standard for speed of SATA</Description>
+      <Unlock>2005</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>20</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.8</CodeArt>
+      <Dependency Software="Storage">S-ATA</Dependency>
+    </Feature>
+    <Feature From="SATA 3G" Forced="FALSE" Vital="TRUE">
+      <Name>SATA 6G</Name>
+      <Category>System</Category>
+      <Description>Twice as fast as the last standard</Description>
+      <Unlock>2008</Unlock>
+      <DevTime>9</DevTime>
+      <Innovation>25</Innovation>
+      <Usability>40</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.8</CodeArt>
+    </Feature>
+    <Feature Forced="TRUE">
+      <Name>Platters</Name>
+      <Category>Physical</Category>
+      <Description>The things you store the data on</Description>
+      <Unlock>0</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>10</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.8</CodeArt>
+    </Feature>
+    <Feature From="Platters" Forced="FALSE" Vital="TRUE">
+      <Name>5 inch Platters</Name>
+      <Category>Physical</Category>
+      <Description>MUCH smaller platters than ever before</Description>
+      <Unlock>1978</Unlock>
+      <DevTime>9</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>20</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.8</CodeArt>
+    </Feature>
+    <Feature From="5 inch Platters" Forced="FALSE" Vital="TRUE">
+      <Name>3 inch Platters</Name>
+      <Category>Physical</Category>
+      <Description>MUCH smaller platters than ever before</Description>
+      <Unlock>1983</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>30</Innovation>
+      <Usability>15</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.6</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>Thermal Spacing</Name>
+      <Category>System</Category>
+      <Description>Cools down hard drives and reduces failure rates.</Description>
+      <Unlock>2005</Unlock>
+      <DevTime>9</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>10</Usability>
+      <Stability>40</Stability>
+      <CodeArt>0.5</CodeArt>
+      <Dependency Software="Storage">3 inch Platters</Dependency>
+    </Feature>
+    <Feature Forced="TRUE">
+      <Name>Heads</Name>
+      <Category>Physical</Category>
+      <Description>The things that read/write data</Description>
+      <Unlock>0</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>5</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.8</CodeArt>
+    </Feature>
+    <Feature From="Heads" Forced="FALSE" Vital="TRUE">
+      <Name>Auto-moving</Name>
+      <Category>Physical</Category>
+      <Description>Heads can autoposition themselves</Description>
+      <Unlock>1973</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>10</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.8</CodeArt>
+    </Feature>
+    <Feature From="Auto-moving" Forced="FALSE" Vital="TRUE">
+      <Name>Film Heads</Name>
+      <Category>Physical</Category>
+      <Description>Thin Film Heads, the next step in making harddrives smaller</Description>
+      <Unlock>1979</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>20</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.6</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>Fluid Bearings</Name>
+      <Category>Physical</Category>
+      <Description>Reduces noises, allows for higher RPMs</Description>
+      <Unlock>1997</Unlock>
+      <DevTime>18</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>40</Usability>
+      <Stability>20</Stability>
+      <CodeArt>0.8</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>PMR</Name>
+      <Category>Physical</Category>
+      <Description>Records perpendicular instead of logarithmic.</Description>
+      <Unlock>2005</Unlock>
+      <DevTime>18</DevTime>
+      <Innovation>40</Innovation>
+      <Usability>20</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.5</CodeArt>
+      <Dependency Software="Storage">Fluid Bearings</Dependency>
+    </Feature>
+  </Features>
+</SoftwareType>

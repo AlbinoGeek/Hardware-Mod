@@ -59,28 +59,28 @@
       <Dependency Software="Motherboard">Dual CPU</Dependency>
     </Feature>
     <Feature Forced="FALSE" Vital="TRUE">
+      <Name>Hard Drive</Name>
+      <Category>Physical</Category>
+      <Description>Needs a Hard Drive</Description>
+      <Unlock>0</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>10</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.25</CodeArt>
+      <Dependency Software="Storage">Heads</Dependency>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
       <Name>Graphics Card</Name>
       <Category>Physical</Category>
       <Description>Needs a Graphics Card</Description>
       <Unlock>1992</Unlock>
       <DevTime>3</DevTime>
-      <Innovation>5</Innovation>
-      <Usability>15</Usability>
+      <Innovation>10</Innovation>
+      <Usability>10</Usability>
       <Stability>5</Stability>
       <CodeArt>0.25</CodeArt>
       <Dependency Software="Graphics Card">GPU</Dependency>
-    </Feature>
-    <Feature Forced="FALSE">
-      <Name>Watchdog</Name>
-      <Category>Physical</Category>
-      <Description>A means of monitoring SERVER hardware</Description>
-      <Unlock>1980</Unlock>
-      <DevTime>12</DevTime>
-      <Innovation>20</Innovation>
-      <Usability>20</Usability>
-      <Stability>20</Stability>
-      <CodeArt>0.9</CodeArt>
-      <Dependency Software="Motherboard">Connectors</Dependency>
     </Feature>
   </Features>
 </SoftwareType>
