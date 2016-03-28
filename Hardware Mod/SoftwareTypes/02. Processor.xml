@@ -32,28 +32,104 @@
       <Stability>5</Stability>
       <CodeArt>1</CodeArt>
     </Feature>
-    <Feature Forced="TRUE">
-      <Name>Math Unit</Name>
-      <Category>Physical</Category>
-      <Description>The Main Brain</Description>
-      <Unlock>1960</Unlock>
+    <Feature From="Control Unit" Forced="FALSE" Vital="TRUE">
+      <Name>Dual Core</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2006</Unlock>
       <DevTime>6</DevTime>
       <Innovation>10</Innovation>
-      <Usability>0</Usability>
+      <Usability>20</Usability>
       <Stability>5</Stability>
-      <CodeArt>1</CodeArt>
+      <CodeArt>0.5</CodeArt>
     </Feature>
-    <Feature Forced="FALSE" Vital="FALSE">
-      <Name>Divider</Name>
+    <Feature From="Dual Core" Forced="FALSE" Vital="TRUE">
+      <Name>Quad Core</Name>
       <Category>System</Category>
-      <Description>Division without the thinking</Description>
-      <Unlock>1980</Unlock>
-      <DevTime>12</DevTime>
+      <Description></Description>
+      <Unlock>2007</Unlock>
+      <DevTime>9</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>30</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.3</CodeArt>
+    </Feature>
+    <Feature From="Quad Core" Forced="FALSE" Vital="TRUE">
+      <Name>Octo Core</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2011</Unlock>
+      <DevTime>15</DevTime>
       <Innovation>40</Innovation>
+      <Usability>50</Usability>
+      <Stability>20</Stability>
+      <CodeArt>0.3</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE">
+      <Name>Heat Spreaders</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1980</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>10</Innovation>
       <Usability>10</Usability>
-      <Stability>0</Stability>
-      <CodeArt>1</CodeArt>
-      <Dependency Software="Processor">Math Unit</Dependency>
+      <Stability>10</Stability>
+      <CodeArt>0.8</CodeArt>
+    </Feature>
+    <Feature From="Heat Spreaders" Forced="FALSE">
+      <Name>Heat Pipes</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1985</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>10</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.4</CodeArt>
+    </Feature>
+    <Feature From="Heat Pipes" Forced="FALSE">
+      <Name>Heat Fins</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1995</Unlock>
+      <DevTime>9</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>10</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.1</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>Thermal Paste</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1970</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>0</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.8</CodeArt>
+    </Feature>
+    <Feature From="Thermal Paste" Forced="FALSE" Vital="TRUE">
+      <Name>Substrate</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1980</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>10</Usability>
+      <Stability>20</Stability>
+      <CodeArt>0.2</CodeArt>
+    </Feature>
+    <Feature From="Substrate" Forced="FALSE" Vital="TRUE">
+      <Name>Arctic Paste</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1990</Unlock>
+      <DevTime>9</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>0</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.6</CodeArt>
     </Feature>
     <Feature Forced="TRUE">
       <Name>Logic Unit</Name>
@@ -124,6 +200,86 @@
       <Stability>10</Stability>
       <CodeArt>1</CodeArt>
       <Dependency Software="Processor">Caches</Dependency>
+    </Feature>
+    <Feature Forced="FALSE">
+      <Name>Power Efficiency</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1995</Unlock>
+      <DevTime>9</DevTime>
+      <Innovation>15</Innovation>
+      <Usability>5</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.6</CodeArt>
+    </Feature>
+    <Feature From="Power Efficiency" Forced="FALSE">
+      <Name>25%</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1998</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>0</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.4</CodeArt>
+    </Feature>
+    <Feature From="25%" Forced="FALSE">
+      <Name>75%</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>2002</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>0</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.4</CodeArt>
+    </Feature>
+    <Feature Forced="TRUE">
+      <Name>Math Unit</Name>
+      <Category>Physical</Category>
+      <Description>The Main Brain</Description>
+      <Unlock>1960</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>0</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="FALSE">
+      <Name>Divider</Name>
+      <Category>System</Category>
+      <Description>Division without the thinking</Description>
+      <Unlock>1980</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>40</Innovation>
+      <Usability>10</Usability>
+      <Stability>0</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Processor">Math Unit</Dependency>
+    </Feature>
+    <Feature Forced="FALSE">
+      <Name>Parallel Math</Name>
+      <Category>System</Category>
+      <Description>What if you could do two things at once?</Description>
+      <Unlock>1990</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>40</Innovation>
+      <Usability>20</Usability>
+      <Stability>10</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Processor">Divider</Dependency>
+    </Feature>
+    <Feature Forced="FALSE" Vital="FALSE">
+      <Name>APU</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>1990</Unlock>
+      <DevTime>24</DevTime>
+      <Innovation>40</Innovation>
+      <Usability>30</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.4</CodeArt>
+      <Dependency Software="Processor">Math Unit</Dependency>
     </Feature>
   </Features>
 </SoftwareType>
