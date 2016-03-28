@@ -22,6 +22,17 @@
   <NameGenerator>names</NameGenerator>
   <Features>
     <Feature Forced="FALSE" Vital="TRUE">
+      <Name>Battery</Name>
+      <Category>Physical</Category>
+      <Description>Lets the system keep tra ck of time while off.</Description>
+      <Unlock>1960</Unlock>
+      <DevTime>1</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>5</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.9</CodeArt>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
       <Name>BIOS</Name>
       <Category>System</Category>
       <Description>Saves basic configuration and let's people name their computer.</Description>
@@ -31,6 +42,7 @@
       <Usability>5</Usability>
       <Stability>5</Stability>
       <CodeArt>0.1</CodeArt>
+      <Dependency Software="Motherboard">Battery</Dependency>
     </Feature>
     <Feature Forced="FALSE" Vital="FALSE">
       <Name>UEFI</Name>
@@ -43,6 +55,17 @@
       <Stability>0</Stability>
       <CodeArt>0.1</CodeArt>
       <Dependency Software="Motherboard">BIOS</Dependency>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>PS/2</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1987</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>5</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.8</CodeArt>
     </Feature>
 	<Feature Forced="TRUE">
       <Name>CPU Socket</Name>
@@ -77,6 +100,30 @@
       <Stability>10</Stability>
       <CodeArt>0.5</CodeArt>
     </Feature>
+	<Feature Forced="FALSE" Vital="FALSE">
+      <Name>Daughter Board</Name>
+      <Category>Physical</Category>
+      <Description>Is a second motherboard specifically designed to offload processing for your processor.</Description>
+      <Unlock>2017</Unlock>
+      <DevTime>24</DevTime>
+      <Innovation>50</Innovation>
+      <Usability>20</Usability>
+      <Stability>0</Stability>
+      <CodeArt>0.2</CodeArt>
+      <Dependency Software="Motherboard">Quad CPU</Dependency>
+    </Feature>
+	<Feature Forced="FALSE" Vital="FALSE">
+      <Name>Sister Board</Name>
+      <Category>Physical</Category>
+      <Description>So I heard you liekd motherboards.</Description>
+      <Unlock>2020</Unlock>
+      <DevTime>48</DevTime>
+      <Innovation>100</Innovation>
+      <Usability>0</Usability>
+      <Stability>0</Stability>
+      <CodeArt>0.1</CodeArt>
+      <Dependency Software="Motherboard">Daughter Board</Dependency>
+    </Feature>
     <Feature Forced="FALSE" Vital="TRUE">
       <Name>Overclocking</Name>
       <Category>System</Category>
@@ -90,18 +137,6 @@
       <Dependency Software="Motherboard">CPU Socket</Dependency>
     </Feature>
     <Feature Forced="FALSE" Vital="FALSE">
-      <Name>+50%</Name>
-      <Category>Physical</Category>
-      <Description>Design the motherboard to overclock.</Description>
-      <Unlock>1983</Unlock>
-      <DevTime>18</DevTime>
-      <Innovation>40</Innovation>
-      <Usability>40</Usability>
-      <Stability>0</Stability>
-      <CodeArt>0.9</CodeArt>
-      <Dependency Software="Motherboard">Overclocking</Dependency>
-    </Feature>
-    <Feature Forced="FALSE" Vital="FALSE">
       <Name>Water Cooling</Name>
       <Category>Physical</Category>
       <Description>Helps stabilize overclocking</Description>
@@ -113,7 +148,7 @@
       <CodeArt>0.9</CodeArt>
       <Dependency Software="Motherboard">Overclocking</Dependency>
     </Feature>
-	<Feature Forced="FALSE" Vital="FALSE">
+	<Feature From="Water Cooling" Forced="FALSE" Vital="FALSE">
       <Name>Nitrogen Cooling</Name>
       <Category>Physical</Category>
       <Description>Try not to freeze yourself</Description>
@@ -123,18 +158,17 @@
       <Usability>0</Usability>
       <Stability>30</Stability>
       <CodeArt>0.8</CodeArt>
-      <Dependency Software="Motherboard">Water Cooling</Dependency>
     </Feature>
-    <Feature Forced="FALSE" Vital="TRUE">
-      <Name>Battery</Name>
+	<Feature From="Nitrogen Cooling" Forced="FALSE" Vital="FALSE">
+      <Name>Subzero Cooling</Name>
       <Category>Physical</Category>
-      <Description>Lets the system keep tra ck of time while off.</Description>
-      <Unlock>1960</Unlock>
-      <DevTime>1</DevTime>
-      <Innovation>5</Innovation>
-      <Usability>5</Usability>
-      <Stability>5</Stability>
-      <CodeArt>0.9</CodeArt>
+      <Description>Insert movie reference here</Description>
+      <Unlock>2024</Unlock>
+      <DevTime>48</DevTime>
+      <Innovation>80</Innovation>
+      <Usability>0</Usability>
+      <Stability>50</Stability>
+      <CodeArt>0.2</CodeArt>
     </Feature>
 	<Feature Forced="FALSE" VITAL="TRUE">
       <Name>14k Modem</Name>
@@ -164,7 +198,7 @@
       <Name>Broadband</Name>
       <Category>Network</Category>
       <Description>Upgrade everyone's modems to Broadband</Description>
-      <Unlock>1996</Unlock>
+      <Unlock>1998</Unlock>
       <DevTime>36</DevTime>
       <Innovation>20</Innovation>
       <Usability>30</Usability>
@@ -240,6 +274,17 @@
       <Stability>10</Stability>
       <CodeArt>0.7</CodeArt>
     </Feature>
+    <Feature From="DDR4" Forced="FALSE" Vital="FALSE">
+      <Name>DDR5</Name>
+      <Category>Physical</Category>
+      <Description>Fuck it.</Description>
+      <Unlock>2018</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>40</Innovation>
+      <Usability>40</Usability>
+      <Stability>20</Stability>
+      <CodeArt>0.1</CodeArt>
+    </Feature>
     <Feature Forced="FALSE" Vital="TRUE">
       <Name>PCI Slots</Name>
       <Category>Physical</Category>
@@ -262,8 +307,8 @@
       <Stability>10</Stability>
       <CodeArt>0.5</CodeArt>
     </Feature>
-    <Feature Forced="FALSE" Vital="FALSE">
-      <Name>SLI Support</Name>
+    <Feature From="PCI Express" Forced="FALSE" Vital="FALSE">
+      <Name>SLl Support</Name>
       <Category>2D</Category>
       <Description>Allows for the use of multiple graphics cards.</Description>
       <Unlock>2004</Unlock>
@@ -272,17 +317,27 @@
       <Usability>20</Usability>
       <Stability>0</Stability>
       <CodeArt>0.5</CodeArt>
-      <Dependency Software="Motherboard">PCI Express</Dependency>
     </Feature>
-    <Feature From="SLI Support" Forced="FALSE" Vital="FALSE">
-      <Name>Quad SLI</Name>
+    <Feature From="SLl Support" Forced="FALSE" Vital="FALSE">
+      <Name>Dual SLl</Name>
       <Category>3D</Category>
-      <Description>Now you can fit four graphics cards.</Description>
-      <Unlock>2008</Unlock>
-      <DevTime>14</DevTime>
+      <Description>Now you can fit two graphics cards.</Description>
+      <Unlock>2006</Unlock>
+      <DevTime>8</DevTime>
+      <Innovation>0</Innovation>
+      <Usability>20</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.5</CodeArt>
+    </Feature>
+    <Feature From="Dual SLl" Forced="FALSE" Vital="FALSE">
+      <Name>Quad SLl</Name>
+      <Category>3D</Category>
+      <Description>FOUR THE GRPAHIC!S</Description>
+      <Unlock>2009</Unlock>
+      <DevTime>18</DevTime>
       <Innovation>30</Innovation>
-      <Usability>10</Usability>
-      <Stability>5</Stability>
+      <Usability>15</Usability>
+      <Stability>20</Stability>
       <CodeArt>0.5</CodeArt>
     </Feature>
     <Feature Forced="FALSE" Vital="FALSE">
@@ -341,6 +396,17 @@
       <Stability>10</Stability>
       <CodeArt>0.9</CodeArt>
     </Feature>
+    <Feature From="7.1 Audio" Forced="FALSE" Vital="FALSE">
+      <Name>4D Audio</Name>
+      <Category>Audio</Category>
+      <Description>It's almost as if you were there</Description>
+      <Unlock>2007</Unlock>
+      <DevTime>18</DevTime>
+      <Innovation>80</Innovation>
+      <Usability>20</Usability>
+      <Stability>0</Stability>
+      <CodeArt>0.1</CodeArt>
+    </Feature>
     <Feature Forced="FALSE" Vital="TRUE">
       <Name>Universal Bus</Name>
       <Category>Physical</Category>
@@ -376,7 +442,31 @@
       <CodeArt>0.3</CodeArt>
     </Feature>
     <Feature Forced="FALSE" Vital="TRUE">
-      <Name>LED Indicators</Name>
+      <Name>Thunderclap</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>2011</Unlock>
+      <DevTime>18</DevTime>
+      <Innovation>30</Innovation>
+      <Usability>40</Usability>
+      <Stability>20</Stability>
+      <CodeArt>0.2</CodeArt>
+      <Dependency Software="Motherboard">Universal Bus 3</Dependency>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>Universal Bus 3.1</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>2013</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>15</Innovation>
+      <Usability>50</Usability>
+      <Stability>20</Stability>
+      <CodeArt>0.8</CodeArt>
+      <Dependency Software="Motherboard">Universal Bus 3</Dependency>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
+      <Name>Indicators</Name>
       <Category>Physical</Category>
       <Description></Description>
       <Unlock>1970</Unlock>
@@ -397,7 +487,7 @@
       <Usability>30</Usability>
       <Stability>5</Stability>
       <CodeArt>0.1</CodeArt>
-      <Dependency Software="Motherboard">LED Indicators</Dependency>
+      <Dependency Software="Motherboard">Indicators</Dependency>
     </Feature>
   </Features>
 </SoftwareType>
