@@ -8,7 +8,7 @@
       <Unlock>1960</Unlock>
       <Popularity>1</Popularity>
       <TimeScale>1</TimeScale>
-      <Retention>0.9</Retention>
+      <Retention>0.8</Retention>
       <Iterative>0.1</Iterative>
       <NameGenerator>names</NameGenerator>
     </Category>
