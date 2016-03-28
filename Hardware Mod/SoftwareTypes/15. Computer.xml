@@ -9,24 +9,24 @@
       <Popularity>1</Popularity>
       <TimeScale>1</TimeScale>
       <Retention>0.75</Retention>
-      <Iterative>0.6</Iterative>
+      <Iterative>0.7</Iterative>
       <NameGenerator>names</NameGenerator>
     </Category>
     <Category Name="Server">
       <Description></Description>
       <Unlock>1960</Unlock>
-      <Popularity>0.6</Popularity>
+      <Popularity>0.8</Popularity>
       <TimeScale>1.2</TimeScale>
-      <Retention>0.98</Retention>
+      <Retention>0.99</Retention>
       <Iterative>0.2</Iterative>
       <NameGenerator>names</NameGenerator>
     </Category>
     <Category Name="Gaming">
       <Description></Description>
       <Unlock>2000</Unlock>
-      <Popularity>0.9</Popularity>
+      <Popularity>0.8</Popularity>
       <TimeScale>0.8</TimeScale>
-      <Retention>0.65</Retention>
+      <Retention>0.55</Retention>
       <Iterative>0.4</Iterative>
       <NameGenerator>names</NameGenerator>
     </Category>
