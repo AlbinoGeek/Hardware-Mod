@@ -4,30 +4,12 @@
   <Description>Create your own Computer</Description>
   <Categories>
     <Category Name="Consumer">
-      <Description></Description>
-      <Unlock>1960</Unlock>
+      <Description>Geared towards individuals, these less powerful computeres are easier to make; but consumers replace them fairly often.</Description>
+      <Unlock>0</Unlock>
       <Popularity>1</Popularity>
       <TimeScale>1</TimeScale>
-      <Retention>0.75</Retention>
+      <Retention>0.7</Retention>
       <Iterative>0.7</Iterative>
-      <NameGenerator>names</NameGenerator>
-    </Category>
-    <Category Name="Server">
-      <Description></Description>
-      <Unlock>1960</Unlock>
-      <Popularity>0.8</Popularity>
-      <TimeScale>1.2</TimeScale>
-      <Retention>0.99</Retention>
-      <Iterative>0.2</Iterative>
-      <NameGenerator>names</NameGenerator>
-    </Category>
-    <Category Name="Gaming">
-      <Description></Description>
-      <Unlock>2000</Unlock>
-      <Popularity>0.8</Popularity>
-      <TimeScale>0.8</TimeScale>
-      <Retention>0.55</Retention>
-      <Iterative>0.4</Iterative>
       <NameGenerator>names</NameGenerator>
     </Category>
   </Categories>
@@ -43,7 +25,7 @@
       <Name>Motherboard</Name>
       <Category>Physical</Category>
       <Description>Needs a Motherboard</Description>
-      <Unlock>1960</Unlock>
+      <Unlock>0</Unlock>
       <DevTime>3</DevTime>
       <Innovation>5</Innovation>
       <Usability>5</Usability>
@@ -55,7 +37,7 @@
       <Name>Processor</Name>
       <Category>Physical</Category>
       <Description>Needs a Processor</Description>
-      <Unlock>1960</Unlock>
+      <Unlock>0</Unlock>
       <DevTime>3</DevTime>
       <Innovation>5</Innovation>
       <Usability>5</Usability>
@@ -63,7 +45,7 @@
       <CodeArt>0.25</CodeArt>
       <Dependency Software="Processor">Control Unit</Dependency>
     </Feature>
-    <Feature Forced="FALSE">
+    <Feature Forced="FALSE" Vital="TRUE">
       <Name>Second CPU</Name>
       <Category>Physical</Category>
       <Description>Doubles the Processing</Description>
@@ -72,10 +54,7 @@
       <Innovation>20</Innovation>
       <Usability>20</Usability>
       <Stability>5</Stability>
-      <CodeArt>0.9</CodeArt>
-      <SoftwareCategory Category="Consumer">2006</SoftwareCategory>
-      <SoftwareCategory Category="Gaming">0</SoftwareCategory>
-      <SoftwareCategory Category="Server">0</SoftwareCategory>
+      <CodeArt>0.75</CodeArt>
       <Dependency Software="Computer">Processor</Dependency>
       <Dependency Software="Motherboard">Dual CPU</Dependency>
     </Feature>
@@ -89,9 +68,6 @@
       <Usability>15</Usability>
       <Stability>5</Stability>
       <CodeArt>0.25</CodeArt>
-      <SoftwareCategory Category="Consumer">0</SoftwareCategory>
-      <SoftwareCategory Category="Gaming">0</SoftwareCategory>
-      <SoftwareCategory Category="Server">1996</SoftwareCategory>
       <Dependency Software="Graphics Card">GPU</Dependency>
     </Feature>
     <Feature Forced="FALSE">
@@ -104,7 +80,6 @@
       <Usability>20</Usability>
       <Stability>20</Stability>
       <CodeArt>0.9</CodeArt>
-      <SoftwareCategory Category="Server">0</SoftwareCategory>
       <Dependency Software="Motherboard">Connectors</Dependency>
     </Feature>
   </Features>
