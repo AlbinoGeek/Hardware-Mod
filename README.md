@@ -19,6 +19,10 @@ A mod for the game "Software Inc." which adds Computer Hardware.
 
 ![Graphics Card Features Image](http://i.imgur.com/ZE6RM0y.png)
 
+**Storage**, required to actually place data on a computer; and coming in a variety of balanced Stability, Usability and Innovative features that you can work towards.  Hard Drives can be purchased by individuals separate of a Computer purchase as well, but rarely.
+
+![Storage Features Image](http://i.imgur.com/iIhCuB5.png)
+
 **Computers** can be assembled out of parts either you or your competitors create, and don't necessarily make all the money; unless you're asking users to purchase your own Motherboard and Processor along with it.  The dependencies are not straight-forward yet, but selling a Computer with your own parts *will increase your Motherboard and Processor sales.*
 
 ![Computer Features Image](http://i.imgur.com/kMfmd67.png)
