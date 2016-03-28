@@ -57,6 +57,18 @@
       <Dependency Software="Motherboard">PCI Express</Dependency>
     </Feature>
     <Feature Forced="FALSE" Vital="TRUE">
+      <Name>SLl Support</Name>
+      <Category>Physical</Category>
+      <Description>Allows people to put two or more graphics cards together.</Description>
+      <Unlock>2008</Unlock>
+      <DevTime>9</DevTime>
+      <Innovation>40</Innovation>
+      <Usability>40</Usability>
+      <Stability>0</Stability>
+      <CodeArt>0.8</CodeArt>
+      <Dependency Software="Graphics Card">PCI Express</Dependency>
+    </Feature>
+    <Feature Forced="FALSE" Vital="TRUE">
       <Name>Heatsink</Name>
       <Category>Physical</Category>
       <Description>Giant block of copper</Description>
