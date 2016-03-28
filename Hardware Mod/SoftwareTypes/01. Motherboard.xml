@@ -82,7 +82,7 @@
       <Name>Dual CPU</Name>
       <Category>Physical</Category>
       <Description>TWICE THE PROCESSORS</Description>
-      <Unlock>1999</Unlock>
+      <Unlock>1989</Unlock>
       <DevTime>8</DevTime>
       <Innovation>20</Innovation>
       <Usability>10</Usability>
@@ -93,7 +93,7 @@
       <Name>Quad CPU</Name>
       <Category>Physical</Category>
       <Description>FOUR THE PROCESSORS</Description>
-      <Unlock>2006</Unlock>
+      <Unlock>1999</Unlock>
       <DevTime>12</DevTime>
       <Innovation>30</Innovation>
       <Usability>10</Usability>

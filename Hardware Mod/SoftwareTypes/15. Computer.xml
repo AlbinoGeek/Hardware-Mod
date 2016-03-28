@@ -3,13 +3,31 @@
   <Category>Hardware</Category>
   <Description>Create your own Computer</Description>
   <Categories>
-    <Category Name="Default">
+    <Category Name="Consumer">
       <Description></Description>
       <Unlock>1960</Unlock>
       <Popularity>1</Popularity>
       <TimeScale>1</TimeScale>
-      <Retention>0.8</Retention>
+      <Retention>0.75</Retention>
       <Iterative>0.6</Iterative>
+      <NameGenerator>names</NameGenerator>
+    </Category>
+    <Category Name="Server">
+      <Description></Description>
+      <Unlock>1960</Unlock>
+      <Popularity>0.6</Popularity>
+      <TimeScale>1.2</TimeScale>
+      <Retention>0.98</Retention>
+      <Iterative>0.2</Iterative>
+      <NameGenerator>names</NameGenerator>
+    </Category>
+    <Category Name="Gaming">
+      <Description></Description>
+      <Unlock>2000</Unlock>
+      <Popularity>0.9</Popularity>
+      <TimeScale>0.8</TimeScale>
+      <Retention>0.65</Retention>
+      <Iterative>0.4</Iterative>
       <NameGenerator>names</NameGenerator>
     </Category>
   </Categories>
@@ -49,12 +67,15 @@
       <Name>Second CPU</Name>
       <Category>Physical</Category>
       <Description>Doubles the Processing</Description>
-      <Unlock>1999</Unlock>
+      <Unlock>1989</Unlock>
       <DevTime>12</DevTime>
       <Innovation>20</Innovation>
       <Usability>20</Usability>
       <Stability>5</Stability>
       <CodeArt>0.9</CodeArt>
+      <SoftwareCategory Category="Consumer">2006</SoftwareCategory>
+      <SoftwareCategory Category="Gaming">0</SoftwareCategory>
+      <SoftwareCategory Category="Server">0</SoftwareCategory>
       <Dependency Software="Computer">Processor</Dependency>
       <Dependency Software="Motherboard">Dual CPU</Dependency>
     </Feature>
@@ -68,7 +89,23 @@
       <Usability>15</Usability>
       <Stability>5</Stability>
       <CodeArt>0.25</CodeArt>
+      <SoftwareCategory Category="Consumer">0</SoftwareCategory>
+      <SoftwareCategory Category="Gaming">0</SoftwareCategory>
+      <SoftwareCategory Category="Server">1996</SoftwareCategory>
       <Dependency Software="Graphics Card">GPU</Dependency>
+    </Feature>
+    <Feature Forced="FALSE">
+      <Name>Watchdog</Name>
+      <Category>Physical</Category>
+      <Description>A means of monitoring SERVER hardware</Description>
+      <Unlock>1980</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>20</Usability>
+      <Stability>20</Stability>
+      <CodeArt>0.9</CodeArt>
+      <SoftwareCategory Category="Server">0</SoftwareCategory>
+      <Dependency Software="Motherboard">Connectors</Dependency>
     </Feature>
   </Features>
 </SoftwareType>
