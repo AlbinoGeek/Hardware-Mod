@@ -30,18 +30,6 @@
   <InHouse>FALSE</InHouse>
   <NameGenerator>names</NameGenerator>
   <Features>
-    <Feature>
-      <Name>Watchdog</Name>
-      <Category>Physical</Category>
-      <Description>A device that helps Servers keep track of events.</Description>
-      <Unlock>1986</Unlock>
-      <DevTime>6</DevTime>
-      <Innovation>10</Innovation>
-      <Usability>15</Usability>
-      <Stability>15</Stability>
-      <CodeArt>0.1</CodeArt>
-      <SoftwareCategory Category="Server">0</SoftwareCategory>
-    </Feature>
     <Feature Forced="TRUE">
       <Name>Motherboard</Name>
       <Category>Physical</Category>
@@ -66,11 +54,11 @@
       <CodeArt>0.25</CodeArt>
       <Dependency Software="Processor">Control Unit</Dependency>
     </Feature>
-    <Feature Forced="FALSE" Vital="TRUE">
+    <Feature Vital="TRUE">
       <Name>Second CPU</Name>
       <Category>Physical</Category>
       <Description>Doubles the Processing</Description>
-      <Unlock>1989</Unlock>
+      <Unlock>1980</Unlock>
       <DevTime>12</DevTime>
       <Innovation>20</Innovation>
       <Usability>20</Usability>
@@ -78,8 +66,10 @@
       <CodeArt>0.75</CodeArt>
       <Dependency Software="Computer">Processor</Dependency>
       <Dependency Software="Motherboard">Dual CPU</Dependency>
+      <SoftwareCategory Category="Consumer">1989</SoftwareCategory>
+      <SoftwareCategory Category="Server">0</SoftwareCategory>
     </Feature>
-    <Feature Forced="FALSE" Vital="TRUE">
+    <Feature Vital="TRUE">
       <Name>Hard Drive</Name>
       <Category>Physical</Category>
       <Description>Needs a Hard Drive</Description>
@@ -91,7 +81,7 @@
       <CodeArt>0.25</CodeArt>
       <Dependency Software="Storage">Heads</Dependency>
     </Feature>
-    <Feature Forced="FALSE" Vital="TRUE">
+    <Feature Vital="TRUE">
       <Name>Graphics Card</Name>
       <Category>Physical</Category>
       <Description>Needs a Graphics Card</Description>
@@ -102,6 +92,20 @@
       <Stability>5</Stability>
       <CodeArt>0.25</CodeArt>
       <Dependency Software="Graphics Card">GPU</Dependency>
+      <SoftwareCategory Category="Consumer">0</SoftwareCategory>
+      <SoftwareCategory Category="Server">1994</SoftwareCategory>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>Watchdog</Name>
+      <Category>Physical</Category>
+      <Description>A device that helps Servers keep track of events.</Description>
+      <Unlock>1986</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>15</Usability>
+      <Stability>15</Stability>
+      <CodeArt>0.1</CodeArt>
+      <SoftwareCategory Category="Server">0</SoftwareCategory>
     </Feature>
   </Features>
 </SoftwareType>

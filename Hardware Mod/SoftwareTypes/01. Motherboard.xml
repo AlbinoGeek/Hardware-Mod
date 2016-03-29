@@ -6,7 +6,7 @@
     <Category Name="Default">
       <Description></Description>
       <Unlock>0</Unlock>
-      <Popularity>1</Popularity>
+      <Popularity>0.95</Popularity>
       <TimeScale>1</TimeScale>
       <Retention>0.8</Retention>
       <Iterative>0.1</Iterative>
@@ -14,8 +14,8 @@
     </Category>
   </Categories>
   <Unlock>0</Unlock>
-  <Random>0</Random>
-  <Popularity>1</Popularity>
+  <Random>0.05</Random>
+  <Popularity>0.95</Popularity>
   <OSSpecific>FALSE</OSSpecific>
   <OneClient>FALSE</OneClient>
   <InHouse>TRUE</InHouse>
