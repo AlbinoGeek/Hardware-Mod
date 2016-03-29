@@ -1,6 +1,6 @@
 <CompanyType>
 	<Specialization>Processors</Specialization>
-	<Force>Processor</Force>
+	<Force>Processor,Default</Force>
 	<PerYear>0.04</PerYear>
 	<Min>2</Min>
 	<Max>3</Max>

@@ -6,21 +6,42 @@
     <Category Name="Consumer">
       <Description>Geared towards individuals, these less powerful computeres are easier to make; but consumers replace them fairly often.</Description>
       <Unlock>0</Unlock>
-      <Popularity>1</Popularity>
+      <Popularity>0.9</Popularity>
       <TimeScale>1</TimeScale>
       <Retention>0.7</Retention>
       <Iterative>0.7</Iterative>
       <NameGenerator>names</NameGenerator>
     </Category>
+    <Category Name="Server">
+      <Description>Geared towards businesses, these more powerful computeres are harer to make and must be stable; but businesses don't upgrade often.</Description>
+      <Unlock>0</Unlock>
+      <Popularity>0.9</Popularity>
+      <TimeScale>1.2</TimeScale>
+      <Retention>0.9</Retention>
+      <Iterative>0.4</Iterative>
+      <NameGenerator>names</NameGenerator>
+    </Category>
   </Categories>
   <Unlock>1960</Unlock>
   <Random>0</Random>
-  <Popularity>1</Popularity>
+  <Popularity>0.9</Popularity>
   <OSSpecific>FALSE</OSSpecific>
   <OneClient>FALSE</OneClient>
   <InHouse>FALSE</InHouse>
   <NameGenerator>names</NameGenerator>
   <Features>
+    <Feature>
+      <Name>Watchdog</Name>
+      <Category>Physical</Category>
+      <Description>A device that helps Servers keep track of events.</Description>
+      <Unlock>1986</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>15</Usability>
+      <Stability>15</Stability>
+      <CodeArt>0.1</CodeArt>
+      <SoftwareCategory Category="Server">0</SoftwareCategory>
+    </Feature>
     <Feature Forced="TRUE">
       <Name>Motherboard</Name>
       <Category>Physical</Category>

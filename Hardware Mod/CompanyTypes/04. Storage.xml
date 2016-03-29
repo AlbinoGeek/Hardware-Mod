@@ -1,10 +1,10 @@
 <CompanyType>
 	<Specialization>Storages</Specialization>
-	<Force>Storage</Force>
+	<Force>Storage,Hard Drive</Force>
 	<PerYear>0.06</PerYear>
 	<Min>2</Min>
 	<Max>3</Max>
 	<Types>
-		<Type Software="Storage" Category="Hard Drive">1</Type>
+		<Type Software="Storage">1</Type>
 	</Types>
 </CompanyType>
