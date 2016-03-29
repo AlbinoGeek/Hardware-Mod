@@ -1,21 +1,21 @@
 <SoftwareType>
   <Name>Processor</Name>
   <Category>Hardware</Category>
-  <Description>Create your own Processor</Description>
+  <Description>Acts as the brain in any cmoputer.</Description>
   <Categories>
     <Category Name="Default">
       <Description></Description>
       <Unlock>0</Unlock>
-      <Popularity>0.5</Popularity>
+      <Popularity>0.7</Popularity>
       <TimeScale>1</TimeScale>
-      <Retention>0.6</Retention>
+      <Retention>0.7</Retention>
       <Iterative>0.9</Iterative>
       <NameGenerator>names</NameGenerator>
     </Category>
   </Categories>
   <Unlock>0</Unlock>
-  <Random>0.5</Random>
-  <Popularity>0.5</Popularity>
+  <Random>0.3</Random>
+  <Popularity>0.7</Popularity>
   <OSSpecific>FALSE</OSSpecific>
   <OneClient>FALSE</OneClient>
   <InHouse>TRUE</InHouse>
@@ -26,13 +26,13 @@
       <Category>Physical</Category>
       <Description></Description>
       <Unlock>0</Unlock>
-      <DevTime>3</DevTime>
+      <DevTime>6</DevTime>
       <Innovation>5</Innovation>
-      <Usability>0</Usability>
+      <Usability>5</Usability>
       <Stability>5</Stability>
       <CodeArt>1</CodeArt>
     </Feature>
-    <Feature From="Control Unit" Forced="FALSE" Vital="TRUE">
+    <Feature From="Control Unit" Vital="TRUE">
       <Name>Dual Core</Name>
       <Category>System</Category>
       <Description></Description>
@@ -43,18 +43,18 @@
       <Stability>5</Stability>
       <CodeArt>0.5</CodeArt>
     </Feature>
-    <Feature From="Dual Core" Forced="FALSE" Vital="TRUE">
+    <Feature From="Dual Core" Vital="TRUE">
       <Name>Quad Core</Name>
       <Category>System</Category>
       <Description></Description>
       <Unlock>2007</Unlock>
-      <DevTime>9</DevTime>
+      <DevTime>10</DevTime>
       <Innovation>20</Innovation>
       <Usability>30</Usability>
       <Stability>10</Stability>
       <CodeArt>0.3</CodeArt>
     </Feature>
-    <Feature From="Quad Core" Forced="FALSE" Vital="TRUE">
+    <Feature From="Quad Core" Vital="TRUE">
       <Name>Octo Core</Name>
       <Category>System</Category>
       <Description></Description>
@@ -65,7 +65,7 @@
       <Stability>20</Stability>
       <CodeArt>0.3</CodeArt>
     </Feature>
-    <Feature Forced="FALSE">
+    <Feature Vital="TRUE">
       <Name>Heat Spreaders</Name>
       <Category>Physical</Category>
       <Description></Description>
@@ -76,7 +76,7 @@
       <Stability>10</Stability>
       <CodeArt>0.8</CodeArt>
     </Feature>
-    <Feature From="Heat Spreaders" Forced="FALSE">
+    <Feature From="Heat Spreaders" Vital="TRUE">
       <Name>Heat Pipes</Name>
       <Category>Physical</Category>
       <Description></Description>
@@ -103,13 +103,13 @@
       <Category>Physical</Category>
       <Description></Description>
       <Unlock>1970</Unlock>
-      <DevTime>3</DevTime>
+      <DevTime>2</DevTime>
       <Innovation>10</Innovation>
-      <Usability>0</Usability>
+      <Usability>3</Usability>
       <Stability>10</Stability>
       <CodeArt>0.8</CodeArt>
     </Feature>
-    <Feature From="Thermal Paste" Forced="FALSE" Vital="TRUE">
+    <Feature From="Thermal Paste" Vital="TRUE">
       <Name>Substrate</Name>
       <Category>Physical</Category>
       <Description></Description>
@@ -120,15 +120,15 @@
       <Stability>20</Stability>
       <CodeArt>0.2</CodeArt>
     </Feature>
-    <Feature From="Substrate" Forced="FALSE" Vital="TRUE">
+    <Feature From="Substrate" Vital="TRUE">
       <Name>Arctic Paste</Name>
       <Category>Physical</Category>
       <Description></Description>
       <Unlock>1990</Unlock>
       <DevTime>9</DevTime>
-      <Innovation>10</Innovation>
-      <Usability>0</Usability>
-      <Stability>10</Stability>
+      <Innovation>20</Innovation>
+      <Usability>10</Usability>
+      <Stability>30</Stability>
       <CodeArt>0.6</CodeArt>
     </Feature>
     <Feature Forced="TRUE">
@@ -138,11 +138,11 @@
       <Unlock>0</Unlock>
       <DevTime>6</DevTime>
       <Innovation>10</Innovation>
-      <Usability>0</Usability>
+      <Usability>5</Usability>
       <Stability>5</Stability>
       <CodeArt>1</CodeArt>
     </Feature>
-    <Feature Forced="FALSE" Vital="FALSE">
+    <Feature>
       <Name>Predicter</Name>
       <Category>System</Category>
       <Description>Can be used to improve logic</Description>
@@ -154,7 +154,7 @@
       <CodeArt>1</CodeArt>
       <Dependency Software="Processor">Logic Unit</Dependency>
     </Feature>
-    <Feature Forced="FALSE" Vital="FALSE">
+    <Feature >
       <Name>Fetcher</Name>
       <Category>System</Category>
       <Description>Orders instructions better</Description>
@@ -173,14 +173,14 @@
       <Unlock>0</Unlock>
       <DevTime>6</DevTime>
       <Innovation>10</Innovation>
-      <Usability>0</Usability>
+      <Usability>5</Usability>
       <Stability>5</Stability>
       <CodeArt>1</CodeArt>
     </Feature>
-    <Feature Forced="FALSE" Vital="FALSE">
+    <Feature Vital="TRUE">
       <Name>Caches</Name>
       <Category>Physical</Category>
-      <Description>Levels of caches help a lot</Description>
+      <Description>Cachces prevent the Processor from having to idle while it waits for other things to catch up.</Description>
       <Unlock>1975</Unlock>
       <DevTime>6</DevTime>
       <Innovation>20</Innovation>
@@ -189,7 +189,7 @@
       <CodeArt>1</CodeArt>
       <Dependency Software="Processor">Registers</Dependency>
     </Feature>
-    <Feature Forced="FALSE" Vital="FALSE">
+    <Feature>
       <Name>L2/L3</Name>
       <Category>Physical</Category>
       <Description>More caches</Description>
@@ -201,7 +201,7 @@
       <CodeArt>1</CodeArt>
       <Dependency Software="Processor">Caches</Dependency>
     </Feature>
-    <Feature Forced="FALSE">
+    <Feature>
       <Name>Power Efficiency</Name>
       <Category>Physical</Category>
       <Description></Description>
@@ -212,7 +212,7 @@
       <Stability>10</Stability>
       <CodeArt>0.6</CodeArt>
     </Feature>
-    <Feature From="Power Efficiency" Forced="FALSE">
+    <Feature From="Power Efficiency">
       <Name>25%</Name>
       <Category>Physical</Category>
       <Description></Description>
@@ -223,7 +223,7 @@
       <Stability>5</Stability>
       <CodeArt>0.4</CodeArt>
     </Feature>
-    <Feature From="25%" Forced="FALSE">
+    <Feature From="25%">
       <Name>75%</Name>
       <Category>Physical</Category>
       <Description></Description>
@@ -241,11 +241,11 @@
       <Unlock>0</Unlock>
       <DevTime>6</DevTime>
       <Innovation>10</Innovation>
-      <Usability>0</Usability>
+      <Usability>5</Usability>
       <Stability>5</Stability>
       <CodeArt>1</CodeArt>
     </Feature>
-    <Feature Forced="FALSE" Vital="FALSE">
+    <Feature>
       <Name>Divider</Name>
       <Category>System</Category>
       <Description>Division without the thinking</Description>
@@ -257,7 +257,7 @@
       <CodeArt>1</CodeArt>
       <Dependency Software="Processor">Math Unit</Dependency>
     </Feature>
-    <Feature Forced="FALSE">
+    <Feature Vital="TRUE">
       <Name>Parallel Math</Name>
       <Category>System</Category>
       <Description>What if you could do two things at once?</Description>
@@ -269,7 +269,7 @@
       <CodeArt>1</CodeArt>
       <Dependency Software="Processor">Divider</Dependency>
     </Feature>
-    <Feature Forced="FALSE" Vital="FALSE">
+    <Feature Vital="FALSE">
       <Name>APU</Name>
       <Category>System</Category>
       <Description></Description>
