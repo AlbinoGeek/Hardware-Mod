@@ -2,8 +2,8 @@
 	<Specialization>Processors</Specialization>
 	<Force>Processor,Default</Force>
 	<PerYear>0.04</PerYear>
-	<Min>2</Min>
-	<Max>3</Max>
+	<Min>1</Min>
+	<Max>2</Max>
 	<Types>
 		<Type Software="Processor">1</Type>
 	</Types>

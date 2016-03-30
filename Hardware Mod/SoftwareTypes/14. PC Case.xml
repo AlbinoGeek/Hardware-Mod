@@ -7,7 +7,7 @@
       <Description>Individuals love to pimp out their case, and are generally only interested in what it looks like.</Description>
       <Unlock>0</Unlock>
       <Popularity>0.8</Popularity>
-      <TimeScale>0.5</TimeScale>
+      <TimeScale>0.3</TimeScale>
       <Retention>0.6</Retention>
       <Iterative>0.8</Iterative>
       <NameGenerator>names</NameGenerator>
@@ -16,7 +16,7 @@
       <Description>Server cases are robust and often include multiple of each components to minimize the impact of failure and maintenance.</Description>
       <Unlock>0</Unlock>
       <Popularity>0.6</Popularity>
-      <TimeScale>0.7</TimeScale>
+      <TimeScale>0.55</TimeScale>
       <Retention>0.9</Retention>
       <Iterative>0.2</Iterative>
       <NameGenerator>names</NameGenerator>
@@ -35,7 +35,7 @@
       <Category>Physical</Category>
       <Description></Description>
       <Unlock>0</Unlock>
-      <DevTime>2</DevTime>
+      <DevTime>3</DevTime>
       <Innovation>5</Innovation>
       <Usability>5</Usability>
       <Stability>5</Stability>
@@ -46,7 +46,7 @@
       <Category>Physical</Category>
       <Description></Description>
       <Unlock>0</Unlock>
-      <DevTime>2</DevTime>
+      <DevTime>3</DevTime>
       <Innovation>5</Innovation>
       <Usability>5</Usability>
       <Stability>5</Stability>
@@ -57,7 +57,7 @@
       <Category>Physical</Category>
       <Description></Description>
       <Unlock>0</Unlock>
-      <DevTime>2</DevTime>
+      <DevTime>3</DevTime>
       <Innovation>5</Innovation>
       <Usability>5</Usability>
       <Stability>5</Stability>

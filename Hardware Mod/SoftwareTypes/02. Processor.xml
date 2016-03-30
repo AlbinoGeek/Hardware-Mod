@@ -6,16 +6,16 @@
     <Category Name="Default">
       <Description></Description>
       <Unlock>0</Unlock>
-      <Popularity>0.7</Popularity>
-      <TimeScale>1</TimeScale>
-      <Retention>0.7</Retention>
-      <Iterative>0.9</Iterative>
+      <Popularity>1</Popularity>
+      <TimeScale>1.2</TimeScale>
+      <Retention>0.70</Retention>
+      <Iterative>0.90</Iterative>
       <NameGenerator>names</NameGenerator>
     </Category>
   </Categories>
   <Unlock>0</Unlock>
   <Random>0.3</Random>
-  <Popularity>0.7</Popularity>
+  <Popularity>1</Popularity>
   <OSSpecific>FALSE</OSSpecific>
   <OneClient>FALSE</OneClient>
   <InHouse>TRUE</InHouse>
@@ -26,10 +26,10 @@
       <Category>Physical</Category>
       <Description></Description>
       <Unlock>0</Unlock>
-      <DevTime>6</DevTime>
-      <Innovation>5</Innovation>
-      <Usability>5</Usability>
-      <Stability>5</Stability>
+      <DevTime>3</DevTime>
+      <Innovation>1</Innovation>
+      <Usability>1</Usability>
+      <Stability>1</Stability>
       <CodeArt>1</CodeArt>
     </Feature>
     <Feature From="Control Unit" Vital="TRUE">
@@ -38,9 +38,9 @@
       <Description></Description>
       <Unlock>2006</Unlock>
       <DevTime>6</DevTime>
-      <Innovation>10</Innovation>
-      <Usability>20</Usability>
-      <Stability>5</Stability>
+      <Innovation>3</Innovation>
+      <Usability>3</Usability>
+      <Stability>1</Stability>
       <CodeArt>0.5</CodeArt>
     </Feature>
     <Feature From="Dual Core" Vital="TRUE">
@@ -48,10 +48,10 @@
       <Category>System</Category>
       <Description></Description>
       <Unlock>2007</Unlock>
-      <DevTime>10</DevTime>
-      <Innovation>20</Innovation>
-      <Usability>30</Usability>
-      <Stability>10</Stability>
+      <DevTime>9</DevTime>
+      <Innovation>6</Innovation>
+      <Usability>6</Usability>
+      <Stability>3</Stability>
       <CodeArt>0.3</CodeArt>
     </Feature>
     <Feature From="Quad Core" Vital="TRUE">
@@ -60,9 +60,9 @@
       <Description></Description>
       <Unlock>2011</Unlock>
       <DevTime>15</DevTime>
-      <Innovation>40</Innovation>
-      <Usability>50</Usability>
-      <Stability>20</Stability>
+      <Innovation>9</Innovation>
+      <Usability>18</Usability>
+      <Stability>5</Stability>
       <CodeArt>0.3</CodeArt>
     </Feature>
     <Feature Vital="TRUE">
@@ -71,9 +71,9 @@
       <Description></Description>
       <Unlock>1980</Unlock>
       <DevTime>3</DevTime>
-      <Innovation>10</Innovation>
-      <Usability>10</Usability>
-      <Stability>10</Stability>
+      <Innovation>2</Innovation>
+      <Usability>2</Usability>
+      <Stability>2</Stability>
       <CodeArt>0.8</CodeArt>
     </Feature>
     <Feature From="Heat Spreaders" Vital="TRUE">
@@ -82,9 +82,9 @@
       <Description></Description>
       <Unlock>1985</Unlock>
       <DevTime>6</DevTime>
-      <Innovation>20</Innovation>
-      <Usability>10</Usability>
-      <Stability>10</Stability>
+      <Innovation>6</Innovation>
+      <Usability>2</Usability>
+      <Stability>4</Stability>
       <CodeArt>0.4</CodeArt>
     </Feature>
     <Feature From="Heat Pipes" Forced="FALSE">
@@ -93,9 +93,9 @@
       <Description></Description>
       <Unlock>1995</Unlock>
       <DevTime>9</DevTime>
-      <Innovation>20</Innovation>
-      <Usability>10</Usability>
-      <Stability>10</Stability>
+      <Innovation>6</Innovation>
+      <Usability>2</Usability>
+      <Stability>8</Stability>
       <CodeArt>0.1</CodeArt>
     </Feature>
     <Feature Forced="FALSE" Vital="TRUE">
@@ -104,9 +104,9 @@
       <Description></Description>
       <Unlock>1970</Unlock>
       <DevTime>2</DevTime>
-      <Innovation>10</Innovation>
-      <Usability>3</Usability>
-      <Stability>10</Stability>
+      <Innovation>1</Innovation>
+      <Usability>1</Usability>
+      <Stability>3</Stability>
       <CodeArt>0.8</CodeArt>
     </Feature>
     <Feature From="Thermal Paste" Vital="TRUE">
@@ -115,9 +115,9 @@
       <Description></Description>
       <Unlock>1980</Unlock>
       <DevTime>6</DevTime>
-      <Innovation>20</Innovation>
-      <Usability>10</Usability>
-      <Stability>20</Stability>
+      <Innovation>4</Innovation>
+      <Usability>1</Usability>
+      <Stability>6</Stability>
       <CodeArt>0.2</CodeArt>
     </Feature>
     <Feature From="Substrate" Vital="TRUE">
@@ -126,9 +126,9 @@
       <Description></Description>
       <Unlock>1990</Unlock>
       <DevTime>9</DevTime>
-      <Innovation>20</Innovation>
-      <Usability>10</Usability>
-      <Stability>30</Stability>
+      <Innovation>8</Innovation>
+      <Usability>2</Usability>
+      <Stability>8</Stability>
       <CodeArt>0.6</CodeArt>
     </Feature>
     <Feature Forced="TRUE">
@@ -137,9 +137,9 @@
       <Description>The Other Main Brain</Description>
       <Unlock>0</Unlock>
       <DevTime>6</DevTime>
-      <Innovation>10</Innovation>
-      <Usability>5</Usability>
-      <Stability>5</Stability>
+      <Innovation>1</Innovation>
+      <Usability>1</Usability>
+      <Stability>1</Stability>
       <CodeArt>1</CodeArt>
     </Feature>
     <Feature>
@@ -148,9 +148,9 @@
       <Description>Can be used to improve logic</Description>
       <Unlock>1983</Unlock>
       <DevTime>6</DevTime>
-      <Innovation>30</Innovation>
-      <Usability>10</Usability>
-      <Stability>20</Stability>
+      <Innovation>2</Innovation>
+      <Usability>2</Usability>
+      <Stability>1</Stability>
       <CodeArt>1</CodeArt>
       <Dependency Software="Processor">Logic Unit</Dependency>
     </Feature>
@@ -160,9 +160,9 @@
       <Description>Orders instructions better</Description>
       <Unlock>1985</Unlock>
       <DevTime>6</DevTime>
-      <Innovation>40</Innovation>
-      <Usability>20</Usability>
-      <Stability>10</Stability>
+      <Innovation>6</Innovation>
+      <Usability>3</Usability>
+      <Stability>1</Stability>
       <CodeArt>1</CodeArt>
       <Dependency Software="Processor">Predicter</Dependency>
     </Feature>
@@ -172,9 +172,9 @@
       <Description>Short Storage</Description>
       <Unlock>0</Unlock>
       <DevTime>6</DevTime>
-      <Innovation>10</Innovation>
-      <Usability>5</Usability>
-      <Stability>5</Stability>
+      <Innovation>1</Innovation>
+      <Usability>1</Usability>
+      <Stability>1</Stability>
       <CodeArt>1</CodeArt>
     </Feature>
     <Feature Vital="TRUE">
@@ -183,9 +183,9 @@
       <Description>Cachces prevent the Processor from having to idle while it waits for other things to catch up.</Description>
       <Unlock>1975</Unlock>
       <DevTime>6</DevTime>
-      <Innovation>20</Innovation>
-      <Usability>10</Usability>
-      <Stability>10</Stability>
+      <Innovation>2</Innovation>
+      <Usability>2</Usability>
+      <Stability>1</Stability>
       <CodeArt>1</CodeArt>
       <Dependency Software="Processor">Registers</Dependency>
     </Feature>
@@ -195,9 +195,9 @@
       <Description>More caches</Description>
       <Unlock>1990</Unlock>
       <DevTime>9</DevTime>
-      <Innovation>10</Innovation>
-      <Usability>40</Usability>
-      <Stability>10</Stability>
+      <Innovation>2</Innovation>
+      <Usability>4</Usability>
+      <Stability>1</Stability>
       <CodeArt>1</CodeArt>
       <Dependency Software="Processor">Caches</Dependency>
     </Feature>
@@ -207,9 +207,9 @@
       <Description></Description>
       <Unlock>1995</Unlock>
       <DevTime>9</DevTime>
-      <Innovation>15</Innovation>
-      <Usability>5</Usability>
-      <Stability>10</Stability>
+      <Innovation>1</Innovation>
+      <Usability>2</Usability>
+      <Stability>2</Stability>
       <CodeArt>0.6</CodeArt>
     </Feature>
     <Feature From="Power Efficiency">
@@ -218,9 +218,9 @@
       <Description></Description>
       <Unlock>1998</Unlock>
       <DevTime>6</DevTime>
-      <Innovation>5</Innovation>
-      <Usability>0</Usability>
-      <Stability>5</Stability>
+      <Innovation>1</Innovation>
+      <Usability>3</Usability>
+      <Stability>3</Stability>
       <CodeArt>0.4</CodeArt>
     </Feature>
     <Feature From="25%">
@@ -229,9 +229,9 @@
       <Description></Description>
       <Unlock>2002</Unlock>
       <DevTime>6</DevTime>
-      <Innovation>5</Innovation>
-      <Usability>0</Usability>
-      <Stability>5</Stability>
+      <Innovation>4</Innovation>
+      <Usability>8</Usability>
+      <Stability>8</Stability>
       <CodeArt>0.4</CodeArt>
     </Feature>
     <Feature Forced="TRUE">
@@ -240,9 +240,9 @@
       <Description>The Main Brain</Description>
       <Unlock>0</Unlock>
       <DevTime>6</DevTime>
-      <Innovation>10</Innovation>
-      <Usability>5</Usability>
-      <Stability>5</Stability>
+      <Innovation>1</Innovation>
+      <Usability>1</Usability>
+      <Stability>1</Stability>
       <CodeArt>1</CodeArt>
     </Feature>
     <Feature>
@@ -251,8 +251,8 @@
       <Description>Division without the thinking</Description>
       <Unlock>1980</Unlock>
       <DevTime>12</DevTime>
-      <Innovation>40</Innovation>
-      <Usability>10</Usability>
+      <Innovation>4</Innovation>
+      <Usability>2</Usability>
       <Stability>0</Stability>
       <CodeArt>1</CodeArt>
       <Dependency Software="Processor">Math Unit</Dependency>
@@ -262,10 +262,10 @@
       <Category>System</Category>
       <Description>What if you could do two things at once?</Description>
       <Unlock>1990</Unlock>
-      <DevTime>6</DevTime>
-      <Innovation>40</Innovation>
-      <Usability>20</Usability>
-      <Stability>10</Stability>
+      <DevTime>9</DevTime>
+      <Innovation>6</Innovation>
+      <Usability>4</Usability>
+      <Stability>2</Stability>
       <CodeArt>1</CodeArt>
       <Dependency Software="Processor">Divider</Dependency>
     </Feature>
@@ -275,9 +275,9 @@
       <Description></Description>
       <Unlock>1990</Unlock>
       <DevTime>24</DevTime>
-      <Innovation>40</Innovation>
-      <Usability>30</Usability>
-      <Stability>10</Stability>
+      <Innovation>8</Innovation>
+      <Usability>8</Usability>
+      <Stability>2</Stability>
       <CodeArt>0.4</CodeArt>
       <Dependency Software="Processor">Math Unit</Dependency>
     </Feature>

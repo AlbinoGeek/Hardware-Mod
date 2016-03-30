@@ -2,8 +2,8 @@
 	<Specialization>Motherboards</Specialization>
 	<Force>Motherboard,Default</Force>
 	<PerYear>0.1</PerYear>
-	<Min>2</Min>
-	<Max>4</Max>
+	<Min>1</Min>
+	<Max>2</Max>
 	<Types>
 		<Type Software="Motherboard">1</Type>
 	</Types>
