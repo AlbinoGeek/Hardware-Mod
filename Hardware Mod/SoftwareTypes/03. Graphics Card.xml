@@ -6,9 +6,9 @@
     <Category Name="Default">
       <Description></Description>
       <Unlock>1992</Unlock>
-      <Popularity>0.5</Popularity>
-      <TimeScale>1</TimeScale>
-      <Retention>0.7</Retention>
+      <Popularity>0.7</Popularity>
+      <TimeScale>1.4</TimeScale>
+      <Retention>0.6</Retention>
       <Iterative>0.9</Iterative>
       <NameGenerator>names</NameGenerator>
     </Category>
