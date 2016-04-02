@@ -7,7 +7,7 @@ Tiger
 Color
 Melor
 Lorn
-Compu
+Comp
 Bio
 Power
 -abase(base2,end,go)
