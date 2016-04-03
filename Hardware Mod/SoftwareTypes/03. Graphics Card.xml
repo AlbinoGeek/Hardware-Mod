@@ -4,7 +4,7 @@
   <Description>Create your own PCI Graphics Card</Description>
   <Categories>
     <Category Name="Default">
-      <Description></Description>
+      <Description>Still needs some balancing (v0.8+)</Description>
       <Unlock>1992</Unlock>
       <Popularity>0.7</Popularity>
       <TimeScale>1.4</TimeScale>
@@ -24,7 +24,7 @@
     <Feature Forced="TRUE">
       <Name>GPU</Name>
       <Category>Physical</Category>
-      <Description>It makes it go</Description>
+      <Description>The Graphical Processing Unit(s), also known as Cores.</Description>
       <Unlock>1992</Unlock>
       <DevTime>9</DevTime>
       <Innovation>20</Innovation>
