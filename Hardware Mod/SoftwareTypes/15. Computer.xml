@@ -77,7 +77,7 @@
       <Stability>5</Stability>
       <CodeArt>0.75</CodeArt>
       <Dependency Software="Computer">Processor</Dependency>
-      <Dependency Software="Motherboard">Dual CPU</Dependency>
+      <Dependency Software="Motherboard">Dual Socket</Dependency>
       <SoftwareCategory Category="Consumer">1989</SoftwareCategory>
       <SoftwareCategory Category="Server">0</SoftwareCategory>
     </Feature>

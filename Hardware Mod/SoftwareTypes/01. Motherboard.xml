@@ -4,7 +4,7 @@
   <Description>A circuitboard which you plug other components in to.</Description>
   <Categories>
     <Category Name="Default">
-      <Description></Description>
+      <Description>There were going to be different types of motherboards, but now that's going to come later (v0.8+)</Description>
       <Unlock>0</Unlock>
       <Popularity>1</Popularity>
       <TimeScale>1.2</TimeScale>
@@ -24,7 +24,7 @@
     <Feature Vital="TRUE">
       <Name>Battery</Name>
       <Category>Physical</Category>
-      <Description>Exists to keep the system time, configuration, and allow for logging systems to flush when the system loses power.  They are important.</Description>
+      <Description>Exists to keep the system time, configuration, and allow for logging systems to flush when the system loses power.</Description>
       <Unlock>0</Unlock>
       <DevTime>1</DevTime>
       <Innovation>1</Innovation>
@@ -35,7 +35,7 @@
     <Feature Vital="TRUE">
       <Name>BIOS</Name>
       <Category>System</Category>
-      <Description>Allows for configuration management, log viewing, and tweaking of the computer system.  This is important.</Description>
+      <Description>Allows for configuration management, log viewing, and tweaking of the computer system.</Description>
       <Unlock>0</Unlock>
       <DevTime>3</DevTime>
       <Innovation>2</Innovation>
@@ -50,8 +50,8 @@
       <Description>The BIOS just wasn't good enough ...</Description>
       <Unlock>2005</Unlock>
       <DevTime>6</DevTime>
-      <Innovation>4</Innovation>
-      <Usability>1</Usability>
+      <Innovation>5</Innovation>
+      <Usability>2</Usability>
       <Stability>0</Stability>
       <CodeArt>0.1</CodeArt>
       <Dependency Software="Motherboard">BIOS</Dependency>
@@ -59,11 +59,11 @@
     <Feature Vital="TRUE">
       <Name>PS/2</Name>
       <Category>Physical</Category>
-      <Description>Allows you to plug in peripherals such as a Keyboard or Mouse.  This is important.</Description>
+      <Description>Allows you to plug in peripherals such as a Keyboard or Mouse.</Description>
       <Unlock>1987</Unlock>
       <DevTime>3</DevTime>
-      <Innovation>3</Innovation>
-      <Usability>5</Usability>
+      <Innovation>2</Innovation>
+      <Usability>4</Usability>
       <Stability>3</Stability>
       <CodeArt>0.6</CodeArt>
     </Feature>
@@ -79,7 +79,7 @@
       <CodeArt>0.2</CodeArt>
     </Feature>
 	<Feature From="CPU Socket">
-      <Name>Dual CPU</Name>
+      <Name>Dual Socket</Name>
       <Category>Physical</Category>
       <Description>TWICE THE PROCESSORS</Description>
       <Unlock>1989</Unlock>
@@ -89,8 +89,8 @@
       <Stability>3</Stability>
       <CodeArt>0.5</CodeArt>
     </Feature>
-	<Feature From="Dual CPU">
-      <Name>Quad CPU</Name>
+	<Feature From="Dual Socket">
+      <Name>Quad Socket</Name>
       <Category>Physical</Category>
       <Description>FOUR THE PROCESSORS</Description>
       <Unlock>1999</Unlock>
@@ -110,7 +110,7 @@
       <Usability>20</Usability>
       <Stability>10</Stability>
       <CodeArt>0.2</CodeArt>
-      <Dependency Software="Motherboard">Quad CPU</Dependency>
+      <Dependency Software="Motherboard">Quad Socket</Dependency>
     </Feature>
 	<Feature>
       <Name>Sister Board</Name>
@@ -233,7 +233,7 @@
     <Feature Forced="TRUE">
       <Name>RAM Slots</Name>
       <Category>Physical</Category>
-      <Description>Somewhere to shove the memory.</Description>
+      <Description>Somewhere to shove the memory. (coming soon)</Description>
       <Unlock>0</Unlock>
       <DevTime>9</DevTime>
       <Innovation>1</Innovation>
@@ -288,7 +288,7 @@
     <Feature Vital="TRUE">
       <Name>PCI Slots</Name>
       <Category>Physical</Category>
-      <Description>Somewhere to shove extra features.</Description>
+      <Description>Slots that let users install additional hardware, currently only Graphics Cards require PCI.</Description>
       <Unlock>1992</Unlock>
       <DevTime>3</DevTime>
       <Innovation>4</Innovation>
@@ -299,7 +299,7 @@
     <Feature From="PCI Slots" Vital="TRUE">
       <Name>PCI Express</Name>
       <Category>Physical</Category>
-      <Description>Much faster than PCI.</Description>
+      <Description>A much faster version of PCI, must match the Graphics Cards being used.</Description>
       <Unlock>2004</Unlock>
       <DevTime>5</DevTime>
       <Innovation>12</Innovation>
@@ -310,7 +310,7 @@
     <Feature From="PCI Express" Vital="FALSE">
       <Name>SLl Support</Name>
       <Category>2D</Category>
-      <Description>Allows for the use of multiple graphics cards.</Description>
+      <Description>Allows for the use of two graphics cards.</Description>
       <Unlock>2004</Unlock>
       <DevTime>10</DevTime>
       <Innovation>4</Innovation>
@@ -319,9 +319,9 @@
       <CodeArt>0.5</CodeArt>
     </Feature>
     <Feature From="SLl Support" Vital="FALSE">
-      <Name>Dual SLl</Name>
+      <Name>Triple SLl</Name>
       <Category>3D</Category>
-      <Description>Now you can fit two graphics cards.</Description>
+      <Description>Now you can fit three graphics cards.</Description>
       <Unlock>2006</Unlock>
       <DevTime>8</DevTime>
       <Innovation>6</Innovation>
@@ -329,7 +329,7 @@
       <Stability>0</Stability>
       <CodeArt>0.5</CodeArt>
     </Feature>
-    <Feature From="Dual SLl" Vital="FALSE">
+    <Feature From="Triple SLl" Vital="FALSE">
       <Name>Quad SLl</Name>
       <Category>3D</Category>
       <Description>FOUR THE GRPAHIC!S</Description>
@@ -347,8 +347,8 @@
       <Unlock>0</Unlock>
       <DevTime>6</DevTime>
       <Innovation>1</Innovation>
-      <Usability>3</Usability>
-      <Stability>10</Stability>
+      <Usability>2</Usability>
+      <Stability>6</Stability>
       <CodeArt>0.5</CodeArt>
     </Feature>
     <Feature Vital="TRUE">
@@ -368,9 +368,9 @@
       <Description>Certain beeps help for debugging.</Description>
       <Unlock>0</Unlock>
       <DevTime>2</DevTime>
-      <Innovation>2</Innovation>
+      <Innovation>1</Innovation>
       <Usability>2</Usability>
-      <Stability>4</Stability>
+      <Stability>3</Stability>
       <CodeArt>0.8</CodeArt>
       <Dependency Software="Motherboard">Connectors</Dependency>
     </Feature>
@@ -380,9 +380,9 @@
       <Description>More realistic sound positioning.</Description>
       <Unlock>1983</Unlock>
       <DevTime>6</DevTime>
-      <Innovation>4</Innovation>
-      <Usability>4</Usability>
-      <Stability>4</Stability>
+      <Innovation>3</Innovation>
+      <Usability>3</Usability>
+      <Stability>3</Stability>
       <CodeArt>0.8</CodeArt>
     </Feature>
     <Feature From="5.1 Audio">
@@ -391,9 +391,9 @@
       <Description>Even More realistic sound positioning.</Description>
       <Unlock>1988</Unlock>
       <DevTime>8</DevTime>
-      <Innovation>8</Innovation>
-      <Usability>16</Usability>
-      <Stability>4</Stability>
+      <Innovation>6</Innovation>
+      <Usability>12</Usability>
+      <Stability>2</Stability>
       <CodeArt>0.9</CodeArt>
     </Feature>
     <Feature From="7.1 Audio">
@@ -402,7 +402,7 @@
       <Description>It's almost as if you were there</Description>
       <Unlock>2007</Unlock>
       <DevTime>18</DevTime>
-      <Innovation>20</Innovation>
+      <Innovation>15</Innovation>
       <Usability>20</Usability>
       <Stability>6</Stability>
       <CodeArt>0.1</CodeArt>
@@ -425,8 +425,8 @@
       <Description></Description>
       <Unlock>2000</Unlock>
       <DevTime>9</DevTime>
-      <Innovation>4</Innovation>
-      <Usability>8</Usability>
+      <Innovation>3</Innovation>
+      <Usability>7</Usability>
       <Stability>3</Stability>
       <CodeArt>0.5</CodeArt>
       <Dependency Software="Motherboard">Universal Bus</Dependency>
@@ -437,9 +437,9 @@
       <Description></Description>
       <Unlock>2008</Unlock>
       <DevTime>15</DevTime>
-      <Innovation>6</Innovation>
-      <Usability>9</Usability>
-      <Stability>4</Stability>
+      <Innovation>5</Innovation>
+      <Usability>7</Usability>
+      <Stability>3</Stability>
       <CodeArt>0.3</CodeArt>
     </Feature>
     <Feature>
@@ -448,8 +448,8 @@
       <Description></Description>
       <Unlock>2011</Unlock>
       <DevTime>18</DevTime>
-      <Innovation>18</Innovation>
-      <Usability>18</Usability>
+      <Innovation>12</Innovation>
+      <Usability>12</Usability>
       <Stability>6</Stability>
       <CodeArt>0.2</CodeArt>
       <Dependency Software="Motherboard">Universal Bus 3</Dependency>
@@ -460,9 +460,9 @@
       <Description></Description>
       <Unlock>2013</Unlock>
       <DevTime>12</DevTime>
-      <Innovation>9</Innovation>
+      <Innovation>8</Innovation>
       <Usability>12</Usability>
-      <Stability>8</Stability>
+      <Stability>6</Stability>
       <CodeArt>0.8</CodeArt>
       <Dependency Software="Motherboard">Universal Bus 3</Dependency>
     </Feature>
