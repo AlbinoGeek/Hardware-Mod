@@ -25,7 +25,7 @@
       <Name>Error Detection</Name>
       <Category>System</Category>
       <Description>Attempts to detect errors at the controller level.</Description>
-      <Unlock>1970</Unlock>
+      <Unlock>0</Unlock>
       <DevTime>6</DevTime>
       <Innovation>2</Innovation>
       <Usability>2</Usability>

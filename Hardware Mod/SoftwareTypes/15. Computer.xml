@@ -74,7 +74,7 @@
       <DevTime>9</DevTime>
       <Innovation>20</Innovation>
       <Usability>20</Usability>
-      <Stability>5</Stability>
+      <Stability>8</Stability>
       <CodeArt>0.75</CodeArt>
       <Dependency Software="Computer">Processor</Dependency>
       <Dependency Software="Motherboard">Dual Socket</Dependency>
@@ -99,9 +99,9 @@
       <Description>Needs a Graphics Card</Description>
       <Unlock>1992</Unlock>
       <DevTime>4</DevTime>
-      <Innovation>10</Innovation>
-      <Usability>10</Usability>
-      <Stability>5</Stability>
+      <Innovation>15</Innovation>
+      <Usability>15</Usability>
+      <Stability>10</Stability>
       <CodeArt>0.25</CodeArt>
       <Dependency Software="Graphics Card">GPU</Dependency>
       <SoftwareCategory Category="Consumer">0</SoftwareCategory>
