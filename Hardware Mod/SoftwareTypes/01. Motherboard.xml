@@ -7,7 +7,7 @@
       <Description>There were going to be different types of motherboards, but now that's going to come later (v0.8+)</Description>
       <Unlock>0</Unlock>
       <Popularity>1</Popularity>
-      <TimeScale>1.2</TimeScale>
+      <TimeScale>1</TimeScale>
       <Retention>0.85</Retention>
       <Iterative>0.15</Iterative>
       <NameGenerator>names</NameGenerator>
