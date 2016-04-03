@@ -1,13 +1,13 @@
 <SoftwareType>
   <Name>Processor</Name>
   <Category>Hardware</Category>
-  <Description>Acts as the brain in any cmoputer.</Description>
+  <Description>The brain of every Comptuer</Description>
   <Categories>
     <Category Name="Default">
       <Description></Description>
       <Unlock>0</Unlock>
       <Popularity>1</Popularity>
-      <TimeScale>1.2</TimeScale>
+      <TimeScale>1.15</TimeScale>
       <Retention>0.70</Retention>
       <Iterative>0.90</Iterative>
       <NameGenerator>names</NameGenerator>
@@ -38,9 +38,9 @@
       <Description></Description>
       <Unlock>2006</Unlock>
       <DevTime>6</DevTime>
-      <Innovation>3</Innovation>
-      <Usability>3</Usability>
-      <Stability>1</Stability>
+      <Innovation>6</Innovation>
+      <Usability>6</Usability>
+      <Stability>2</Stability>
       <CodeArt>0.5</CodeArt>
     </Feature>
     <Feature From="Dual Core" Vital="TRUE">
@@ -49,9 +49,9 @@
       <Description></Description>
       <Unlock>2007</Unlock>
       <DevTime>9</DevTime>
-      <Innovation>6</Innovation>
-      <Usability>6</Usability>
-      <Stability>3</Stability>
+      <Innovation>10</Innovation>
+      <Usability>10</Usability>
+      <Stability>5</Stability>
       <CodeArt>0.3</CodeArt>
     </Feature>
     <Feature From="Quad Core" Vital="TRUE">
@@ -60,9 +60,9 @@
       <Description></Description>
       <Unlock>2011</Unlock>
       <DevTime>15</DevTime>
-      <Innovation>9</Innovation>
-      <Usability>18</Usability>
-      <Stability>5</Stability>
+      <Innovation>12</Innovation>
+      <Usability>15</Usability>
+      <Stability>9</Stability>
       <CodeArt>0.3</CodeArt>
     </Feature>
     <Feature Vital="TRUE">
@@ -71,9 +71,9 @@
       <Description></Description>
       <Unlock>1980</Unlock>
       <DevTime>3</DevTime>
-      <Innovation>2</Innovation>
-      <Usability>2</Usability>
-      <Stability>2</Stability>
+      <Innovation>1</Innovation>
+      <Usability>1</Usability>
+      <Stability>3</Stability>
       <CodeArt>0.8</CodeArt>
     </Feature>
     <Feature From="Heat Spreaders" Vital="TRUE">
@@ -82,9 +82,9 @@
       <Description></Description>
       <Unlock>1985</Unlock>
       <DevTime>6</DevTime>
-      <Innovation>6</Innovation>
+      <Innovation>3</Innovation>
       <Usability>2</Usability>
-      <Stability>4</Stability>
+      <Stability>6</Stability>
       <CodeArt>0.4</CodeArt>
     </Feature>
     <Feature From="Heat Pipes" Forced="FALSE">
@@ -106,7 +106,7 @@
       <DevTime>2</DevTime>
       <Innovation>1</Innovation>
       <Usability>1</Usability>
-      <Stability>3</Stability>
+      <Stability>2</Stability>
       <CodeArt>0.8</CodeArt>
     </Feature>
     <Feature From="Thermal Paste" Vital="TRUE">
@@ -154,13 +154,13 @@
       <CodeArt>1</CodeArt>
       <Dependency Software="Processor">Logic Unit</Dependency>
     </Feature>
-    <Feature >
+    <Feature>
       <Name>Fetcher</Name>
       <Category>System</Category>
       <Description>Orders instructions better</Description>
       <Unlock>1985</Unlock>
       <DevTime>6</DevTime>
-      <Innovation>6</Innovation>
+      <Innovation>4</Innovation>
       <Usability>3</Usability>
       <Stability>1</Stability>
       <CodeArt>1</CodeArt>
@@ -184,7 +184,7 @@
       <Unlock>1975</Unlock>
       <DevTime>6</DevTime>
       <Innovation>2</Innovation>
-      <Usability>2</Usability>
+      <Usability>3</Usability>
       <Stability>1</Stability>
       <CodeArt>1</CodeArt>
       <Dependency Software="Processor">Registers</Dependency>
@@ -195,8 +195,8 @@
       <Description>More caches</Description>
       <Unlock>1990</Unlock>
       <DevTime>9</DevTime>
-      <Innovation>2</Innovation>
-      <Usability>4</Usability>
+      <Innovation>3</Innovation>
+      <Usability>5</Usability>
       <Stability>1</Stability>
       <CodeArt>1</CodeArt>
       <Dependency Software="Processor">Caches</Dependency>
@@ -215,7 +215,7 @@
     <Feature From="Power Efficiency">
       <Name>25%</Name>
       <Category>Physical</Category>
-      <Description></Description>
+      <Description>One giant leap in... making things smaller?  Using smaller and smaller components has net a considerable power and efficiency increase.</Description>
       <Unlock>1998</Unlock>
       <DevTime>6</DevTime>
       <Innovation>1</Innovation>
@@ -224,15 +224,26 @@
       <CodeArt>0.4</CodeArt>
     </Feature>
     <Feature From="25%">
-      <Name>75%</Name>
+      <Name>35%</Name>
       <Category>Physical</Category>
-      <Description></Description>
+      <Description>Yes, it really did take you four years to figure out how to save even ten percent more power on the chips themselves, you didn't want to sacrifice performance.</Description>
       <Unlock>2002</Unlock>
+      <DevTime>9</DevTime>
+      <Innovation>3</Innovation>
+      <Usability>5</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.4</CodeArt>
+    </Feature>
+    <Feature From="35%">
+      <Name>42%</Name>
+      <Category>Physical</Category>
+      <Description>A crazy scientist named "Bob" in the depths of your Research and Development dept. thinks he's solved the universe itself... or at least 7% more power savings.</Description>
+      <Unlock>2007</Unlock>
       <DevTime>6</DevTime>
-      <Innovation>4</Innovation>
+      <Innovation>5</Innovation>
       <Usability>8</Usability>
       <Stability>8</Stability>
-      <CodeArt>0.4</CodeArt>
+      <CodeArt>0.1</CodeArt>
     </Feature>
     <Feature Forced="TRUE">
       <Name>Math Unit</Name>
