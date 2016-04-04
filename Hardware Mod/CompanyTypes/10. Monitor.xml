@@ -1,0 +1,10 @@
+<CompanyType>
+	<Specialization>Monitors</Specialization>
+	<Force>Monitor,Default</Force>
+	<PerYear>0.25</PerYear>
+	<Min>2</Min>
+	<Max>4</Max>
+	<Types>
+		<Type Software="Monitor">1</Type>
+	</Types>
+</CompanyType>

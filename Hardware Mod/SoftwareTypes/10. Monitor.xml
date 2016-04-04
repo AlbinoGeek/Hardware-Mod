@@ -21,8 +21,19 @@
   <InHouse>TRUE</InHouse>
   <NameGenerator>names</NameGenerator>
   <Features>
+    <Feature Vital="TRUE">
+      <Name>Multiple Inputs</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>0</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>2</Innovation>
+      <Usability>5</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
     <Feature Forced="TRUE">
-      <Name>Cathode Tubes CRT</Name>
+      <Name>Cathode Tube CRT</Name>
       <Category>Physical</Category>
       <Description></Description>
       <Unlock>0</Unlock>
@@ -31,6 +42,28 @@
       <Usability>1</Usability>
       <Stability>1</Stability>
       <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="Cathode Tube CRT" Vital="TRUE">
+      <Name>Liquid Crystaline</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>1990</Unlock>
+      <DevTime>24</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>15</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.75</CodeArt>
+    </Feature>
+    <Feature From="Liquid Crystaline" Vital="TRUE">
+      <Name>Organic LED</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2020</Unlock>
+      <DevTime>48</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>35</Usability>
+      <Stability>20</Stability>
+      <CodeArt>0.75</CodeArt>
     </Feature>
     <Feature Vital="TRUE">
       <Name>Two color display</Name>
@@ -42,18 +75,7 @@
       <Usability>5</Usability>
       <Stability>1</Stability>
       <CodeArt>0.75</CodeArt>
-      <Dependency Software="Monitor">Cathode Tubes CRT</Dependency>
-    </Feature>
-    <Feature From="Two color display" Vital="TRUE">
-      <Name>16 colors</Name>
-      <Category>System</Category>
-      <Description></Description>
-      <Unlock>1984</Unlock>
-      <DevTime>15</DevTime>
-      <Innovation>5</Innovation>
-      <Usability>10</Usability>
-      <Stability>5</Stability>
-      <CodeArt>0.75</CodeArt>
+      <Dependency Software="Monitor">Cathode Tube CRT</Dependency>
     </Feature>
     <Feature From="Two color display" Vital="TRUE">
       <Name>16 colors</Name>
@@ -97,28 +119,6 @@
       <Innovation>30</Innovation>
       <Usability>60</Usability>
       <Stability>40</Stability>
-      <CodeArt>0.75</CodeArt>
-    </Feature>
-    <Feature From="Cathode Tube CRT" Vital="TRUE">
-      <Name>Liquid Crystaline</Name>
-      <Category>System</Category>
-      <Description></Description>
-      <Unlock>1990</Unlock>
-      <DevTime>24</DevTime>
-      <Innovation>10</Innovation>
-      <Usability>15</Usability>
-      <Stability>5</Stability>
-      <CodeArt>0.75</CodeArt>
-    </Feature>
-    <Feature From="Liquid Crystaline" Vital="TRUE">
-      <Name>Organic LED</Name>
-      <Category>System</Category>
-      <Description></Description>
-      <Unlock>2020</Unlock>
-      <DevTime>48</DevTime>
-      <Innovation>20</Innovation>
-      <Usability>35</Usability>
-      <Stability>20</Stability>
       <CodeArt>0.75</CodeArt>
     </Feature>
     <Feature Forced="TRUE">
