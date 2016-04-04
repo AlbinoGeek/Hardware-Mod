@@ -3,13 +3,22 @@
   <Category>Hardware</Category>
   <Description>A circuitboard which you plug other components in to.</Description>
   <Categories>
-    <Category Name="Default">
-      <Description>There were going to be different types of motherboards, but now that's going to come later (v0.8+)</Description>
+    <Category Name="Consumer">
+      <Description>Geared towards individuals, these less powerful computeres are easier to make; but consumers replace them fairly often.</Description>
       <Unlock>0</Unlock>
       <Popularity>1</Popularity>
       <TimeScale>1</TimeScale>
       <Retention>0.85</Retention>
-      <Iterative>0.15</Iterative>
+      <Iterative>0.35</Iterative>
+      <NameGenerator>names</NameGenerator>
+    </Category>
+    <Category Name="Server">
+      <Description>Geared towards businesses, these more powerful computeres are harer to make and must be stable; but businesses don't upgrade often.</Description>
+      <Unlock>0</Unlock>
+      <Popularity>0.8</Popularity>
+      <TimeScale>1.4</TimeScale>
+      <Retention>0.9</Retention>
+      <Iterative>0.2</Iterative>
       <NameGenerator>names</NameGenerator>
     </Category>
   </Categories>
@@ -21,6 +30,18 @@
   <InHouse>TRUE</InHouse>
   <NameGenerator>names</NameGenerator>
   <Features>
+    <Feature Vital="TRUE">
+      <Name>Out of Band Management</Name>
+      <Category>Physical</Category>
+      <Description>A serial port or ethernet port (when internet comes around) to work with the server, when you can't just be local to it.</Description>
+      <Unlock>0</Unlock>
+      <DevTime>1</DevTime>
+      <Innovation>1</Innovation>
+      <Usability>1</Usability>
+      <Stability>2</Stability>
+      <CodeArt>0.9</CodeArt>
+      <SoftwareCategory Category="Server">0</SoftwareCategory>
+    </Feature>
     <Feature Vital="TRUE">
       <Name>Battery</Name>
       <Category>Physical</Category>
@@ -211,12 +232,12 @@
       <Category>Network</Category>
       <Description>Upgrade everyone's modems to Cable</Description>
       <Unlock>2006</Unlock>
-      <DevTime>36</DevTime>
+      <DevTime>48</DevTime>
       <Innovation>16</Innovation>
       <Usability>16</Usability>
       <Stability>8</Stability>
       <CodeArt>1</CodeArt>
-      <Server>0.032</Server>
+      <Server>0.024</Server>
     </Feature>
 	<Feature From="Cable" Vital="TRUE">
       <Name>Fiber</Name>
@@ -228,7 +249,7 @@
       <Usability>32</Usability>
       <Stability>16</Stability>
       <CodeArt>1</CodeArt>
-      <Server>0.07</Server>
+      <Server>0.05</Server>
     </Feature>
     <Feature Forced="TRUE">
       <Name>RAM Slots</Name>
@@ -296,7 +317,7 @@
       <Stability>2</Stability>
       <CodeArt>0.6</CodeArt>
     </Feature>
-    <Feature From="PCI Slots" Vital="TRUE">
+    <Feature Vital="TRUE">
       <Name>PCI Express</Name>
       <Category>Physical</Category>
       <Description>A much faster version of PCI, must match the Graphics Cards being used.</Description>
@@ -306,8 +327,9 @@
       <Usability>16</Usability>
       <Stability>4</Stability>
       <CodeArt>0.5</CodeArt>
+      <Dependency Software="Motherboard">PCI Slots</Dependency>
     </Feature>
-    <Feature From="PCI Express" Vital="FALSE">
+    <Feature Vital="FALSE">
       <Name>SLl Support</Name>
       <Category>2D</Category>
       <Description>Allows for the use of two graphics cards.</Description>
@@ -317,6 +339,7 @@
       <Usability>8</Usability>
       <Stability>0</Stability>
       <CodeArt>0.5</CodeArt>
+      <Dependency Software="Motherboard">PCI Express</Dependency>
     </Feature>
     <Feature From="SLl Support" Vital="FALSE">
       <Name>Triple SLl</Name>

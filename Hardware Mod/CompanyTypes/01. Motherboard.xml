@@ -1,6 +1,6 @@
 <CompanyType>
 	<Specialization>Motherboards</Specialization>
-	<Force>Motherboard,Default</Force>
+	<Force>Motherboard,Consumer</Force>
 	<PerYear>0.1</PerYear>
 	<Min>1</Min>
 	<Max>2</Max>

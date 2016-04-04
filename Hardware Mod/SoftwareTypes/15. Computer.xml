@@ -35,7 +35,7 @@
       <Category>Physical</Category>
       <Description>You need something to shove all the guts inside.</Description>
       <Unlock>0</Unlock>
-      <DevTime>3</DevTime>
+      <DevTime>2</DevTime>
       <Innovation>5</Innovation>
       <Usability>10</Usability>
       <Stability>5</Stability>
@@ -43,23 +43,37 @@
       <Dependency Software="Case">Side Panels</Dependency>
     </Feature>
     <Feature Forced="TRUE">
-      <Name>Motherboard</Name>
+      <Name>PC Motherboard</Name>
       <Category>Physical</Category>
-      <Description>Needs a Motherboard</Description>
+      <Description>Needs a Motherboard of type: PC</Description>
       <Unlock>0</Unlock>
-      <DevTime>5</DevTime>
+      <DevTime>3</DevTime>
       <Innovation>5</Innovation>
       <Usability>5</Usability>
       <Stability>5</Stability>
       <CodeArt>0</CodeArt>
       <Dependency Software="Motherboard">CPU Socket</Dependency>
+      <SoftwareCategory Category="Consumer">0</SoftwareCategory>
+    </Feature>
+    <Feature Forced="TRUE">
+      <Name>Server Motherboard</Name>
+      <Category>Physical</Category>
+      <Description>Needs a Motherboard of type: Server</Description>
+      <Unlock>0</Unlock>
+      <DevTime>4</DevTime>
+      <Innovation>8</Innovation>
+      <Usability>8</Usability>
+      <Stability>8</Stability>
+      <CodeArt>0</CodeArt>
+      <Dependency Software="Motherboard">Out of Band Management</Dependency>
+      <SoftwareCategory Category="Server">0</SoftwareCategory>
     </Feature>
     <Feature Forced="TRUE">
       <Name>Processor</Name>
       <Category>Physical</Category>
       <Description>Needs a Processor</Description>
       <Unlock>0</Unlock>
-      <DevTime>4</DevTime>
+      <DevTime>3</DevTime>
       <Innovation>5</Innovation>
       <Usability>5</Usability>
       <Stability>5</Stability>
@@ -71,7 +85,7 @@
       <Category>Physical</Category>
       <Description>Doubles the Processing</Description>
       <Unlock>1980</Unlock>
-      <DevTime>9</DevTime>
+      <DevTime>4</DevTime>
       <Innovation>20</Innovation>
       <Usability>20</Usability>
       <Stability>8</Stability>
@@ -107,12 +121,27 @@
       <SoftwareCategory Category="Consumer">0</SoftwareCategory>
       <SoftwareCategory Category="Server">1994</SoftwareCategory>
     </Feature>
+    <Feature From="Graphics Card" Vital="TRUE">
+      <Name>Daul Graphics</Name>
+      <Category>Physical</Category>
+      <Description>Requires Graphics Cards and a Motherboard that all support SLl, which allows you to use more than one of them.</Description>
+      <Unlock>2004</Unlock>
+      <DevTime>7</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>35</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.35</CodeArt>
+      <Dependency Software="Motherboard">SLl Support</Dependency>
+      <Dependency Software="Graphics Card">SLl Support</Dependency>
+      <SoftwareCategory Category="Consumer">0</SoftwareCategory>
+      <SoftwareCategory Category="Server">2006</SoftwareCategory>
+    </Feature>
     <Feature Vital="TRUE">
       <Name>Watchdog</Name>
       <Category>Physical</Category>
       <Description>A device that helps Servers keep track of events.</Description>
       <Unlock>1986</Unlock>
-      <DevTime>8</DevTime>
+      <DevTime>4</DevTime>
       <Innovation>10</Innovation>
       <Usability>15</Usability>
       <Stability>15</Stability>
