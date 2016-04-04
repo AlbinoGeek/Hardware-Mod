@@ -1,6 +1,6 @@
 ## Make your own Computers!
 
-#### version 0.6-alpha
+#### version 0.7-alpha
 
 A mod for the game "Software Inc." which adds Computer Hardware.
 
