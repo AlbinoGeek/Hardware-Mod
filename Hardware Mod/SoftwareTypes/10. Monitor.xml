@@ -1,0 +1,203 @@
+<SoftwareType>
+  <Name>Monitor</Name>
+  <Category>Hardware</Category>
+  <Description>Chances are you bought a cmoputer to see something... visually, you might need this.  Sort of required for 2D or 3D... or even Text-Based interfaces.</Description>
+  <Categories>
+    <Category Name="Default">
+      <Description>Still needs some balancing (v0.8+)</Description>
+      <Unlock>0</Unlock>
+      <Popularity>1</Popularity>
+      <TimeScale>1.0</TimeScale>
+      <Retention>0.5</Retention>
+      <Iterative>0.7</Iterative>
+      <NameGenerator>names</NameGenerator>
+    </Category>
+  </Categories>
+  <Unlock>0</Unlock>
+  <Random>0.35</Random>
+  <Popularity>1</Popularity>
+  <OSSpecific>FALSE</OSSpecific>
+  <OneClient>FALSE</OneClient>
+  <InHouse>TRUE</InHouse>
+  <NameGenerator>names</NameGenerator>
+  <Features>
+    <Feature Forced="TRUE">
+      <Name>Cathode Tubes CRT</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>0</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>1</Innovation>
+      <Usability>1</Usability>
+      <Stability>1</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>Two color display</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>1980</Unlock>
+      <DevTime>9</DevTime>
+      <Innovation>3</Innovation>
+      <Usability>5</Usability>
+      <Stability>1</Stability>
+      <CodeArt>0.75</CodeArt>
+      <Dependency Software="Monitor">Cathode Tubes CRT</Dependency>
+    </Feature>
+    <Feature From="Two color display" Vital="TRUE">
+      <Name>16 colors</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>1984</Unlock>
+      <DevTime>15</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>10</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.75</CodeArt>
+    </Feature>
+    <Feature From="Two color display" Vital="TRUE">
+      <Name>16 colors</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>1984</Unlock>
+      <DevTime>15</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>10</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.75</CodeArt>
+    </Feature>
+    <Feature From="16 colors" Vital="TRUE">
+      <Name>256 colors</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>1994</Unlock>
+      <DevTime>24</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>20</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.75</CodeArt>
+    </Feature>
+    <Feature From="256 colors" Vital="TRUE">
+      <Name>64k colors</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2002</Unlock>
+      <DevTime>48</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>40</Usability>
+      <Stability>20</Stability>
+      <CodeArt>0.75</CodeArt>
+    </Feature>
+    <Feature From="64k colors" Vital="TRUE">
+      <Name>16M colors</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2006</Unlock>
+      <DevTime>60</DevTime>
+      <Innovation>30</Innovation>
+      <Usability>60</Usability>
+      <Stability>40</Stability>
+      <CodeArt>0.75</CodeArt>
+    </Feature>
+    <Feature From="Cathode Tube CRT" Vital="TRUE">
+      <Name>Liquid Crystaline</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>1990</Unlock>
+      <DevTime>24</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>15</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.75</CodeArt>
+    </Feature>
+    <Feature From="Liquid Crystaline" Vital="TRUE">
+      <Name>Organic LED</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2020</Unlock>
+      <DevTime>48</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>35</Usability>
+      <Stability>20</Stability>
+      <CodeArt>0.75</CodeArt>
+    </Feature>
+    <Feature Forced="TRUE">
+      <Name>Standard Definition</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>0</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>5</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="Standard Definition" Vital="TRUE">
+      <Name>720p HD</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1984</Unlock>
+      <DevTime>9</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>10</Usability>
+      <Stability>10</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="720p HD" Vital="TRUE">
+      <Name>1080p HD</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>1988</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>15</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.75</CodeArt>
+    </Feature>
+    <Feature From="1080p HD" Vital="TRUE">
+      <Name>2160p (4K)</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>2003</Unlock>
+      <DevTime>24</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>35</Usability>
+      <Stability>15</Stability>
+      <CodeArt>0.5</CodeArt>
+    </Feature>
+    <Feature Forced="TRUE">
+      <Name>Built-in</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock></Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>2</Innovation>
+      <Usability>2</Usability>
+      <Stability>2</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="Built-in" Vital="TRUE">
+      <Name>VGA</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1987</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>5</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>DVI Digital</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1987</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>5</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Monitor">Built-in</Dependency>
+    </Feature>
+  </Features>
+</SoftwareType>
