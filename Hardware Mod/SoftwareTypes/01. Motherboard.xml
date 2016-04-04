@@ -88,7 +88,7 @@
       <Stability>3</Stability>
       <CodeArt>0.6</CodeArt>
     </Feature>
-	<Feature Forced="TRUE">
+    <Feature Forced="TRUE">
       <Name>CPU Socket</Name>
       <Category>Physical</Category>
       <Description>Somewhere to shove that fine thinkin' brain of yours.</Description>
@@ -99,7 +99,7 @@
       <Stability>1</Stability>
       <CodeArt>0.2</CodeArt>
     </Feature>
-	<Feature From="CPU Socket">
+    <Feature From="CPU Socket">
       <Name>Dual Socket</Name>
       <Category>Physical</Category>
       <Description>TWICE THE PROCESSORS</Description>
@@ -110,7 +110,7 @@
       <Stability>3</Stability>
       <CodeArt>0.5</CodeArt>
     </Feature>
-	<Feature From="Dual Socket">
+    <Feature From="Dual Socket">
       <Name>Quad Socket</Name>
       <Category>Physical</Category>
       <Description>FOUR THE PROCESSORS</Description>
@@ -121,19 +121,19 @@
       <Stability>7</Stability>
       <CodeArt>0.5</CodeArt>
     </Feature>
-	<Feature>
+    <Feature>
       <Name>Daughter Board</Name>
       <Category>Physical</Category>
-      <Description>Is a second motherboard specifically designed to offload processing for your processor.</Description>
-      <Unlock>2017</Unlock>
-      <DevTime>27</DevTime>
+      <Description>A dedicated motherboard on your motherboard to process for your processor.</Description>
+      <Unlock>2010</Unlock>
+      <DevTime>22</DevTime>
       <Innovation>20</Innovation>
       <Usability>20</Usability>
-      <Stability>10</Stability>
-      <CodeArt>0.2</CodeArt>
+      <Stability>15</Stability>
+      <CodeArt>0.5</CodeArt>
       <Dependency Software="Motherboard">Quad Socket</Dependency>
     </Feature>
-	<Feature>
+    <Feature>
       <Name>Sister Board</Name>
       <Category>Physical</Category>
       <Description>So I heard you liekd motherboards.</Description>
@@ -169,7 +169,7 @@
       <CodeArt>0.9</CodeArt>
       <Dependency Software="Motherboard">Overclocking</Dependency>
     </Feature>
-	<Feature From="Water Cooling">
+    <Feature From="Water Cooling">
       <Name>Nitrogen Cooling</Name>
       <Category>Physical</Category>
       <Description>Try not to freeze yourself</Description>
@@ -180,7 +180,7 @@
       <Stability>16</Stability>
       <CodeArt>0.8</CodeArt>
     </Feature>
-	<Feature From="Nitrogen Cooling">
+    <Feature From="Nitrogen Cooling">
       <Name>Subzero Cooling</Name>
       <Category>Physical</Category>
       <Description>Insert movie reference here</Description>
@@ -191,7 +191,7 @@
       <Stability>32</Stability>
       <CodeArt>0.2</CodeArt>
     </Feature>
-	<Feature Vital="TRUE">
+    <Feature Vital="TRUE">
       <Name>14k Modem</Name>
       <Category>Network</Category>
       <Description>THIS MAKES YOU THEIR ISP, WATCH YOUR BANDWIDTH</Description>
@@ -203,7 +203,7 @@
       <CodeArt>1</CodeArt>
       <Server>0.0006</Server>
     </Feature>
-	<Feature From="14k Modem" Vital="TRUE">
+    <Feature From="14k Modem" Vital="TRUE">
       <Name>56k Modem</Name>
       <Category>Network</Category>
       <Description>Upgrade everyone's modems to 56k</Description>
@@ -215,7 +215,7 @@
       <CodeArt>1</CodeArt>
       <Server>0.003</Server>
     </Feature>
-	<Feature From="56k Modem">
+    <Feature From="56k Modem">
       <Name>Broadband</Name>
       <Category>Network</Category>
       <Description>Upgrade everyone's modems to Broadband</Description>
@@ -227,7 +227,7 @@
       <CodeArt>1</CodeArt>
       <Server>0.012</Server>
     </Feature>
-	<Feature From="Broadband" Vital="TRUE">
+    <Feature From="Broadband" Vital="TRUE">
       <Name>Cable</Name>
       <Category>Network</Category>
       <Description>Upgrade everyone's modems to Cable</Description>
@@ -239,7 +239,7 @@
       <CodeArt>1</CodeArt>
       <Server>0.024</Server>
     </Feature>
-	<Feature From="Cable" Vital="TRUE">
+    <Feature From="Cable" Vital="TRUE">
       <Name>Fiber</Name>
       <Category>Network</Category>
       <Description>FASTER THAN LIGHT: FTL</Description>
