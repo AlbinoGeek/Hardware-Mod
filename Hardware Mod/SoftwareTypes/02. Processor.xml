@@ -223,7 +223,7 @@
       <Stability>3</Stability>
       <CodeArt>0.4</CodeArt>
     </Feature>
-    <Feature From="25%">
+    <Feature Research="Power Efficiency">
       <Name>35%</Name>
       <Category>Physical</Category>
       <Description>Yes, it really did take you four years to figure out how to save even ten percent more power on the chips themselves, you didn't want to sacrifice performance.</Description>
@@ -234,7 +234,7 @@
       <Stability>5</Stability>
       <CodeArt>0.4</CodeArt>
     </Feature>
-    <Feature From="35%">
+    <Feature Research="Power Efficiency">
       <Name>42%</Name>
       <Category>Physical</Category>
       <Description>A crazy scientist named "Bob" in the depths of your Research and Development dept. thinks he's solved the universe itself... or at least 7% more power savings.</Description>
@@ -256,7 +256,7 @@
       <Stability>1</Stability>
       <CodeArt>1</CodeArt>
     </Feature>
-    <Feature>
+    <Feature Research="Math Unit">
       <Name>Divider</Name>
       <Category>System</Category>
       <Description>Division without the thinking</Description>
@@ -266,7 +266,6 @@
       <Usability>2</Usability>
       <Stability>0</Stability>
       <CodeArt>1</CodeArt>
-      <Dependency Software="Processor">Math Unit</Dependency>
     </Feature>
     <Feature Vital="TRUE">
       <Name>Parallel Math</Name>
@@ -278,9 +277,9 @@
       <Usability>4</Usability>
       <Stability>2</Stability>
       <CodeArt>1</CodeArt>
-      <Dependency Software="Processor">Divider</Dependency>
+      <Dependency Software="Processor">Math Unit</Dependency>
     </Feature>
-    <Feature Vital="FALSE">
+    <Feature Research="Math Unit" Vital="TRUE">
       <Name>APU</Name>
       <Category>System</Category>
       <Description></Description>
@@ -290,7 +289,6 @@
       <Usability>8</Usability>
       <Stability>2</Stability>
       <CodeArt>0.4</CodeArt>
-      <Dependency Software="Processor">Math Unit</Dependency>
     </Feature>
   </Features>
 </SoftwareType>
