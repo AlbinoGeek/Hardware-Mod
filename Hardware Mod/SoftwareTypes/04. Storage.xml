@@ -26,7 +26,7 @@
       <Category>System</Category>
       <Description>Attempts to detect errors at the controller level.</Description>
       <Unlock>0</Unlock>
-      <DevTime>6</DevTime>
+      <DevTime>9</DevTime>
       <Innovation>2</Innovation>
       <Usability>2</Usability>
       <Stability>2</Stability>
@@ -37,7 +37,7 @@
       <Category>System</Category>
       <Description>Attempts to predict when a drive will fail, saving your data in the process by warning you about an imminent failure ahead of time.</Description>
       <Unlock>1980</Unlock>
-      <DevTime>12</DevTime>
+      <DevTime>15</DevTime>
       <Innovation>4</Innovation>
       <Usability>4</Usability>
       <Stability>4</Stability>
@@ -48,7 +48,7 @@
       <Category>System</Category>
       <Description>Attempts to correct detected errors.</Description>
       <Unlock>1985</Unlock>
-      <DevTime>12</DevTime>
+      <DevTime>15</DevTime>
       <Innovation>4</Innovation>
       <Usability>4</Usability>
       <Stability>8</Stability>
@@ -60,7 +60,7 @@
       <Category>System</Category>
       <Description>Logs errors and reports them in a meaningful way, for debuggers.</Description>
       <Unlock>1995</Unlock>
-      <DevTime>24</DevTime>
+      <DevTime>27</DevTime>
       <Innovation>8</Innovation>
       <Usability>4</Usability>
       <Stability>12</Stability>
@@ -71,7 +71,7 @@
       <Category>Physical</Category>
       <Description>Literally sold pre-installed in the computer, unreplacable</Description>
       <Unlock>0</Unlock>
-      <DevTime>1</DevTime>
+      <DevTime>3</DevTime>
       <Innovation>1</Innovation>
       <Usability>1</Usability>
       <Stability>3</Stability>
@@ -82,7 +82,7 @@
       <Category>Physical</Category>
       <Description>Finally, replacable harddrives.</Description>
       <Unlock>1986</Unlock>
-      <DevTime>6</DevTime>
+      <DevTime>9</DevTime>
       <Innovation>4</Innovation>
       <Usability>2</Usability>
       <Stability>2</Stability>
@@ -93,7 +93,7 @@
       <Category>Physical</Category>
       <Description>A faster, less stable connection.</Description>
       <Unlock>1998</Unlock>
-      <DevTime>9</DevTime>
+      <DevTime>12</DevTime>
       <Innovation>6</Innovation>
       <Usability>4</Usability>
       <Stability>2</Stability>
@@ -104,7 +104,7 @@
       <Category>System</Category>
       <Description>Half the price of P-ATA, and faster.</Description>
       <Unlock>2003</Unlock>
-      <DevTime>3</DevTime>
+      <DevTime>9</DevTime>
       <Innovation>9</Innovation>
       <Usability>8</Usability>
       <Stability>4</Stability>
@@ -115,7 +115,7 @@
       <Category>System</Category>
       <Description>A standard for speed of SATA</Description>
       <Unlock>2005</Unlock>
-      <DevTime>6</DevTime>
+      <DevTime>12</DevTime>
       <Innovation>2</Innovation>
       <Usability>4</Usability>
       <Stability>2</Stability>
@@ -127,7 +127,7 @@
       <Category>System</Category>
       <Description>Twice as fast as the last standard</Description>
       <Unlock>2008</Unlock>
-      <DevTime>9</DevTime>
+      <DevTime>15</DevTime>
       <Innovation>2</Innovation>
       <Usability>8</Usability>
       <Stability>4</Stability>
@@ -138,7 +138,7 @@
       <Category>Physical</Category>
       <Description>The things you store the data on</Description>
       <Unlock>0</Unlock>
-      <DevTime>12</DevTime>
+      <DevTime>15</DevTime>
       <Innovation>1</Innovation>
       <Usability>1</Usability>
       <Stability>1</Stability>
@@ -149,7 +149,7 @@
       <Category>Physical</Category>
       <Description>MUCH smaller platters than ever before</Description>
       <Unlock>1978</Unlock>
-      <DevTime>9</DevTime>
+      <DevTime>12</DevTime>
       <Innovation>2</Innovation>
       <Usability>4</Usability>
       <Stability>1</Stability>
@@ -160,7 +160,7 @@
       <Category>Physical</Category>
       <Description>MUCH smaller platters than ever before</Description>
       <Unlock>1983</Unlock>
-      <DevTime>12</DevTime>
+      <DevTime>15</DevTime>
       <Innovation>4</Innovation>
       <Usability>8</Usability>
       <Stability>2</Stability>
@@ -171,7 +171,7 @@
       <Category>System</Category>
       <Description>Cools down hard drives and reduces failure rates.</Description>
       <Unlock>2005</Unlock>
-      <DevTime>9</DevTime>
+      <DevTime>12</DevTime>
       <Innovation>8</Innovation>
       <Usability>8</Usability>
       <Stability>16</Stability>
@@ -183,7 +183,7 @@
       <Category>Physical</Category>
       <Description>The things that read/write data</Description>
       <Unlock>0</Unlock>
-      <DevTime>6</DevTime>
+      <DevTime>9</DevTime>
       <Innovation>1</Innovation>
       <Usability>1</Usability>
       <Stability>1</Stability>
@@ -194,7 +194,7 @@
       <Category>Physical</Category>
       <Description>Heads can autoposition themselves</Description>
       <Unlock>1973</Unlock>
-      <DevTime>12</DevTime>
+      <DevTime>15</DevTime>
       <Innovation>3</Innovation>
       <Usability>3</Usability>
       <Stability>2</Stability>
@@ -205,7 +205,7 @@
       <Category>Physical</Category>
       <Description>Thin Film Heads, the next step in making harddrives smaller</Description>
       <Unlock>1979</Unlock>
-      <DevTime>6</DevTime>
+      <DevTime>9</DevTime>
       <Innovation>12</Innovation>
       <Usability>12</Usability>
       <Stability>6</Stability>
@@ -216,7 +216,7 @@
       <Category>Physical</Category>
       <Description>Reduces noises, allows for higher RPMs</Description>
       <Unlock>1997</Unlock>
-      <DevTime>18</DevTime>
+      <DevTime>21</DevTime>
       <Innovation>4</Innovation>
       <Usability>4</Usability>
       <Stability>8</Stability>
@@ -227,7 +227,7 @@
       <Category>Physical</Category>
       <Description>Records perpendicular instead of logarithmic.</Description>
       <Unlock>2005</Unlock>
-      <DevTime>18</DevTime>
+      <DevTime>21</DevTime>
       <Innovation>16</Innovation>
       <Usability>16</Usability>
       <Stability>8</Stability>
