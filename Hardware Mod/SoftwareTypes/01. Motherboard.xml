@@ -7,8 +7,8 @@
       <Description>Geared towards individuals, these less powerful computeres are easier to make; but consumers replace them fairly often.</Description>
       <Unlock>0</Unlock>
       <Popularity>1</Popularity>
-      <TimeScale>1</TimeScale>
-      <Retention>0.85</Retention>
+      <TimeScale>0.9</TimeScale>
+      <Retention>0.65</Retention>
       <Iterative>0.35</Iterative>
       <NameGenerator>names</NameGenerator>
     </Category>
@@ -16,14 +16,14 @@
       <Description>Geared towards businesses, these more powerful computeres are harer to make and must be stable; but businesses don't upgrade often.</Description>
       <Unlock>0</Unlock>
       <Popularity>0.8</Popularity>
-      <TimeScale>1.4</TimeScale>
-      <Retention>0.9</Retention>
+      <TimeScale>1.2</TimeScale>
+      <Retention>0.7</Retention>
       <Iterative>0.2</Iterative>
       <NameGenerator>names</NameGenerator>
     </Category>
   </Categories>
   <Unlock>0</Unlock>
-  <Random>0.15</Random>
+  <Random>0.25</Random>
   <Popularity>1</Popularity>
   <OSSpecific>FALSE</OSSpecific>
   <OneClient>FALSE</OneClient>
@@ -41,6 +41,59 @@
       <Stability>2</Stability>
       <CodeArt>0.9</CodeArt>
       <SoftwareCategory Category="Server">0</SoftwareCategory>
+      <SoftwareCategory Category="Consumer">1996</SoftwareCategory>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>Remote Power</Name>
+      <Category>Physical</Category>
+      <Description>Allos you to remotely turn the server on/off.</Description>
+      <Unlock>0</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>1</Innovation>
+      <Usability>1</Usability>
+      <Stability>3</Stability>
+      <CodeArt>0.9</CodeArt>
+      <SoftwareCategory Category="Server">1978</SoftwareCategory>
+      <Dependency Software="Motherboard">Out of Band Management</Dependency>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>Remote Input</Name>
+      <Category>Physical</Category>
+      <Description>Allos you to remotely press certain keys, often useful to stop a server from rebooting.</Description>
+      <Unlock>0</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>3</Innovation>
+      <Usability>3</Usability>
+      <Stability>3</Stability>
+      <CodeArt>0.9</CodeArt>
+      <SoftwareCategory Category="Server">1980</SoftwareCategory>
+      <Dependency Software="Motherboard">Remote Power</Dependency>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>Remote Video</Name>
+      <Category>Physical</Category>
+      <Description>Allows you to actually see what's on the screen, and interact with the server remotely.</Description>
+      <Unlock>0</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>3</Innovation>
+      <Usability>3</Usability>
+      <Stability>3</Stability>
+      <CodeArt>0.9</CodeArt>
+      <SoftwareCategory Category="Server">1994</SoftwareCategory>
+      <Dependency Software="Motherboard">Remote Input</Dependency>
+    </Feature>
+    <Feature Vital="FALSE">
+      <Name>Remote Audio</Name>
+      <Category>Physical</Category>
+      <Description>Allos you hear what's going on the server, such as music or local input devices.</Description>
+      <Unlock>0</Unlock>
+      <DevTime>9</DevTime>
+      <Innovation>9</Innovation>
+      <Usability>3</Usability>
+      <Stability>3</Stability>
+      <CodeArt>0.9</CodeArt>
+      <SoftwareCategory Category="Server">1998</SoftwareCategory>
+      <Dependency Software="Motherboard">Remote Video</Dependency>
     </Feature>
     <Feature Vital="TRUE">
       <Name>Battery</Name>
@@ -93,7 +146,7 @@
       <Category>Physical</Category>
       <Description>Somewhere to shove that fine thinkin' brain of yours.</Description>
       <Unlock>0</Unlock>
-      <DevTime>6</DevTime>
+      <DevTime>9</DevTime>
       <Innovation>1</Innovation>
       <Usability>1</Usability>
       <Stability>1</Stability>
@@ -122,28 +175,16 @@
       <CodeArt>0.5</CodeArt>
     </Feature>
     <Feature>
-      <Name>Daughter Board</Name>
+      <Name>Daughter Board support</Name>
       <Category>Physical</Category>
-      <Description>A dedicated motherboard on your motherboard to process for your processor.</Description>
-      <Unlock>2010</Unlock>
-      <DevTime>22</DevTime>
-      <Innovation>20</Innovation>
-      <Usability>20</Usability>
-      <Stability>15</Stability>
-      <CodeArt>0.5</CodeArt>
+      <Description>Addss support for Daughter Boards, which can be added to the Computer to increase processing power.</Description>
+      <Unlock>2002</Unlock>
+      <DevTime>21</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>10</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.4</CodeArt>
       <Dependency Software="Motherboard">Quad Socket</Dependency>
-    </Feature>
-    <Feature>
-      <Name>Sister Board</Name>
-      <Category>Physical</Category>
-      <Description>So I heard you liekd motherboards.</Description>
-      <Unlock>2020</Unlock>
-      <DevTime>42</DevTime>
-      <Innovation>40</Innovation>
-      <Usability>40</Usability>
-      <Stability>25</Stability>
-      <CodeArt>0.1</CodeArt>
-      <Dependency Software="Motherboard">Daughter Board</Dependency>
     </Feature>
     <Feature>
       <Name>Overclocking</Name>
@@ -226,6 +267,19 @@
       <Stability>4</Stability>
       <CodeArt>1</CodeArt>
       <Server>0.012</Server>
+    </Feature>
+    <Feature Vital="FALSE">
+      <Name>Dual NIC</Name>
+      <Category>Network</Category>
+      <Description>Two network interfaces configured in a mode called 'bonding' which allows them to handle packets for each other.  Considered to be more stable than having only one.</Description>
+      <Unlock>2000</Unlock>
+      <DevTime>36</DevTime>
+      <Innovation>8</Innovation>
+      <Usability>8</Usability>
+      <Stability>16</Stability>
+      <CodeArt>1</CodeArt>
+      <Server>0.01</Server>
+      <Dependency Software="Motherboard">Broadband</Dependency>
     </Feature>
     <Feature From="Broadband" Vital="TRUE">
       <Name>Cable</Name>
@@ -351,6 +405,7 @@
       <Usability>12</Usability>
       <Stability>0</Stability>
       <CodeArt>0.5</CodeArt>
+      <Dependency Software="Motherboard">PCI Express</Dependency>
     </Feature>
     <Feature From="Triple SLl" Vital="FALSE">
       <Name>Quad SLl</Name>
@@ -362,6 +417,7 @@
       <Usability>20</Usability>
       <Stability>0</Stability>
       <CodeArt>0.5</CodeArt>
+      <Dependency Software="Motherboard">PCI Express</Dependency>
     </Feature>
     <Feature Vital="TRUE">
       <Name>Fan Control</Name>
@@ -386,7 +442,7 @@
       <CodeArt>1</CodeArt>
     </Feature>
     <Feature Vital="TRUE">
-      <Name>Speaker</Name>
+      <Name>PC Speaker</Name>
       <Category>Audio</Category>
       <Description>Certain beeps help for debugging.</Description>
       <Unlock>0</Unlock>
@@ -397,7 +453,7 @@
       <CodeArt>0.8</CodeArt>
       <Dependency Software="Motherboard">Connectors</Dependency>
     </Feature>
-    <Feature From="Speaker">
+    <Feature>
       <Name>5.1 Audio</Name>
       <Category>Audio</Category>
       <Description>More realistic sound positioning.</Description>
@@ -407,6 +463,7 @@
       <Usability>3</Usability>
       <Stability>3</Stability>
       <CodeArt>0.8</CodeArt>
+      <Dependency Software="Motherboard">PC Speaker</Dependency>
     </Feature>
     <Feature From="5.1 Audio">
       <Name>7.1 Audio</Name>
@@ -418,6 +475,7 @@
       <Usability>12</Usability>
       <Stability>2</Stability>
       <CodeArt>0.9</CodeArt>
+      <Dependency Software="Motherboard">PC Speaker</Dependency>
     </Feature>
     <Feature From="7.1 Audio">
       <Name>4D Audio</Name>
@@ -429,6 +487,7 @@
       <Usability>20</Usability>
       <Stability>6</Stability>
       <CodeArt>0.1</CodeArt>
+      <Dependency Software="Motherboard">PC Speaker</Dependency>
     </Feature>
     <Feature Vital="TRUE">
       <Name>Universal Bus</Name>
@@ -442,7 +501,7 @@
       <CodeArt>0.5</CodeArt>
       <Dependency Software="Motherboard">Connectors</Dependency>
     </Feature>
-    <Feature Vital="TRUE">
+    <Feature From="Universal Bus" Vital="TRUE">
       <Name>Universal Bus 2</Name>
       <Category>System</Category>
       <Description></Description>
@@ -452,7 +511,6 @@
       <Usability>7</Usability>
       <Stability>3</Stability>
       <CodeArt>0.5</CodeArt>
-      <Dependency Software="Motherboard">Universal Bus</Dependency>
     </Feature>
     <Feature From="Universal Bus 2" Vital="TRUE">
       <Name>Universal Bus 3</Name>
