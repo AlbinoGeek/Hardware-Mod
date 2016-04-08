@@ -130,17 +130,6 @@
       <CodeArt>0.1</CodeArt>
       <Dependency Software="Motherboard">BIOS</Dependency>
     </Feature>
-    <Feature Vital="TRUE">
-      <Name>PS/2</Name>
-      <Category>Physical</Category>
-      <Description>Allows you to plug in peripherals such as a Keyboard or Mouse.</Description>
-      <Unlock>1987</Unlock>
-      <DevTime>3</DevTime>
-      <Innovation>2</Innovation>
-      <Usability>4</Usability>
-      <Stability>3</Stability>
-      <CodeArt>0.6</CodeArt>
-    </Feature>
     <Feature Forced="TRUE">
       <Name>CPU Socket</Name>
       <Category>Physical</Category>
@@ -237,7 +226,7 @@
       <Category>Network</Category>
       <Description>THIS MAKES YOU THEIR ISP, WATCH YOUR BANDWIDTH</Description>
       <Unlock>1990</Unlock>
-      <DevTime>60</DevTime>
+      <DevTime>48</DevTime>
       <Innovation>4</Innovation>
       <Usability>2</Usability>
       <Stability>2</Stability>
@@ -418,6 +407,17 @@
       <Stability>0</Stability>
       <CodeArt>0.5</CodeArt>
       <Dependency Software="Motherboard">PCI Express</Dependency>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>PS/2</Name>
+      <Category>Physical</Category>
+      <Description>Allows you to plug in peripherals such as a Keyboard or Mouse.</Description>
+      <Unlock>1987</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>2</Innovation>
+      <Usability>4</Usability>
+      <Stability>3</Stability>
+      <CodeArt>0.6</CodeArt>
     </Feature>
     <Feature Vital="TRUE">
       <Name>Fan Control</Name>
