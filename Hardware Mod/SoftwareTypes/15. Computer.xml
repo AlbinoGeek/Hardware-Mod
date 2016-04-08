@@ -162,6 +162,21 @@
       <SoftwareCategory Category="Consumer">0</SoftwareCategory>
       <SoftwareCategory Category="Server">1994</SoftwareCategory>
     </Feature>
+    <Feature Vital="TRUE">
+      <Name>Capture Card</Name>
+      <Category>Physical</Category>
+      <Description>Needs a Graphics Card</Description>
+      <Unlock>1992</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>15</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.25</CodeArt>
+      <Dependency Software="Computer">Graphics Card</Dependency>
+      <Dependency Software="Capture Card">PCI Interface</Dependency>
+      <SoftwareCategory Category="Consumer">0</SoftwareCategory>
+      <SoftwareCategory Category="Server">1994</SoftwareCategory>
+    </Feature>
     <Feature From="Graphics Card" Vital="TRUE">
       <Name>Dual Graphics</Name>
       <Category>Physical</Category>

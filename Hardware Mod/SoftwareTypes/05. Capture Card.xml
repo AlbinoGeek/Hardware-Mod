@@ -1,0 +1,164 @@
+<SoftwareType>
+  <Name>Capture Card</Name>
+  <Category>Hardware</Category>
+  <Description></Description>
+  <Categories>
+    <Category Name="Default">
+      <Description></Description>
+      <Unlock>1992</Unlock>
+      <Popularity>0.5</Popularity>
+      <TimeScale>1.0</TimeScale>
+      <Retention>0.5</Retention>
+      <Iterative>0.7</Iterative>
+      <NameGenerator>names</NameGenerator>
+    </Category>
+  </Categories>
+  <Unlock>1992</Unlock>
+  <Random>0</Random>
+  <Popularity>0.6</Popularity>
+  <OSSpecific>FALSE</OSSpecific>
+  <OneClient>FALSE</OneClient>
+  <InHouse>FALSE</InHouse>
+  <NameGenerator>names</NameGenerator>
+  <Features>
+    <Feature Forced="TRUE">
+      <Name>PCI Interface</Name>
+      <Category>Physical</Category>
+      <Description>It plugs into a PCI Slot!</Description>
+      <Unlock>1992</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>10</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Motherboard">PCI Slots</Dependency>
+    </Feature>
+    <Feature From="PCI Interface" Vital="TRUE">
+      <Name>PCI Express</Name>
+      <Category>Physical</Category>
+      <Description>PCI Express is much faster!</Description>
+      <Unlock>2004</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>10</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Motherboard">PCI Express</Dependency>
+    </Feature>
+    <Feature Forced="TRUE">
+      <Name>SD Resolution</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>0</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>5</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="SD Resolution" Vital="TRUE">
+      <Name>720p HD</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>2002</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>10</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>1080i HD</Name>
+      <Category>Physical</Category>
+      <Description>Consider researching 1080p ...</Description>
+      <Unlock>2004</Unlock>
+      <DevTime>18</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>20</Usability>
+      <Stability>10</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Capture Card">720p HD</Dependency>
+    </Feature>
+    <Feature Research="1080i HD" Vital="TRUE">
+      <Name>1080p HD</Name>
+      <Category>Physical</Category>
+      <Description>Because interlaced frames suck.</Description>
+      <Unlock>2006</Unlock>
+      <DevTime>24</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>20</Usability>
+      <Stability>10</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="1080i HD" Vital="TRUE">
+      <Name>2160p HD</Name>
+      <Category>Physical</Category>
+      <Description>For all of your 4k needs.</Description>
+      <Unlock>2008</Unlock>
+      <DevTime>36</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>20</Usability>
+      <Stability>10</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Forced="TRUE">
+      <Name>Framerate</Name>
+      <Category>Physical</Category>
+      <Description>Only useful for a talking slideshow.</Description>
+      <Unlock>0</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>5</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>24</Name>
+      <Category>Physical</Category>
+      <Description>Gives a cinematic feel.</Description>
+      <Unlock>2001</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>10</Usability>
+      <Stability>20</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Capture Card">Framerate</Dependency>
+    </Feature>
+    <Feature>
+      <Name>50</Name>
+      <Category>Physical</Category>
+      <Description>I don't really know why this exists.</Description>
+      <Unlock>2005</Unlock>
+      <DevTime>9</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>20</Usability>
+      <Stability>10</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Capture Card">24</Dependency>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>30</Name>
+      <Category>Physical</Category>
+      <Description>Slightly better for smooth motion.</Description>
+      <Unlock>2002</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>15</Usability>
+      <Stability>15</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Capture Card">Framerate</Dependency>
+    </Feature>
+    <Feature>
+      <Name>60</Name>
+      <Category>Physical</Category>
+      <Description>A direct upgrade to smooth motion, still backwards compatible wtih 30fps.</Description>
+      <Unlock>2008</Unlock>
+      <DevTime>9</DevTime>
+      <Innovation>15</Innovation>
+      <Usability>25</Usability>
+      <Stability>15</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Capture Card">30</Dependency>
+    </Feature>
+  </Features>
+</SoftwareType>
