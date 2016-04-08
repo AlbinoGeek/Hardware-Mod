@@ -7,7 +7,7 @@
       <Description>Geared towards individuals, these less powerful computeres are easier to make; but consumers replace them fairly often.</Description>
       <Unlock>0</Unlock>
       <Popularity>0.8</Popularity>
-      <TimeScale>1.1</TimeScale>
+      <TimeScale>1.0</TimeScale>
       <Retention>0.6</Retention>
       <Iterative>0.7</Iterative>
       <NameGenerator>names</NameGenerator>
@@ -16,7 +16,7 @@
       <Description>Geared towards businesses, these more powerful computeres are harer to make and must be stable; but businesses don't upgrade often.</Description>
       <Unlock>0</Unlock>
       <Popularity>0.7</Popularity>
-      <TimeScale>1.6</TimeScale>
+      <TimeScale>1.3</TimeScale>
       <Retention>0.8</Retention>
       <Iterative>0.4</Iterative>
       <NameGenerator>names</NameGenerator>
@@ -73,7 +73,7 @@
       <Category>Physical</Category>
       <Description>Expose the Out of Band Management feature of the Motherboard to the end-user through a dedicated serial port.</Description>
       <Unlock>0</Unlock>
-      <DevTime>6</DevTime>
+      <DevTime>5</DevTime>
       <Innovation>8</Innovation>
       <Usability>8</Usability>
       <Stability>8</Stability>
@@ -86,7 +86,7 @@
       <Category>Physical</Category>
       <Description>Gives a password protected control panel that ca be remotely accessed to use the Out of Band Management features via a dedicated NIC.</Description>
       <Unlock>1980</Unlock>
-      <DevTime>24</DevTime>
+      <DevTime>18</DevTime>
       <Innovation>16</Innovation>
       <Usability>16</Usability>
       <Stability>16</Stability>
@@ -111,7 +111,7 @@
       <Category>Physical</Category>
       <Description>Doubles the Processing</Description>
       <Unlock>1980</Unlock>
-      <DevTime>4</DevTime>
+      <DevTime>6</DevTime>
       <Innovation>20</Innovation>
       <Usability>20</Usability>
       <Stability>8</Stability>
@@ -197,7 +197,7 @@
       <Category>Physical</Category>
       <Description>FOUR THE GRAPHICS</Description>
       <Unlock>2009</Unlock>
-      <DevTime>14</DevTime>
+      <DevTime>15</DevTime>
       <Innovation>25</Innovation>
       <Usability>75</Usability>
       <Stability>20</Stability>
