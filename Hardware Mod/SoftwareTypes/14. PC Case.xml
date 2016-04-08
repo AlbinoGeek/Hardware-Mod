@@ -41,6 +41,30 @@
       <Stability>5</Stability>
       <CodeArt>0</CodeArt>
     </Feature>
+    <Feature Vital="TRUE">
+      <Name>Audio</Name>
+      <Category>Physical</Category>
+      <Description>Audio ports at the front of the computer are much more accessible.</Description>
+      <Unlock>1983</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>10</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.5</CodeArt>
+      <Dependency Software="Motherboard">PC Speaker</Dependency>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>Universal Bus</Name>
+      <Category>Physical</Category>
+      <Description>Universal Bus ports at the front of a computer ...</Description>
+      <Unlock>1996</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>10</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.5</CodeArt>
+      <Dependency Software="Motherboard">Universal Bus</Dependency>
+    </Feature>
     <Feature Forced="TRUE">
       <Name>Rear Panel</Name>
       <Category>Physical</Category>
