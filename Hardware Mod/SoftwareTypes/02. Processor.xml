@@ -22,6 +22,51 @@
   <NameGenerator>names</NameGenerator>
   <Features>
     <Feature Forced="TRUE">
+      <Name>Math Unit</Name>
+      <Category>Physical</Category>
+      <Description>The Main Brain</Description>
+      <Unlock>0</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>1</Innovation>
+      <Usability>1</Usability>
+      <Stability>1</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Research="Math Unit">
+      <Name>Divider</Name>
+      <Category>System</Category>
+      <Description>Division without the thinking</Description>
+      <Unlock>1980</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>4</Innovation>
+      <Usability>2</Usability>
+      <Stability>0</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Research="Math Unit" Vital="TRUE">
+      <Name>APU</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>1990</Unlock>
+      <DevTime>24</DevTime>
+      <Innovation>8</Innovation>
+      <Usability>8</Usability>
+      <Stability>2</Stability>
+      <CodeArt>0.4</CodeArt>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>Parallel Math</Name>
+      <Category>System</Category>
+      <Description>What if you could do two things at once?</Description>
+      <Unlock>1990</Unlock>
+      <DevTime>9</DevTime>
+      <Innovation>6</Innovation>
+      <Usability>4</Usability>
+      <Stability>2</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Processor">Math Unit</Dependency>
+    </Feature>
+    <Feature Forced="TRUE">
       <Name>Control Unit</Name>
       <Category>Physical</Category>
       <Description></Description>
@@ -178,28 +223,51 @@
       <CodeArt>1</CodeArt>
     </Feature>
     <Feature Vital="TRUE">
-      <Name>Caches</Name>
+      <Name>Cache</Name>
       <Category>Physical</Category>
-      <Description>Cachces prevent the Processor from having to idle while it waits for other things to catch up.</Description>
-      <Unlock>1975</Unlock>
-      <DevTime>6</DevTime>
-      <Innovation>2</Innovation>
-      <Usability>3</Usability>
-      <Stability>1</Stability>
+      <Description>As processor clock speeds continue to increase, the memory access time has been lagging behind.  Caches were added to allow the processor to make less round trips to the memory.</Description>
+      <Unlock>1985</Unlock>
+      <DevTime>9</DevTime>
+      <Innovation>4</Innovation>
+      <Usability>6</Usability>
+      <Stability>2</Stability>
       <CodeArt>1</CodeArt>
       <Dependency Software="Processor">Registers</Dependency>
     </Feature>
-    <Feature>
-      <Name>L2/L3</Name>
+    <Feature Vital="TRUE">
+      <Name>2nd Level</Name>
       <Category>Physical</Category>
-      <Description>More caches</Description>
+      <Description>A second level of cache that uses a Most Frequently Used list to keep note of things that important, where the first level is changed to a First In First Out register.</Description>
       <Unlock>1990</Unlock>
-      <DevTime>9</DevTime>
-      <Innovation>3</Innovation>
-      <Usability>5</Usability>
-      <Stability>1</Stability>
-      <CodeArt>1</CodeArt>
-      <Dependency Software="Processor">Caches</Dependency>
+      <DevTime>15</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>10</Usability>
+      <Stability>4</Stability>
+      <CodeArt>0.7</CodeArt>
+      <Dependency Software="Processor">Cache</Dependency>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>3rd Level</Name>
+      <Category>Physical</Category>
+      <Description>A third level of cache simply maintanis a lookup table between the 2nd Level of cache, and the physical address space.  This decreases access time and round trip time..</Description>
+      <Unlock>1995</Unlock>
+      <DevTime>15</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>10</Usability>
+      <Stability>4</Stability>
+      <CodeArt>0.7</CodeArt>
+      <Dependency Software="Processor">2nd Level</Dependency>
+    </Feature>
+    <Feature Research="3rd Level" Vital="TRUE">
+      <Name>On-Chip Memory</Name>
+      <Category>Physical</Category>
+      <Description>Integrates the 3rd level cache directly onto the chip, reducing the access time dramatically,</Description>
+      <Unlock>2000</Unlock>
+      <DevTime>24</DevTime>
+      <Innovation>15</Innovation>
+      <Usability>20</Usability>
+      <Stability>8</Stability>
+      <CodeArt>0.7</CodeArt>
     </Feature>
     <Feature>
       <Name>Power Efficiency</Name>
@@ -244,51 +312,6 @@
       <Usability>8</Usability>
       <Stability>8</Stability>
       <CodeArt>0.1</CodeArt>
-    </Feature>
-    <Feature Forced="TRUE">
-      <Name>Math Unit</Name>
-      <Category>Physical</Category>
-      <Description>The Main Brain</Description>
-      <Unlock>0</Unlock>
-      <DevTime>6</DevTime>
-      <Innovation>1</Innovation>
-      <Usability>1</Usability>
-      <Stability>1</Stability>
-      <CodeArt>1</CodeArt>
-    </Feature>
-    <Feature Research="Math Unit">
-      <Name>Divider</Name>
-      <Category>System</Category>
-      <Description>Division without the thinking</Description>
-      <Unlock>1980</Unlock>
-      <DevTime>12</DevTime>
-      <Innovation>4</Innovation>
-      <Usability>2</Usability>
-      <Stability>0</Stability>
-      <CodeArt>1</CodeArt>
-    </Feature>
-    <Feature Vital="TRUE">
-      <Name>Parallel Math</Name>
-      <Category>System</Category>
-      <Description>What if you could do two things at once?</Description>
-      <Unlock>1990</Unlock>
-      <DevTime>9</DevTime>
-      <Innovation>6</Innovation>
-      <Usability>4</Usability>
-      <Stability>2</Stability>
-      <CodeArt>1</CodeArt>
-      <Dependency Software="Processor">Math Unit</Dependency>
-    </Feature>
-    <Feature Research="Math Unit" Vital="TRUE">
-      <Name>APU</Name>
-      <Category>System</Category>
-      <Description></Description>
-      <Unlock>1990</Unlock>
-      <DevTime>24</DevTime>
-      <Innovation>8</Innovation>
-      <Usability>8</Usability>
-      <Stability>2</Stability>
-      <CodeArt>0.4</CodeArt>
     </Feature>
   </Features>
 </SoftwareType>
