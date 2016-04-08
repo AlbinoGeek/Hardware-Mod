@@ -1,9 +1,10 @@
 <CompanyType>
 	<Specialization>Graphics Cards</Specialization>
 	<PerYear>0.2</PerYear>
-	<Min>1</Min>
-	<Max>2</Max>
+	<Min>2</Min>
+	<Max>3</Max>
 	<Types>
 		<Type Software="Graphics Card">1</Type>
+		<Type Software="Capture Card">1</Type>
 	</Types>
 </CompanyType>
