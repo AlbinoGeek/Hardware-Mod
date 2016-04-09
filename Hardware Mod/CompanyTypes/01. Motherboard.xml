@@ -1,10 +1,10 @@
 <CompanyType>
 	<Specialization>Motherboards</Specialization>
 	<Force>Motherboard,Consumer</Force>
-	<PerYear>0.1</PerYear>
-	<Min>1</Min>
-	<Max>2</Max>
+	<PerYear>0.2</PerYear>
+	<Min>3</Min>
+	<Max>5</Max>
 	<Types>
-		<Type Software="Motherboard">1</Type>
+		<Type Software="Motherboard">0.3</Type>
 	</Types>
 </CompanyType>
