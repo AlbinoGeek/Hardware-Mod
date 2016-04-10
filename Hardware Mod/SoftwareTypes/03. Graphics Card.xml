@@ -33,9 +33,9 @@
       <CodeArt>1</CodeArt>
     </Feature>
     <Feature Research="GPU" Vital="FALSE">
-      <Name>G-SYNC Support</Name>
+      <Name>G-SYNC support</Name>
       <Category>System</Category>
-      <Description>"are you sure you need this for g-sync monitors?" "I HAVE NO IDEA!"</Description>
+      <Description>-"are you sure you need this for g-sync monitors?" -"I HAVE NO IDEA!"</Description>
       <Unlock>2012</Unlock>
       <DevTime>3</DevTime>
       <Innovation>30</Innovation>
