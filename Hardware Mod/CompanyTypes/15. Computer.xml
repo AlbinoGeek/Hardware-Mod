@@ -1,9 +1,9 @@
 <CompanyType>
 	<Specialization>Computers</Specialization>
     <Force>Computer,Consumer</Force>
-	<PerYear>0.12</PerYear>
+	<PerYear>0.2</PerYear>
 	<Min>2</Min>
-	<Max>2</Max>
+	<Max>3</Max>
 	<Types>
 		<Type Software="Computer">1</Type>
 	</Types>
