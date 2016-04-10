@@ -33,7 +33,7 @@
       <CodeArt>1</CodeArt>
     </Feature>
     <Feature Research="GPU" Vital="FALSE">
-      <Name>G-SYNC support</Name>
+      <Name>Adaptive Vsync</Name>
       <Category>System</Category>
       <Description>-"are you sure you need this for g-sync monitors?" -"I HAVE NO IDEA!"</Description>
       <Unlock>2012</Unlock>
@@ -42,6 +42,17 @@
       <Usability>30</Usability>
       <Stability>10</Stability>
       <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Research="GPU" Vital="TRUE">
+      <Name>HDR Support</Name>
+      <Category>System</Category>
+      <Description>We need more than pixels, we need BETTER pixels (c) AMD</Description>
+      <Unlock>2016</Unlock>
+      <DevTime>80</DevTime>
+      <Innovation>60</Innovation>
+      <Usability>90</Usability>
+      <Stability>50</Stability>
+      <CodeArt>0.5</CodeArt>
     </Feature>
     <Feature Forced="FALSE" Vital="TRUE">
       <Name>PCI Interface</Name>
@@ -177,6 +188,28 @@
       <Innovation>40</Innovation>
       <Usability>0</Usability>
       <Stability>10</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="GDDR5" Forced="FALSE" Vital="TRUE">
+      <Name>HBM1</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2013</Unlock>
+      <DevTime>32</DevTime>
+      <Innovation>60</Innovation>
+      <Usability>0</Usability>
+      <Stability>15</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="HBM2" Forced="FALSE" Vital="TRUE">
+      <Name>HBM2</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2016</Unlock>
+      <DevTime>40</DevTime>
+      <Innovation>70</Innovation>
+      <Usability>25</Usability>
+      <Stability>35</Stability>
       <CodeArt>1</CodeArt>
     </Feature>
   </Features>
