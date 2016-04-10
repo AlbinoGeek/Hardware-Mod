@@ -24,7 +24,7 @@
     <Feature Forced="TRUE">
       <Name>Cathode Tube CRT</Name>
       <Category>Physical</Category>
-      <Description></Description>
+      <Description>A lot of tubes bombarding screen surface with electrons, sounds cool, quality is not</Description>
       <Unlock>0</Unlock>
       <DevTime>6</DevTime>
       <Innovation>1</Innovation>
@@ -57,7 +57,7 @@
     <Feature Vital="TRUE">
       <Name>Two color display</Name>
       <Category>System</Category>
-      <Description></Description>
+      <Description>1 pixel tales up 1 bit of memory, economic, but you certainly shouldnt expect rainbows</Description>
       <Unlock>1980</Unlock>
       <DevTime>6</DevTime>
       <Innovation>3</Innovation>
@@ -69,7 +69,7 @@
     <Feature From="Two color display" Vital="TRUE">
       <Name>16 colors</Name>
       <Category>System</Category>
-      <Description></Description>
+      <Description>4 bits of memory per pixel let's you see a propper rainbow</Description>
       <Unlock>1984</Unlock>
       <DevTime>9</DevTime>
       <Innovation>5</Innovation>
@@ -80,7 +80,7 @@
     <Feature From="16 colors" Vital="TRUE">
       <Name>256 colors</Name>
       <Category>System</Category>
-      <Description></Description>
+      <Description>8 bits of memory per pixel</Description>
       <Unlock>1994</Unlock>
       <DevTime>12</DevTime>
       <Innovation>10</Innovation>
@@ -91,7 +91,7 @@
     <Feature From="256 colors" Vital="TRUE">
       <Name>64k colors</Name>
       <Category>System</Category>
-      <Description></Description>
+      <Description>16 bits of memory per pixel</Description>
       <Unlock>2002</Unlock>
       <DevTime>18</DevTime>
       <Innovation>20</Innovation>
@@ -102,7 +102,7 @@
     <Feature From="64k colors" Vital="TRUE">
       <Name>16M colors</Name>
       <Category>System</Category>
-      <Description></Description>
+      <Description>32 bits of memory per pixel... is that enought for you?</Description>
       <Unlock>2006</Unlock>
       <DevTime>24</DevTime>
       <Innovation>30</Innovation>
@@ -113,7 +113,7 @@
     <Feature Forced="TRUE">
       <Name>Standard Definition</Name>
       <Category>Physical</Category>
-      <Description></Description>
+      <Description>More pixels than you can count on one hand!</Description>
       <Unlock>0</Unlock>
       <DevTime>3</DevTime>
       <Innovation>5</Innovation>
@@ -124,7 +124,7 @@
     <Feature From="Standard Definition" Vital="TRUE">
       <Name>720p HD</Name>
       <Category>Physical</Category>
-      <Description></Description>
+      <Description>Good and comfortable format for your eyes</Description>
       <Unlock>1984</Unlock>
       <DevTime>6</DevTime>
       <Innovation>10</Innovation>
@@ -146,7 +146,7 @@
     <Feature From="1080p HD" Vital="TRUE">
       <Name>2160p (4K)</Name>
       <Category>Physical</Category>
-      <Description></Description>
+      <Description>FOR THE PC MASTERRACE!... or for people with money</Description>
       <Unlock>2003</Unlock>
       <DevTime>12</DevTime>
       <Innovation>20</Innovation>
@@ -211,6 +211,18 @@
       <Stability>5</Stability>
       <CodeArt>1</CodeArt>
       <Dependency Software="Monitor">VGA</Dependency>
+    </Feature>
+    <Feature Forced="FALSE" Vital="FALSE">
+      <Name>G-SYNC</Name>
+      <Category>System</Category>
+      <Description>Halts monitor re-fresh until it recieves new frame from computer/GPU, preventing screen tearing. Does not impact on framerate, instead of V-SYNC, so it's better</Description>
+      <Unlock>2012</Unlock>
+      <DevTime>2</DevTime>
+      <Innovation>30</Innovation>
+      <Usability>30</Usability>
+      <Stability>10</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Graphics Card">G-SYNC support</Dependency>
     </Feature>
   </Features>
 </SoftwareType>

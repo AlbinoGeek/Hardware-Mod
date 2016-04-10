@@ -32,6 +32,17 @@
       <Stability>10</Stability>
       <CodeArt>1</CodeArt>
     </Feature>
+    <Feature Research="GPU" Vital="FALSE">
+      <Name>G-SYNC support</Name>
+      <Category>System</Category>
+      <Description>-"are you sure you need this for g-sync monitors?" -"I HAVE NO IDEA!"</Description>
+      <Unlock>2012</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>30</Innovation>
+      <Usability>30</Usability>
+      <Stability>10</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
     <Feature Forced="FALSE" Vital="TRUE">
       <Name>PCI Interface</Name>
       <Category>Physical</Category>
