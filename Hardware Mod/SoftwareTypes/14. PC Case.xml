@@ -7,7 +7,7 @@
       <Description>Individuals love to pimp out their case, and are generally only interested in what it looks like.</Description>
       <Unlock>0</Unlock>
       <Popularity>0.8</Popularity>
-      <TimeScale>0.3</TimeScale>
+      <TimeScale>0.45</TimeScale>
       <Retention>0.6</Retention>
       <Iterative>0.8</Iterative>
       <NameGenerator>names</NameGenerator>
@@ -16,7 +16,7 @@
       <Description>Server cases are robust and often include multiple of each components to minimize the impact of failure and maintenance.</Description>
       <Unlock>0</Unlock>
       <Popularity>0.6</Popularity>
-      <TimeScale>0.55</TimeScale>
+      <TimeScale>0.6</TimeScale>
       <Retention>0.9</Retention>
       <Iterative>0.2</Iterative>
       <NameGenerator>names</NameGenerator>
@@ -35,7 +35,7 @@
       <Category>Physical</Category>
       <Description></Description>
       <Unlock>0</Unlock>
-      <DevTime>3</DevTime>
+      <DevTime>2</DevTime>
       <Innovation>5</Innovation>
       <Usability>5</Usability>
       <Stability>5</Stability>
@@ -46,11 +46,12 @@
       <Category>Physical</Category>
       <Description>Audio ports at the front of the computer are much more accessible.</Description>
       <Unlock>1983</Unlock>
-      <DevTime>6</DevTime>
+      <DevTime>4</DevTime>
       <Innovation>5</Innovation>
       <Usability>10</Usability>
       <Stability>5</Stability>
       <CodeArt>0.5</CodeArt>
+      <Dependency Software="Case">Front Panel</Dependency>
       <Dependency Software="Motherboard">PC Speaker</Dependency>
     </Feature>
     <Feature Vital="TRUE">
@@ -58,11 +59,12 @@
       <Category>Physical</Category>
       <Description>Universal Bus ports at the front of a computer ...</Description>
       <Unlock>1996</Unlock>
-      <DevTime>6</DevTime>
+      <DevTime>4</DevTime>
       <Innovation>5</Innovation>
       <Usability>10</Usability>
       <Stability>5</Stability>
       <CodeArt>0.5</CodeArt>
+      <Dependency Software="Case">Front Panel</Dependency>
       <Dependency Software="Motherboard">Universal Bus</Dependency>
     </Feature>
     <Feature Forced="TRUE">
@@ -70,7 +72,7 @@
       <Category>Physical</Category>
       <Description></Description>
       <Unlock>0</Unlock>
-      <DevTime>3</DevTime>
+      <DevTime>2</DevTime>
       <Innovation>5</Innovation>
       <Usability>5</Usability>
       <Stability>5</Stability>
@@ -81,7 +83,7 @@
       <Category>Physical</Category>
       <Description></Description>
       <Unlock>0</Unlock>
-      <DevTime>3</DevTime>
+      <DevTime>2</DevTime>
       <Innovation>5</Innovation>
       <Usability>5</Usability>
       <Stability>5</Stability>
@@ -92,12 +94,36 @@
       <Category>Physical</Category>
       <Description>All servers need a way to mount them to the wall.  Rails are the easiest way to do this, as it allows for maintenance as well.</Description>
       <Unlock>1980</Unlock>
-      <DevTime>6</DevTime>
+      <DevTime>4</DevTime>
       <Innovation>5</Innovation>
       <Usability>5</Usability>
       <Stability>10</Stability>
       <CodeArt>0.2</CodeArt>
       <SoftwareCategory Category="Rack Server">0</SoftwareCategory>
+    </Feature>
+    <Feature From="Fixed Rails" Vital="TRUE">
+      <Name>Baker Rails</Name>
+      <Category>Physical</Category>
+      <Description>"Baker" rails are ones that can be pulled out like a drawer, and be angled by up to 45 degrees to allow for working on a server while it's still plugged in.</Description>
+      <Unlock>1990</Unlock>
+      <DevTime>8</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>10</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.2</CodeArt>
+      <SoftwareCategory Category="Rack Server">0</SoftwareCategory>
+    </Feature>
+    <Feature>
+      <Name>Temp. Dials</Name>
+      <Category>Physical</Category>
+      <Description>Helps for overclockers, they get to see the temperature of various system components from the exterior of the case.</Description>
+      <Unlock>1980</Unlock>
+      <DevTime>4</DevTime>
+      <Innovation>3</Innovation>
+      <Usability>5</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.2</CodeArt>
+      <SoftwareCategory Category="PC Tower">0</SoftwareCategory>
     </Feature>
   </Features>
 </SoftwareType>
