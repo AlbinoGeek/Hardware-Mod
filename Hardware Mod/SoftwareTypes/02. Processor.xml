@@ -24,7 +24,7 @@
     <Feature Forced="TRUE">
       <Name>Math Unit</Name>
       <Category>Physical</Category>
-      <Description>The Main Brain</Description>
+      <Description>The Main Brain. Does things like finding "X" from "X=42^(1-4+9)"...</Description>
       <Unlock>0</Unlock>
       <DevTime>6</DevTime>
       <Innovation>1</Innovation>
@@ -113,7 +113,7 @@
     <Feature Vital="TRUE">
       <Name>Heat Spreaders</Name>
       <Category>Physical</Category>
-      <Description></Description>
+      <Description>If you dont know why are these important, search "CPU cooking" on youtube</Description>
       <Unlock>1980</Unlock>
       <DevTime>3</DevTime>
       <Innovation>1</Innovation>
@@ -146,7 +146,7 @@
     <Feature Forced="FALSE" Vital="TRUE">
       <Name>Thermal Paste</Name>
       <Category>Physical</Category>
-      <Description></Description>
+      <Description>Help to transfer heat from CPU to other stuff</Description>
       <Unlock>1970</Unlock>
       <DevTime>2</DevTime>
       <Innovation>1</Innovation>
@@ -179,7 +179,7 @@
     <Feature Forced="TRUE">
       <Name>Logic Unit</Name>
       <Category>System</Category>
-      <Description>The Other Main Brain</Description>
+      <Description>The Other Main Brain. Does things like comparing two numbers</Description>
       <Unlock>0</Unlock>
       <DevTime>6</DevTime>
       <Innovation>1</Innovation>
@@ -272,7 +272,7 @@
     <Feature>
       <Name>Power Efficiency</Name>
       <Category>Physical</Category>
-      <Description></Description>
+      <Description>Use less power! Save the planet!</Description>
       <Unlock>1995</Unlock>
       <DevTime>9</DevTime>
       <Innovation>1</Innovation>
