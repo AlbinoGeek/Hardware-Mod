@@ -33,9 +33,9 @@
       <CodeArt>1</CodeArt>
     </Feature>
     <Feature Research="GPU" Vital="FALSE">
-      <Name>Adaptive Vsync</Name>
+      <Name>Adaptive Sync</Name>
       <Category>System</Category>
-      <Description>-"are you sure you need this for g-sync monitors?" -"I HAVE NO IDEA!"</Description>
+      <Description>You can't have 60fps rock solid? No problem, Adaptive Sync is here!</Description>
       <Unlock>2012</Unlock>
       <DevTime>3</DevTime>
       <Innovation>30</Innovation>
@@ -50,7 +50,7 @@
       <Unlock>2016</Unlock>
       <DevTime>80</DevTime>
       <Innovation>60</Innovation>
-      <Usability>90</Usability>
+      <Usability>80</Usability>
       <Stability>50</Stability>
       <CodeArt>0.5</CodeArt>
     </Feature>
@@ -197,11 +197,11 @@
       <Unlock>2013</Unlock>
       <DevTime>32</DevTime>
       <Innovation>60</Innovation>
-      <Usability>0</Usability>
+      <Usability>15</Usability>
       <Stability>15</Stability>
       <CodeArt>1</CodeArt>
     </Feature>
-    <Feature From="HBM2" Forced="FALSE" Vital="TRUE">
+    <Feature From="HBM1" Forced="FALSE" Vital="TRUE">
       <Name>HBM2</Name>
       <Category>System</Category>
       <Description></Description>
