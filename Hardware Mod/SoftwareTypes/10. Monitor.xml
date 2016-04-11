@@ -4,34 +4,23 @@
   <Description>Chances are you bought a cmoputer to see something... visually, you might need this.  Sort of required for 2D or 3D... or even Text-Based interfaces.</Description>
   <Categories>
     <Category Name="Default">
-      <Description>Still needs some balancing (v0.8+)</Description>
+      <Description>Still needs some balancing (v0.9+)</Description>
       <Unlock>0</Unlock>
-      <Popularity>1</Popularity>
-      <TimeScale>1.0</TimeScale>
+      <Popularity>0.8</Popularity>
+      <TimeScale>0.8</TimeScale>
       <Retention>0.5</Retention>
       <Iterative>0.7</Iterative>
       <NameGenerator>names</NameGenerator>
     </Category>
   </Categories>
   <Unlock>0</Unlock>
-  <Random>0.35</Random>
-  <Popularity>1</Popularity>
+  <Random>0.40</Random>
+  <Popularity>0.8</Popularity>
   <OSSpecific>FALSE</OSSpecific>
   <OneClient>FALSE</OneClient>
   <InHouse>TRUE</InHouse>
   <NameGenerator>names</NameGenerator>
   <Features>
-    <Feature Vital="TRUE">
-      <Name>Multiple Inputs</Name>
-      <Category>Physical</Category>
-      <Description></Description>
-      <Unlock>0</Unlock>
-      <DevTime>6</DevTime>
-      <Innovation>2</Innovation>
-      <Usability>5</Usability>
-      <Stability>5</Stability>
-      <CodeArt>1</CodeArt>
-    </Feature>
     <Feature Forced="TRUE">
       <Name>Cathode Tube CRT</Name>
       <Category>Physical</Category>
@@ -48,7 +37,7 @@
       <Category>System</Category>
       <Description></Description>
       <Unlock>1990</Unlock>
-      <DevTime>24</DevTime>
+      <DevTime>9</DevTime>
       <Innovation>10</Innovation>
       <Usability>15</Usability>
       <Stability>5</Stability>
@@ -59,7 +48,7 @@
       <Category>System</Category>
       <Description></Description>
       <Unlock>2020</Unlock>
-      <DevTime>48</DevTime>
+      <DevTime>12</DevTime>
       <Innovation>20</Innovation>
       <Usability>35</Usability>
       <Stability>20</Stability>
@@ -70,7 +59,7 @@
       <Category>System</Category>
       <Description>1 pixel tales up 1 bit of memory, economic, but you certainly shouldnt expect rainbows</Description>
       <Unlock>1980</Unlock>
-      <DevTime>9</DevTime>
+      <DevTime>6</DevTime>
       <Innovation>3</Innovation>
       <Usability>5</Usability>
       <Stability>1</Stability>
@@ -82,7 +71,7 @@
       <Category>System</Category>
       <Description>4 bits of memory per pixel let's you see a propper rainbow</Description>
       <Unlock>1984</Unlock>
-      <DevTime>15</DevTime>
+      <DevTime>9</DevTime>
       <Innovation>5</Innovation>
       <Usability>10</Usability>
       <Stability>5</Stability>
@@ -93,7 +82,7 @@
       <Category>System</Category>
       <Description>8 bits of memory per pixel</Description>
       <Unlock>1994</Unlock>
-      <DevTime>24</DevTime>
+      <DevTime>12</DevTime>
       <Innovation>10</Innovation>
       <Usability>20</Usability>
       <Stability>10</Stability>
@@ -104,7 +93,7 @@
       <Category>System</Category>
       <Description>16 bits of memory per pixel</Description>
       <Unlock>2002</Unlock>
-      <DevTime>48</DevTime>
+      <DevTime>18</DevTime>
       <Innovation>20</Innovation>
       <Usability>40</Usability>
       <Stability>20</Stability>
@@ -115,7 +104,7 @@
       <Category>System</Category>
       <Description>32 bits of memory per pixel... is that enought for you?</Description>
       <Unlock>2006</Unlock>
-      <DevTime>60</DevTime>
+      <DevTime>24</DevTime>
       <Innovation>30</Innovation>
       <Usability>60</Usability>
       <Stability>40</Stability>
@@ -128,7 +117,7 @@
       <Unlock>2016</Unlock>
       <DevTime>80</DevTime>
       <Innovation>60</Innovation>
-      <Usability>90</Usability>
+      <Usability>80</Usability>
       <Stability>50</Stability>
       <CodeArt>0.5</CodeArt>
       <Dependency Software="Graphics Card">HDR Support</Dependency>
@@ -138,7 +127,7 @@
       <Category>Physical</Category>
       <Description>More pixels than you can count on one hand!</Description>
       <Unlock>0</Unlock>
-      <DevTime>6</DevTime>
+      <DevTime>3</DevTime>
       <Innovation>5</Innovation>
       <Usability>5</Usability>
       <Stability>5</Stability>
@@ -149,7 +138,7 @@
       <Category>Physical</Category>
       <Description>Good and comfortable format for your eyes</Description>
       <Unlock>1984</Unlock>
-      <DevTime>9</DevTime>
+      <DevTime>6</DevTime>
       <Innovation>10</Innovation>
       <Usability>10</Usability>
       <Stability>10</Stability>
@@ -160,7 +149,7 @@
       <Category>System</Category>
       <Description></Description>
       <Unlock>1988</Unlock>
-      <DevTime>12</DevTime>
+      <DevTime>9</DevTime>
       <Innovation>10</Innovation>
       <Usability>15</Usability>
       <Stability>10</Stability>
@@ -171,7 +160,7 @@
       <Category>Physical</Category>
       <Description>FOR THE PC MASTERRACE!... or for people with money</Description>
       <Unlock>2003</Unlock>
-      <DevTime>24</DevTime>
+      <DevTime>12</DevTime>
       <Innovation>20</Innovation>
       <Usability>35</Usability>
       <Stability>15</Stability>
@@ -192,8 +181,8 @@
       <Name>Built-in</Name>
       <Category>Physical</Category>
       <Description></Description>
-      <Unlock></Unlock>
-      <DevTime>3</DevTime>
+      <Unlock>0</Unlock>
+      <DevTime>2</DevTime>
       <Innovation>2</Innovation>
       <Usability>2</Usability>
       <Stability>2</Stability>
@@ -222,30 +211,44 @@
       <CodeArt>1</CodeArt>
       <Dependency Software="Monitor">Built-in</Dependency>
     </Feature>
-    <Feature From="DVI Digital" Vital="TRUE">
-      <Name>HDMI</Name>
+    <Feature Vital="TRUE">
+      <Name>High Definition Input</Name>
       <Category>Physical</Category>
-      <Description></Description>
-      <Unlock>2002</Unlock>
-      <DevTime>3</DevTime>
-      <Innovation>6</Innovation>
-      <Usability>4</Usability>
+      <Description>Also known as High Definition Media Interface or HDMI.</Description>
+      <Unlock>1994</Unlock>
+      <DevTime>4</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>10</Usability>
       <Stability>5</Stability>
       <CodeArt>1</CodeArt>
+      <Dependency Software="Monitor">DVI Digital</Dependency>
     </Feature>
-    <Feature From="HDMI" Vital="TRUE">
+    <Feature Vital="TRUE">
       <Name>DisplayPort</Name>
       <Category>Physical</Category>
       <Description></Description>
       <Unlock>2006</Unlock>
       <DevTime>4</DevTime>
       <Innovation>6</Innovation>
-      <Usability>6</Usability>
+      <Usability>15</Usability>
       <Stability>5</Stability>
       <CodeArt>1</CodeArt>
+	  <Dependency Software="Monitor">DVI Digital</Dependency>
     </Feature>
-    <Feature Forced="FALSE" Vital="FALSE">
-      <Name>Adaptive Vsync</Name>
+    <Feature Vital="TRUE">
+      <Name>Multiple Inputs</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1987</Unlock>
+      <DevTime>4</DevTime>
+      <Innovation>2</Innovation>
+      <Usability>5</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Monitor">VGA</Dependency>
+    </Feature>
+    <Feature Research="DisplayPort" Forced="FALSE" Vital="FALSE">
+      <Name>Adaptive Sync</Name>
       <Category>System</Category>
       <Description>Halts monitor re-fresh until it recieves new frame from computer/GPU, preventing screen tearing. Does not impact on framerate, instead of V-SYNC, so it's better</Description>
       <Unlock>2012</Unlock>
@@ -254,7 +257,7 @@
       <Usability>30</Usability>
       <Stability>10</Stability>
       <CodeArt>1</CodeArt>
-      <Dependency Software="Graphics Card">Adaptive Vsync</Dependency>
+      <Dependency Software="Graphics Card">Adaptive Sync</Dependency>
 	  <Dependency Software="Monitor">DisplayPort</Dependency>
     </Feature>
     <Feature Forced="TRUE">
