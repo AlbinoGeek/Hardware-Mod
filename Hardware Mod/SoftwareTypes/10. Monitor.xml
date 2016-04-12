@@ -110,6 +110,18 @@
       <Stability>40</Stability>
       <CodeArt>0.75</CodeArt>
     </Feature>
+    <Feature From="16M colors" Vital="TRUE">
+      <Name>HDR colors</Name>
+      <Category>System</Category>
+      <Description>We need more than pixels, we need BETTER pixels (c) AMD</Description>
+      <Unlock>2016</Unlock>
+      <DevTime>80</DevTime>
+      <Innovation>60</Innovation>
+      <Usability>80</Usability>
+      <Stability>50</Stability>
+      <CodeArt>0.5</CodeArt>
+      <Dependency Software="Graphics Card">HDR Support</Dependency>
+    </Feature>
     <Feature Forced="TRUE">
       <Name>Standard Definition</Name>
       <Category>Physical</Category>
@@ -153,6 +165,17 @@
       <Usability>35</Usability>
       <Stability>15</Stability>
       <CodeArt>0.5</CodeArt>
+    </Feature>
+    <Feature From="2160p (4K)" Vital="TRUE">
+      <Name>2880p (5K)</Name>
+      <Category>Physical</Category>
+      <Description>FOR THE PC MASTERRACE!... or for people with money x500</Description>
+      <Unlock>2014</Unlock>
+      <DevTime>24</DevTime>
+      <Innovation>30</Innovation>
+      <Usability>45</Usability>
+      <Stability>15</Stability>
+      <CodeArt>0.3</CodeArt>
     </Feature>
     <Feature Forced="TRUE">
       <Name>Built-in</Name>
@@ -201,6 +224,18 @@
       <Dependency Software="Monitor">DVI Digital</Dependency>
     </Feature>
     <Feature Vital="TRUE">
+      <Name>DisplayPort</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>2006</Unlock>
+      <DevTime>4</DevTime>
+      <Innovation>6</Innovation>
+      <Usability>15</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+	  <Dependency Software="Monitor">High Definition Input</Dependency>
+    </Feature>
+    <Feature Vital="TRUE">
       <Name>Multiple Inputs</Name>
       <Category>Physical</Category>
       <Description></Description>
@@ -212,8 +247,8 @@
       <CodeArt>1</CodeArt>
       <Dependency Software="Monitor">VGA</Dependency>
     </Feature>
-    <Feature Forced="FALSE" Vital="FALSE">
-      <Name>G-SYNC</Name>
+    <Feature Research="DisplayPort">
+      <Name>Adaptive Sync</Name>
       <Category>System</Category>
       <Description>Halts monitor re-fresh until it recieves new frame from computer/GPU, preventing screen tearing. Does not impact on framerate, instead of V-SYNC, so it's better</Description>
       <Unlock>2012</Unlock>
@@ -222,7 +257,51 @@
       <Usability>30</Usability>
       <Stability>10</Stability>
       <CodeArt>1</CodeArt>
-      <Dependency Software="Graphics Card">G-SYNC support</Dependency>
+      <Dependency Software="Graphics Card">Adaptive Sync</Dependency>
+    </Feature>
+    <Feature Forced="TRUE">
+      <Name>Refresh Rate (30 Hz)</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>0</Unlock>
+      <DevTime>2</DevTime>
+      <Innovation>2</Innovation>
+      <Usability>2</Usability>
+      <Stability>3</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="Refresh Rate (30 Hz)" Vital="TRUE">
+      <Name>60 Hz</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>1994</Unlock>
+      <DevTime>2</DevTime>
+      <Innovation>3</Innovation>
+      <Usability>3</Usability>
+      <Stability>3</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="60 Hz" Vital="TRUE">
+      <Name>120 Hz</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>2008</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>6</Innovation>
+      <Usability>6</Usability>
+      <Stability>3</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="120 Hz" Vital="TRUE">
+      <Name>144 Hz</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>2012</Unlock>
+      <DevTime>4</DevTime>
+      <Innovation>9</Innovation>
+      <Usability>8</Usability>
+      <Stability>4</Stability>
+      <CodeArt>0.9</CodeArt>
     </Feature>
   </Features>
 </SoftwareType>
