@@ -7,24 +7,22 @@
       <Description>Geared towards individuals, these less powerful computeres are easier to make; but consumers replace them fairly often.</Description>
       <Unlock>0</Unlock>
       <Popularity>1</Popularity>
-      <TimeScale>0.9</TimeScale>
+      <TimeScale>0.75</TimeScale>
       <Retention>0.65</Retention>
-      <Iterative>0.35</Iterative>
+      <Iterative>0.5</Iterative>
       <NameGenerator>names</NameGenerator>
     </Category>
     <Category Name="Server">
       <Description>Geared towards businesses, these more powerful computeres are harer to make and must be stable; but businesses don't upgrade often.</Description>
       <Unlock>0</Unlock>
-      <Popularity>0.8</Popularity>
-      <TimeScale>1.2</TimeScale>
-      <Retention>0.7</Retention>
-      <Iterative>0.2</Iterative>
+      <Popularity>0.2</Popularity>
+      <TimeScale>1.4</TimeScale>
+      <Retention>0.9</Retention>
+      <Iterative>0.3</Iterative>
       <NameGenerator>names</NameGenerator>
     </Category>
   </Categories>
-  <Unlock>0</Unlock>
-  <Random>0.25</Random>
-  <Popularity>1</Popularity>
+  <Random>0</Random>
   <OSSpecific>FALSE</OSSpecific>
   <OneClient>FALSE</OneClient>
   <InHouse>TRUE</InHouse>
@@ -192,7 +190,7 @@
       <Category>Physical</Category>
       <Description>Helps stabilize overclocking</Description>
       <Unlock>1992</Unlock>
-      <DevTime>12</DevTime>
+      <DevTime>10</DevTime>
       <Innovation>4</Innovation>
       <Usability>0</Usability>
       <Stability>8</Stability>
@@ -226,7 +224,7 @@
       <Category>Network</Category>
       <Description>THIS MAKES YOU THEIR ISP, WATCH YOUR BANDWIDTH</Description>
       <Unlock>1990</Unlock>
-      <DevTime>48</DevTime>
+      <DevTime>24</DevTime>
       <Innovation>4</Innovation>
       <Usability>2</Usability>
       <Stability>2</Stability>
@@ -238,7 +236,7 @@
       <Category>Network</Category>
       <Description>Upgrade everyone's modems to 56k</Description>
       <Unlock>1994</Unlock>
-      <DevTime>36</DevTime>
+      <DevTime>20</DevTime>
       <Innovation>4</Innovation>
       <Usability>4</Usability>
       <Stability>4</Stability>
@@ -250,7 +248,7 @@
       <Category>Network</Category>
       <Description>Upgrade everyone's modems to Broadband</Description>
       <Unlock>1998</Unlock>
-      <DevTime>36</DevTime>
+      <DevTime>20</DevTime>
       <Innovation>8</Innovation>
       <Usability>8</Usability>
       <Stability>4</Stability>
@@ -275,7 +273,7 @@
       <Category>Network</Category>
       <Description>Upgrade everyone's modems to Cable</Description>
       <Unlock>2006</Unlock>
-      <DevTime>48</DevTime>
+      <DevTime>24</DevTime>
       <Innovation>16</Innovation>
       <Usability>16</Usability>
       <Stability>8</Stability>
@@ -287,7 +285,7 @@
       <Category>Network</Category>
       <Description>FASTER THAN LIGHT: FTL</Description>
       <Unlock>2010</Unlock>
-      <DevTime>72</DevTime>
+      <DevTime>36</DevTime>
       <Innovation>32</Innovation>
       <Usability>32</Usability>
       <Stability>16</Stability>
@@ -342,7 +340,7 @@
       <Name>DDR5</Name>
       <Category>Physical</Category>
       <Description></Description>
-      <Unlock>2018</Unlock>
+      <Unlock>2021</Unlock>
       <DevTime>24</DevTime>
       <Innovation>12</Innovation>
       <Usability>16</Usability>
@@ -354,7 +352,7 @@
       <Category>Physical</Category>
       <Description>Slots that let users install additional hardware, currently only Graphics Cards require PCI.</Description>
       <Unlock>1992</Unlock>
-      <DevTime>3</DevTime>
+      <DevTime>4</DevTime>
       <Innovation>4</Innovation>
       <Usability>8</Usability>
       <Stability>2</Stability>
@@ -372,13 +370,13 @@
       <CodeArt>0.5</CodeArt>
       <Dependency Software="Motherboard">PCI Slots</Dependency>
     </Feature>
-    <Feature Vital="FALSE">
+    <Feature From="PCI Express" Vital="TRUE">
       <Name>SLl Support</Name>
       <Category>2D</Category>
       <Description>Allows for the use of two graphics cards.</Description>
       <Unlock>2004</Unlock>
-      <DevTime>10</DevTime>
-      <Innovation>4</Innovation>
+      <DevTime>8</DevTime>
+      <Innovation>20</Innovation>
       <Usability>8</Usability>
       <Stability>0</Stability>
       <CodeArt>0.5</CodeArt>
@@ -390,7 +388,7 @@
       <Description>Now you can fit three graphics cards.</Description>
       <Unlock>2006</Unlock>
       <DevTime>8</DevTime>
-      <Innovation>6</Innovation>
+      <Innovation>18</Innovation>
       <Usability>12</Usability>
       <Stability>0</Stability>
       <CodeArt>0.5</CodeArt>
@@ -489,10 +487,10 @@
       <CodeArt>0.1</CodeArt>
       <Dependency Software="Motherboard">PC Speaker</Dependency>
     </Feature>
-    <Feature Vital="TRUE">
+    <Feature From="Connectors" Vital="TRUE">
       <Name>Universal Bus</Name>
       <Category>Physical</Category>
-      <Description></Description>
+      <Description>That thing you always plug into your PC the wrong side... USB</Description>
       <Unlock>1996</Unlock>
       <DevTime>6</DevTime>
       <Innovation>4</Innovation>
@@ -504,7 +502,7 @@
     <Feature From="Universal Bus" Vital="TRUE">
       <Name>Universal Bus 2</Name>
       <Category>System</Category>
-      <Description></Description>
+      <Description>Now with faster data transfer, figuring out which side are you going to plug it in in the dark is still terrible</Description>
       <Unlock>2000</Unlock>
       <DevTime>9</DevTime>
       <Innovation>3</Innovation>
@@ -515,10 +513,10 @@
     <Feature From="Universal Bus 2" Vital="TRUE">
       <Name>Universal Bus 3</Name>
       <Category>System</Category>
-      <Description></Description>
+      <Description>Woooo, a bit faster USB colored in blue!</Description>
       <Unlock>2008</Unlock>
-      <DevTime>15</DevTime>
-      <Innovation>5</Innovation>
+      <DevTime>10</DevTime>
+      <Innovation>7</Innovation>
       <Usability>7</Usability>
       <Stability>3</Stability>
       <CodeArt>0.3</CodeArt>
@@ -535,7 +533,7 @@
       <CodeArt>0.2</CodeArt>
       <Dependency Software="Motherboard">Universal Bus 3</Dependency>
     </Feature>
-    <Feature>
+    <Feature From="Universal Bus 3">
       <Name>Universal Bus 3.1</Name>
       <Category>System</Category>
       <Description></Description>
@@ -545,7 +543,6 @@
       <Usability>12</Usability>
       <Stability>6</Stability>
       <CodeArt>0.8</CodeArt>
-      <Dependency Software="Motherboard">Universal Bus 3</Dependency>
     </Feature>
     <Feature Vital="TRUE">
       <Name>Indicators</Name>
