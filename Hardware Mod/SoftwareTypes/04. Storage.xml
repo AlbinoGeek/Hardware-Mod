@@ -80,7 +80,7 @@
     <Feature From="Hardwired" Vital="TRUE">
       <Name>SCSI</Name>
       <Category>Physical</Category>
-      <Description>Finally, replacable harddrives.</Description>
+      <Description>Finally, replacable harddrives. We have no idea why someone was buying them before invention of this thing</Description>
       <Unlock>1986</Unlock>
       <DevTime>9</DevTime>
       <Innovation>4</Innovation>
@@ -158,7 +158,7 @@
     <Feature From="5 inch Platters" Vital="TRUE">
       <Name>3 inch Platters</Name>
       <Category>Physical</Category>
-      <Description>MUCH smaller platters than ever before</Description>
+      <Description>MUCH smaller platters than ever before, now with even more "ever"!</Description>
       <Unlock>1983</Unlock>
       <DevTime>15</DevTime>
       <Innovation>4</Innovation>
@@ -225,7 +225,7 @@
     <Feature Vital="TRUE">
       <Name>PMR</Name>
       <Category>Physical</Category>
-      <Description>Records perpendicular instead of logarithmic.</Description>
+      <Description>Records perpendicular instead of logarithmic, allowing more data to be stored</Description>
       <Unlock>2005</Unlock>
       <DevTime>21</DevTime>
       <Innovation>16</Innovation>

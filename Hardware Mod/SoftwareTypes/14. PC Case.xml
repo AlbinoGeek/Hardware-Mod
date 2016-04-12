@@ -33,7 +33,7 @@
     <Feature Forced="TRUE">
       <Name>Front Panel</Name>
       <Category>Physical</Category>
-      <Description></Description>
+      <Description>That thing you smash with your leg trying to hit the "ON" button</Description>
       <Unlock>0</Unlock>
       <DevTime>2</DevTime>
       <Innovation>5</Innovation>
@@ -70,7 +70,7 @@
     <Feature Forced="TRUE">
       <Name>Rear Panel</Name>
       <Category>Physical</Category>
-      <Description></Description>
+      <Description>That thing you plug into the things like power cord and other things</Description>
       <Unlock>0</Unlock>
       <DevTime>2</DevTime>
       <Innovation>5</Innovation>
