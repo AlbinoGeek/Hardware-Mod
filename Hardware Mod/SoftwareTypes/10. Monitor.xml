@@ -233,7 +233,7 @@
       <Usability>15</Usability>
       <Stability>5</Stability>
       <CodeArt>1</CodeArt>
-	  <Dependency Software="Monitor">DVI Digital</Dependency>
+	  <Dependency Software="Monitor">High Definition Input</Dependency>
     </Feature>
     <Feature Vital="TRUE">
       <Name>Multiple Inputs</Name>
@@ -247,7 +247,7 @@
       <CodeArt>1</CodeArt>
       <Dependency Software="Monitor">VGA</Dependency>
     </Feature>
-    <Feature Research="DisplayPort" Forced="FALSE" Vital="FALSE">
+    <Feature Research="DisplayPort">
       <Name>Adaptive Sync</Name>
       <Category>System</Category>
       <Description>Halts monitor re-fresh until it recieves new frame from computer/GPU, preventing screen tearing. Does not impact on framerate, instead of V-SYNC, so it's better</Description>
@@ -258,7 +258,6 @@
       <Stability>10</Stability>
       <CodeArt>1</CodeArt>
       <Dependency Software="Graphics Card">Adaptive Sync</Dependency>
-	  <Dependency Software="Monitor">DisplayPort</Dependency>
     </Feature>
     <Feature Forced="TRUE">
       <Name>Refresh Rate (30 Hz)</Name>
