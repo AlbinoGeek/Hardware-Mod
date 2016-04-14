@@ -32,27 +32,138 @@
       <Stability>10</Stability>
       <CodeArt>1</CodeArt>
     </Feature>
-    <Feature Research="GPU" Vital="FALSE">
-      <Name>Adaptive Sync</Name>
-      <Category>System</Category>
-      <Description>You can't have 60fps rock solid? No problem, Adaptive Sync is here!</Description>
+    <Feature Vital="TRUE">
+      <Name>GPU Boost</Name>
+      <Category>Physical</Category>
+      <Description>GPU Boost is a new feature which is roughly analogous to turbo boosting of a CPU.</Description>
       <Unlock>2012</Unlock>
-      <DevTime>3</DevTime>
-      <Innovation>30</Innovation>
-      <Usability>30</Usability>
+      <DevTime>4</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>10</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+	  <Dependency Software="Graphics Card">GPU</Dependency>
+    </Feature>
+    <Feature From="GPU Boost" Vital="TRUE">
+      <Name>GPU Boost 2.0</Name>
+      <Category>Physical</Category>
+      <Description>GPU Boost 2.0 allow the GPU clock speed to increase indefinitely until a user-set temperature limit was reached without passing a user-specified maximum fan speed.</Description>
+      <Unlock>2013</Unlock>
+      <DevTime>5</DevTime>
+      <Innovation>15</Innovation>
+      <Usability>15</Usability>
       <Stability>10</Stability>
       <CodeArt>1</CodeArt>
     </Feature>
-    <Feature Research="GPU" Vital="TRUE">
-      <Name>HDR Support</Name>
+    <Feature Forced="TRUE">
+      <Name>Video BIOS</Name>
       <Category>System</Category>
-      <Description>We need more than pixels, we need BETTER pixels (c) AMD</Description>
-      <Unlock>2016</Unlock>
-      <DevTime>80</DevTime>
+      <Description></Description>
+      <Unlock>1992</Unlock>
+      <DevTime>1</DevTime>
+      <Innovation>0</Innovation>
+      <Usability>5</Usability>
+      <Stability>3</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="Video BIOS" Vital="FALSE">
+      <Name>Dual BIOS</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2007</Unlock>
+      <DevTime>1</DevTime>
+      <Innovation>0</Innovation>
+      <Usability>10</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Forced="TRUE">
+      <Name>VRAM (Video RAM)</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1992</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>0</Innovation>
+      <Usability>5</Usability>
+      <Stability>0</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="VRAM (Video RAM)" Vital="TRUE">
+      <Name>SDRAM</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1993</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>5</Usability>
+      <Stability>0</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="SDRAM" Vital="TRUE">
+      <Name>DDR</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>2000</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>8</Innovation>
+      <Usability>5</Usability>
+      <Stability>0</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="DDR" Vital="FALSE">
+      <Name>DDR2</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2003</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>0</Usability>
+      <Stability>0</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="DDR2" Forced="FALSE" Vital="TRUE">
+      <Name>GDDR3</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>2004</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>0</Usability>
+      <Stability>0</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="GDDR3" Forced="FALSE" Vital="TRUE">
+      <Name>GDDR5</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2008</Unlock>
+      <DevTime>24</DevTime>
+      <Innovation>40</Innovation>
+      <Usability>0</Usability>
+      <Stability>10</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="GDDR5" Forced="FALSE" Vital="TRUE">
+      <Name>HBM1</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>2013</Unlock>
+      <DevTime>32</DevTime>
       <Innovation>60</Innovation>
-      <Usability>80</Usability>
-      <Stability>50</Stability>
-      <CodeArt>0.5</CodeArt>
+      <Usability>15</Usability>
+      <Stability>15</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="HBM1" Forced="FALSE" Vital="TRUE">
+      <Name>HBM2</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2016</Unlock>
+      <DevTime>40</DevTime>
+      <Innovation>70</Innovation>
+      <Usability>25</Usability>
+      <Stability>35</Stability>
+      <CodeArt>1</CodeArt>
     </Feature>
     <Feature Forced="FALSE" Vital="TRUE">
       <Name>PCI Interface</Name>
@@ -67,14 +178,75 @@
       <Dependency Software="Motherboard">PCI Slots</Dependency>
     </Feature>
     <Feature From="PCI Interface" Forced="FALSE" Vital="TRUE">
-      <Name>PCI Express</Name>
+      <Name>AGP</Name>
       <Category>Physical</Category>
-      <Description>PCI Express is much faster!</Description>
+      <Description>A bus dedicated to graphics adapters.</Description>
+      <Unlock>1997</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>10</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Motherboard">AGP</Dependency>
+    </Feature>
+    <Feature From="AGP" Forced="FALSE" Vital="TRUE">
+      <Name>AGP x8</Name>
+      <Category>Physical</Category>
+      <Description>A bus dedicated to graphics adapters.</Description>
+      <Unlock>1997</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>10</Usability>
+      <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Motherboard">AGP x8</Dependency>
+	  <Dependency Software="Graphics Card">AGP</Dependency>
+    </Feature>
+    <Feature From="AGP x8" Forced="FALSE" Vital="TRUE">
+      <Name>PCI Express x16</Name>
+      <Category>Physical</Category>
+      <Description>PCI Express is much faster! (40 Gbit/s)</Description>
       <Unlock>2004</Unlock>
       <DevTime>3</DevTime>
       <Innovation>20</Innovation>
       <Usability>10</Usability>
       <Stability>5</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Motherboard">PCI Express</Dependency>
+    </Feature>
+    <Feature From="PCI Express x16" Forced="FALSE" Vital="TRUE">
+      <Name>PCI-E 2.0 x16</Name>
+      <Category>Physical</Category>
+      <Description>PCI-E 2.0 duplicate the bandwidth from the first version (80 Gbit/s)</Description>
+      <Unlock>2007</Unlock>
+      <DevTime>4</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>15</Usability>
+      <Stability>10</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Motherboard">PCI Express</Dependency>
+    </Feature>
+    <Feature From="PCI-E 2.0 x16" Forced="FALSE" Vital="TRUE">
+      <Name>PCI-E 3.0 x16</Name>
+      <Category>Physical</Category>
+      <Description>PCI-E 3.0 upgrades the encoding scheme to 128b/130b, reducing the bandwidth overhead from 20% of PCIE 2.0 to approximately 1.54% (128 Gbit/s)</Description>
+      <Unlock>2011</Unlock>
+      <DevTime>4</DevTime>
+      <Innovation>30</Innovation>
+      <Usability>20</Usability>
+      <Stability>15</Stability>
+      <CodeArt>1</CodeArt>
+      <Dependency Software="Motherboard">PCI Express</Dependency>
+    </Feature>
+    <Feature From="PCI-E 3.0 x16" Forced="FALSE" Vital="TRUE">
+      <Name>PCI-E 4.0 x16</Name>
+      <Category>Physical</Category>
+      <Description>PCI-E 4.0 duplicate the bandwidth from the third version (256 Gbit/s)</Description>
+      <Unlock>2017</Unlock>
+      <DevTime>5</DevTime>
+      <Innovation>35</Innovation>
+      <Usability>35</Usability>
+      <Stability>20</Stability>
       <CodeArt>1</CodeArt>
       <Dependency Software="Motherboard">PCI Express</Dependency>
     </Feature>
@@ -88,7 +260,101 @@
       <Usability>40</Usability>
       <Stability>0</Stability>
       <CodeArt>0.8</CodeArt>
-      <Dependency Software="Graphics Card">PCI Express</Dependency>
+      <Dependency Software="Graphics Card">PCI Express x16</Dependency>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>Decoder Block</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2004</Unlock>
+      <DevTime>1</DevTime>
+      <Innovation>2</Innovation>
+      <Usability>5</Usability>
+      <Stability>3</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>MPEG-1/MPEG-2</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2004</Unlock>
+      <DevTime>1</DevTime>
+      <Innovation>2</Innovation>
+      <Usability>5</Usability>
+      <Stability>3</Stability>
+      <CodeArt>1</CodeArt>
+	  <Dependency Software="Graphics Card">Decoder Block</Dependency>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>H.264/VC-1</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2007</Unlock>
+      <DevTime>2</DevTime>
+      <Innovation>3</Innovation>
+      <Usability>6</Usability>
+      <Stability>4</Stability>
+      <CodeArt>1</CodeArt>
+	  <Dependency Software="Graphics Card">MPEG-1/MPEG-2</Dependency>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>H.264+</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2012</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>4</Innovation>
+      <Usability>7</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.95</CodeArt>
+	  <Dependency Software="Graphics Card">H.264/VC-1</Dependency>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>H.265</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2015</Unlock>
+      <DevTime>4</DevTime>
+      <Innovation>8</Innovation>
+      <Usability>14</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.8</CodeArt>
+	  <Dependency Software="Graphics Card">H.264+</Dependency>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>Encoder Block</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2012</Unlock>
+      <DevTime>1</DevTime>
+      <Innovation>2</Innovation>
+      <Usability>5</Usability>
+      <Stability>3</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>H.264 1080p60</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2012</Unlock>
+      <DevTime>2</DevTime>
+      <Innovation>3</Innovation>
+      <Usability>6</Usability>
+      <Stability>4</Stability>
+      <CodeArt>1</CodeArt>
+	  <Dependency Software="Graphics Card">Encoder Block</Dependency>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>H.264/H.265 4Kp60</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>2014</Unlock>
+      <DevTime>4</DevTime>
+      <Innovation>8</Innovation>
+      <Usability>10</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.8</CodeArt>
+	  <Dependency Software="Graphics Card">H.264 1080p60</Dependency>
     </Feature>
     <Feature Forced="FALSE" Vital="TRUE">
       <Name>Heatsink</Name>
@@ -101,7 +367,7 @@
       <Stability>20</Stability>
       <CodeArt>1</CodeArt>
     </Feature>
-    <Feature From="Heatsink" Forced="FALSE" Vital="TRUE">
+	<Feature From="Heatsink" Forced="FALSE" Vital="TRUE">
       <Name>Heatpipes</Name>
       <Category>Physical</Category>
       <Description>A more intricated block of copper</Description>
@@ -157,60 +423,253 @@
       <Stability>10</Stability>
       <CodeArt>1</CodeArt>
     </Feature>
-    <Feature Forced="TRUE">
-      <Name>Graphics Memory</Name>
+    <Feature Forced="TRUE" Vital="TRUE">
+      <Name>API's Support</Name>
+      <Category>System</Category>
+      <Description></Description>
+      <Unlock>1992</Unlock>
+      <DevTime>1</DevTime>
+      <Innovation>1</Innovation>
+      <Usability>5</Usability>
+      <Stability>1</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>DirectX Early Version</Name>
+      <Category>System</Category>
+      <Description>Execute Buffer, Multitexture, etc.</Description>
+      <Unlock>1995</Unlock>
+      <DevTime>1</DevTime>
+      <Innovation>3</Innovation>
+      <Usability>5</Usability>
+      <Stability>1</Stability>
+      <CodeArt>1</CodeArt>
+	  <Dependency Software="Graphics Card">API's Support</Dependency>
+    </Feature>
+    <Feature From="DirectX Early Version" Vital="TRUE">
+      <Name>DX 7.1</Name>
+      <Category>System</Category>
+      <Description>Transform, clipping, and lighting (T&L)</Description>
+      <Unlock>2000</Unlock>
+      <DevTime>4</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>8</Usability>
+      <Stability>2</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="DX 7.1" Vital="TRUE">
+      <Name>DX 8.1</Name>
+      <Category>System</Category>
+      <Description>Pixel & Vertex Shaders, Fog, Bump Mapping, etc.</Description>
+      <Unlock>2001</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>15</Innovation>
+      <Usability>10</Usability>
+      <Stability>3</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="DX 8.1" Vital="TRUE">
+      <Name>DX 9.0c</Name>
+      <Category>System</Category>
+      <Description>Shader Model 3.0, Multiple Render Targets, etc.</Description>
+      <Unlock>2004</Unlock>
+      <DevTime>8</DevTime>
+      <Innovation>22</Innovation>
+      <Usability>16</Usability>
+      <Stability>6</Stability>
+      <CodeArt>0.95</CodeArt>
+    </Feature>
+    <Feature From="DX 9.0c" Vital="TRUE">
+      <Name>DX 10</Name>
+      <Category>System</Category>
+      <Description>Shader Model 4.0, Geometry shaders, etc.</Description>
+      <Unlock>2006</Unlock>
+      <DevTime>10</DevTime>
+      <Innovation>28</Innovation>
+      <Usability>20</Usability>
+      <Stability>9</Stability>
+      <CodeArt>0.95</CodeArt>
+    </Feature>
+    <Feature From="DX 10" Vital="TRUE">
+      <Name>DX 11</Name>
+      <Category>System</Category>
+      <Description>Shader Model 5.0, Tessellation, Multithreaded rendering, Compute shaders, etc.</Description>
+      <Unlock>2009</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>33</Innovation>
+      <Usability>28</Usability>
+      <Stability>12</Stability>
+      <CodeArt>0.95</CodeArt>
+    </Feature>
+    <Feature From="DX 11" Vital="TRUE">
+      <Name>DX 12</Name>
+      <Category>System</Category>
+      <Description>Shader Model 5.1, Low-level API, UAV, ROV, Async Shaders, etc.</Description>
+      <Unlock>2015</Unlock>
+      <DevTime>24</DevTime>
+      <Innovation>45</Innovation>
+      <Usability>37</Usability>
+      <Stability>20</Stability>
+      <CodeArt>0.9</CodeArt>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>OpenGL 1.2</Name>
+      <Category>System</Category>
+      <Description>Imaging Subset, Three-dimensional texturing, etc.</Description>
+      <Unlock>1998</Unlock>
+      <DevTime>1</DevTime>
+      <Innovation>3</Innovation>
+      <Usability>5</Usability>
+      <Stability>1</Stability>
+      <CodeArt>1</CodeArt>
+	  <Dependency Software="Graphics Card">API's Support</Dependency>
+    </Feature>
+    <Feature From="OpenGL 1.2" Vital="TRUE">
+      <Name>OpenGL 1.3</Name>
+      <Category>System</Category>
+      <Description>Cube-mapped texturing, MSAA Framework, etc.</Description>
+      <Unlock>2001</Unlock>
+      <DevTime>4</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>8</Usability>
+      <Stability>2</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="OpenGL 1.3" Vital="TRUE">
+      <Name>OpenGL 1.5</Name>
+      <Category>System</Category>
+      <Description>GLSL extension, Depth Texture, Stencil Wrap, etc.</Description>
+      <Unlock>2003</Unlock>
+      <DevTime>6</DevTime>
+      <Innovation>15</Innovation>
+      <Usability>10</Usability>
+      <Stability>3</Stability>
+      <CodeArt>1</CodeArt>
+    </Feature>
+    <Feature From="OpenGL 1.5" Vital="TRUE">
+      <Name>OpenGL 2.1</Name>
+      <Category>System</Category>
+      <Description>GLSL integrated</Description>
+      <Unlock>2006</Unlock>
+      <DevTime>8</DevTime>
+      <Innovation>22</Innovation>
+      <Usability>16</Usability>
+      <Stability>6</Stability>
+      <CodeArt>0.95</CodeArt>
+    </Feature>
+    <Feature From="OpenGL 2.1" Vital="TRUE">
+      <Name>OpenGL 3.3</Name>
+      <Category>System</Category>
+      <Description>Target DX10 Hardware, Geometry shaders, etc.</Description>
+      <Unlock>2010</Unlock>
+      <DevTime>10</DevTime>
+      <Innovation>28</Innovation>
+      <Usability>20</Usability>
+      <Stability>9</Stability>
+      <CodeArt>0.95</CodeArt>
+    </Feature>
+    <Feature From="OpenGL 3.3" Vital="TRUE">
+      <Name>OpenGL 4.5</Name>
+      <Category>System</Category>
+      <Description>Target DX11 Hardware, Compute shaders, etc.</Description>
+      <Unlock>2014</Unlock>
+      <DevTime>12</DevTime>
+      <Innovation>33</Innovation>
+      <Usability>28</Usability>
+      <Stability>12</Stability>
+      <CodeArt>0.95</CodeArt>
+    </Feature>
+    <Feature From="OpenGL 4.5" Vital="TRUE">
+      <Name>Vulkan</Name>
+      <Category>System</Category>
+      <Description>Low-level API, UAV, ROV, Async Shaders, etc.</Description>
+      <Unlock>2015</Unlock>
+      <DevTime>24</DevTime>
+      <Innovation>45</Innovation>
+      <Usability>37</Usability>
+      <Stability>20</Stability>
+      <CodeArt>0.9</CodeArt>
+    </Feature>
+    <Feature Forced="TRUE" Vital="TRUE">
+      <Name>Display Connectors</Name>
       <Category>Physical</Category>
       <Description></Description>
       <Unlock>1992</Unlock>
-      <DevTime>6</DevTime>
+      <DevTime>0.5</DevTime>
       <Innovation>0</Innovation>
+      <Usability>1</Usability>
+      <Stability>0</Stability>
+      <CodeArt>0.9</CodeArt>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>VGA</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1992</Unlock>
+      <DevTime>1</DevTime>
+      <Innovation>0</Innovation>
+      <Usability>4</Usability>
+      <Stability>4</Stability>
+      <CodeArt>0.9</CodeArt>
+	  <Dependency Software="Graphics Card">Display Connectors</Dependency>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>DVI</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>1999</Unlock>
+      <DevTime>2</DevTime>
+      <Innovation>2</Innovation>
+      <Usability>6</Usability>
+      <Stability>6</Stability>
+      <CodeArt>0.85</CodeArt>
+	  <Dependency Software="Graphics Card">VGA</Dependency>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>HDMI</Name>
+      <Category>Physical</Category>
+      <Description></Description>
+      <Unlock>2002</Unlock>
+      <DevTime>2</DevTime>
+      <Innovation>3</Innovation>
       <Usability>5</Usability>
-      <Stability>0</Stability>
-      <CodeArt>1</CodeArt>
+      <Stability>5</Stability>
+      <CodeArt>0.9</CodeArt>
+	  <Dependency Software="Graphics Card">DVI</Dependency>
     </Feature>
-    <Feature From="Graphics Memory" Forced="FALSE" Vital="TRUE">
-      <Name>GDDR3</Name>
-      <Category>System</Category>
+    <Feature Vital="TRUE">
+      <Name>DisplayPort</Name>
+      <Category>Physical</Category>
       <Description></Description>
-      <Unlock>2004</Unlock>
-      <DevTime>12</DevTime>
-      <Innovation>20</Innovation>
-      <Usability>0</Usability>
-      <Stability>0</Stability>
-      <CodeArt>1</CodeArt>
+      <Unlock>2006</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>7</Usability>
+      <Stability>7</Stability>
+      <CodeArt>0.95</CodeArt>
+	  <Dependency Software="Graphics Card">HDMI</Dependency>
     </Feature>
-    <Feature From="GDDR3" Forced="FALSE" Vital="TRUE">
-      <Name>GDDR5</Name>
+    <Feature Research="DisplayPort" Vital="FALSE">
+      <Name>Adaptive Sync</Name>
       <Category>System</Category>
-      <Description></Description>
-      <Unlock>2008</Unlock>
-      <DevTime>24</DevTime>
-      <Innovation>40</Innovation>
-      <Usability>0</Usability>
+      <Description>You can't have 60fps rock solid? No problem, Adaptive Sync is here!</Description>
+      <Unlock>2012</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>30</Innovation>
+      <Usability>30</Usability>
       <Stability>10</Stability>
       <CodeArt>1</CodeArt>
     </Feature>
-    <Feature From="GDDR5" Forced="FALSE" Vital="TRUE">
-      <Name>HBM1</Name>
+    <Feature Research="DisplayPort" Vital="TRUE">
+      <Name>HDR Support</Name>
       <Category>System</Category>
-      <Description></Description>
-      <Unlock>2013</Unlock>
-      <DevTime>32</DevTime>
-      <Innovation>60</Innovation>
-      <Usability>15</Usability>
-      <Stability>15</Stability>
-      <CodeArt>1</CodeArt>
-    </Feature>
-    <Feature From="HBM1" Forced="FALSE" Vital="TRUE">
-      <Name>HBM2</Name>
-      <Category>System</Category>
-      <Description></Description>
+      <Description>We need more than pixels, we need BETTER pixels (c) AMD</Description>
       <Unlock>2016</Unlock>
-      <DevTime>40</DevTime>
-      <Innovation>70</Innovation>
-      <Usability>25</Usability>
-      <Stability>35</Stability>
-      <CodeArt>1</CodeArt>
+      <DevTime>80</DevTime>
+      <Innovation>60</Innovation>
+      <Usability>80</Usability>
+      <Stability>50</Stability>
+      <CodeArt>0.5</CodeArt>
     </Feature>
   </Features>
 </SoftwareType>
