@@ -137,6 +137,57 @@
       <SoftwareCategory Category="Server">0</SoftwareCategory>
     </Feature>
     <Feature Vital="TRUE">
+      <Name>Memory RAM</Name>
+      <Category>Physical</Category>
+      <Description>Needs a Memory RAM</Description>
+      <Unlock>0</Unlock>
+      <DevTime>2</DevTime>
+      <Innovation>10</Innovation>
+      <Usability>15</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.95</CodeArt>
+      <Dependency Software="Memory">DRAM</Dependency>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>Dual Channel</Name>
+      <Category>Physical</Category>
+      <Description>Memory in Dual Channel!!</Description>
+      <Unlock>2004</Unlock>
+      <DevTime>2</DevTime>
+      <Innovation>20</Innovation>
+      <Usability>15</Usability>
+      <Stability>5</Stability>
+      <CodeArt>0.9</CodeArt>
+	  <Dependency Software="Computer">Memory RAM</Dependency>
+      <Dependency Software="Memory">Dual Channel Kit</Dependency>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>Triple Channel</Name>
+      <Category>Physical</Category>
+      <Description>Memory in Triple Channel!!!</Description>
+      <Unlock>2008</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>25</Innovation>
+      <Usability>20</Usability>
+      <Stability>10</Stability>
+      <CodeArt>0.85</CodeArt>
+	  <Dependency Software="Computer">Dual Channel</Dependency>
+      <Dependency Software="Memory">Triple Channel Kit</Dependency>
+    </Feature>
+    <Feature Vital="FALSE">
+      <Name>Quad Channel</Name>
+      <Category>Physical</Category>
+      <Description>Memory in Quad Channel!!!!</Description>
+      <Unlock>2010</Unlock>
+      <DevTime>4</DevTime>
+      <Innovation>30</Innovation>
+      <Usability>30</Usability>
+      <Stability>15</Stability>
+      <CodeArt>0.7</CodeArt>
+	  <Dependency Software="Computer">Triple Channel</Dependency>
+      <Dependency Software="Memory">Quad Channel Kit</Dependency>
+    </Feature>
+    <Feature Vital="TRUE">
       <Name>Hard Drive</Name>
       <Category>Physical</Category>
       <Description>Needs a Hard Drive</Description>
