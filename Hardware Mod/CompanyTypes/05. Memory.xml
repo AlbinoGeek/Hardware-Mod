@@ -1,0 +1,10 @@
+<CompanyType>
+	<Specialization>Memory</Specialization>
+	<Force>Memory,Default</Force>
+	<PerYear>0.1</PerYear>
+	<Min>2</Min>
+	<Max>3</Max>
+	<Types>
+		<Type Software="Memory">1</Type>
+	</Types>
+</CompanyType>

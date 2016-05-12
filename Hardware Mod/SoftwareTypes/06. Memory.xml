@@ -1,0 +1,305 @@
+<SoftwareType>
+  <Name>Memory</Name>
+  <Category>Hardware</Category>
+  <Description></Description>
+  <Categories>
+    <Category Name="Default">
+      <Description></Description>
+      <Unlock>0</Unlock>
+      <Popularity>0.8</Popularity>
+      <TimeScale>0.9</TimeScale>
+      <Retention>0.65</Retention>
+      <Iterative>0.7</Iterative>
+      <NameGenerator>names</NameGenerator>
+    </Category>
+  </Categories>
+  <Unlock>0</Unlock>
+  <Random>0.3</Random>
+  <Popularity>1</Popularity>
+  <OSSpecific>FALSE</OSSpecific>
+  <OneClient>FALSE</OneClient>
+  <InHouse>TRUE</InHouse>
+  <NameGenerator>names</NameGenerator>
+  <Features>
+    <Feature Forced="TRUE">
+		<Name>DRAM</Name>
+		<Category>Physical</Category>
+		<Description>DRAM is widely used in digital electronics where low-cost and high-capacity memory is required.</Description>
+		<Unlock>0</Unlock>
+		<DevTime>5</DevTime>
+		<Innovation>8</Innovation>
+		<Usability>6</Usability>
+		<Stability>4</Stability>
+		<CodeArt>1</CodeArt>
+    </Feature>
+	<Feature From="DRAM" Vital="TRUE">
+		<Name>SDRAM</Name>
+		<Category>Physical</Category>
+		<Description>Synchronous dynamic random-access memory.</Description>
+		<Unlock>1993</Unlock>
+		<DevTime>6</DevTime>
+		<Innovation>10</Innovation>
+		<Usability>8</Usability>
+		<Stability>8</Stability>
+		<CodeArt>1</CodeArt>
+    </Feature>
+	<Feature From="SDRAM" Vital="TRUE">
+		<Name>DDR</Name>
+		<Category>Physical</Category>
+		<Description>DDR is a class of memory integrated circuits used in computers.</Description>
+		<Unlock>1996</Unlock>
+		<DevTime>6</DevTime>
+		<Innovation>15</Innovation>
+		<Usability>10</Usability>
+		<Stability>10</Stability>
+		<CodeArt>1</CodeArt>
+    </Feature>
+	<Feature From="DDR" Vital="TRUE">
+		<Name>DDR2</Name>
+		<Category>Physical</Category>
+		<Description>More speed with lower voltage</Description>
+		<Unlock>2003</Unlock>
+		<DevTime>14</DevTime>
+		<Innovation>25</Innovation>
+		<Usability>15</Usability>
+		<Stability>15</Stability>
+		<CodeArt>0.9</CodeArt>
+    </Feature>
+	<Feature From="DDR2" Vital="TRUE">
+		<Name>DDR3</Name>
+		<Category>Physical</Category>
+		<Description>More speed with lower voltage x2</Description>
+		<Unlock>2007</Unlock>
+		<DevTime>18</DevTime>
+		<Innovation>35</Innovation>
+		<Usability>25</Usability>
+		<Stability>25</Stability>
+		<CodeArt>0.9</CodeArt>
+    </Feature>
+	<Feature Research="DDR3" Vital="FALSE">
+		<Name>DDR3L (Low Voltage)</Name>
+		<Category>Physical</Category>
+		<Description>Less voltage!</Description>
+		<Unlock>2010</Unlock>
+		<DevTime>12</DevTime>
+		<Innovation>20</Innovation>
+		<Usability>8</Usability>
+		<Stability>5</Stability>
+		<CodeArt>1</CodeArt>
+    </Feature>
+	<Feature From="DDR3" Vital="TRUE">
+		<Name>DDR4</Name>
+		<Category>Physical</Category>
+		<Description>More speed with lower voltage x3</Description>
+		<Unlock>2014</Unlock>
+		<DevTime>24</DevTime>
+		<Innovation>60</Innovation>
+		<Usability>40</Usability>
+		<Stability>40</Stability>
+		<CodeArt>0.9</CodeArt>
+    </Feature>
+	<Feature From="DDR4" Vital="TRUE">
+		<Name>DDR5</Name>
+		<Category>Physical</Category>
+		<Description>More speed with lower voltage x4</Description>
+		<Unlock>2018</Unlock>
+		<DevTime>30</DevTime>
+		<Innovation>70</Innovation>
+		<Usability>60</Usability>
+		<Stability>50</Stability>
+		<CodeArt>0.9</CodeArt>
+    </Feature>
+	<Feature Forced="TRUE">
+        <Name>Single Channel</Name>
+        <Category>Physical</Category>
+        <Description></Description>
+        <Unlock>0</Unlock>
+        <DevTime>0.5</DevTime>
+        <Innovation>0</Innovation>
+        <Usability>0</Usability>
+        <Stability>5</Stability>
+        <CodeArt>1</CodeArt>
+	</Feature>
+	<Feature From="Single Channel" Vital="TRUE">
+        <Name>Dual Channel Kit</Name>
+        <Category>Physical</Category>
+        <Description></Description>
+        <Unlock>2004</Unlock>
+        <DevTime>4</DevTime>
+        <Innovation>15</Innovation>
+        <Usability>8</Usability>
+        <Stability>5</Stability>
+        <CodeArt>0.9</CodeArt>
+	</Feature>
+	<Feature From="Dual Channel Kit" Vital="FALSE">
+        <Name>Triple Channel Kit</Name>
+        <Category>Physical</Category>
+        <Description></Description>
+        <Unlock>2008</Unlock>
+        <DevTime>8</DevTime>
+        <Innovation>25</Innovation>
+        <Usability>15</Usability>
+        <Stability>5</Stability>
+        <CodeArt>0.9</CodeArt>
+	</Feature>
+	<Feature From="Triple Channel Kit" Vital="FALSE">
+        <Name>Quad Channel Kit</Name>
+        <Category>Physical</Category>
+        <Description></Description>
+        <Unlock>2010</Unlock>
+        <DevTime>10</DevTime>
+        <Innovation>30</Innovation>
+        <Usability>20</Usability>
+        <Stability>10</Stability>
+        <CodeArt>0.8</CodeArt>
+	</Feature>
+	<Feature Forced="FALSE" Vital="TRUE">
+        <Name>SPD</Name>
+        <Category>System</Category>
+        <Description>Memory Profiles</Description>
+        <Unlock>1993</Unlock>
+        <DevTime>2</DevTime>
+        <Innovation>5</Innovation>
+        <Usability>5</Usability>
+        <Stability>0</Stability>
+        <CodeArt>1</CodeArt>
+	</Feature>
+	<Feature Research="DDR2" Vital="FALSE">
+        <Name>EPP</Name>
+        <Category>System</Category>
+        <Description>Enhanced Performance Profiles for enthusiasts.</Description>
+        <Unlock>2006</Unlock>
+        <DevTime>2</DevTime>
+        <Innovation>5</Innovation>
+        <Usability>5</Usability>
+        <Stability>0</Stability>
+        <CodeArt>1</CodeArt>
+		<Dependency Software="Memory">SPD</Dependency>
+	</Feature>
+	<Feature Research="DDR3" Vital="FALSE">
+        <Name>EPP 2.0</Name>
+        <Category>System</Category>
+        <Description>Changelog: Support DDR3</Description>
+        <Unlock>2008</Unlock>
+        <DevTime>6</DevTime>
+        <Innovation>10</Innovation>
+        <Usability>15</Usability>
+        <Stability>0</Stability>
+        <CodeArt>1</CodeArt>
+		<Dependency Software="Memory">SPD</Dependency>
+	</Feature>
+	<Feature Research="DDR3" Forced="FALSE" Vital="TRUE">
+        <Name>XMP</Name>
+        <Category>System</Category>
+        <Description>XMP allows you to overclock RAM to perform beyond standard specifications</Description>
+        <Unlock>2011</Unlock>
+        <DevTime>8</DevTime>
+        <Innovation>15</Innovation>
+        <Usability>20</Usability>
+        <Stability>5</Stability>
+        <CodeArt>0.9</CodeArt>
+		<Dependency Software="Memory">SPD</Dependency>
+	</Feature>
+	<Feature Research="DDR4" Forced="FALSE" Vital="TRUE">
+        <Name>XMP 2.0</Name>
+        <Category>System</Category>
+        <Description>Changelog: Support DDR4</Description>
+        <Unlock>2014</Unlock>
+        <DevTime>8</DevTime>
+        <Innovation>15</Innovation>
+        <Usability>20</Usability>
+        <Stability>8</Stability>
+        <CodeArt>0.9</CodeArt>
+		<Dependency Software="Memory">SPD</Dependency>
+	</Feature>
+	<Feature Research="DDR5" Forced="FALSE" Vital="TRUE">
+        <Name>XMP 3.0</Name>
+        <Category>System</Category>
+        <Description>Changelog: Support DDR5</Description>
+        <Unlock>2019</Unlock>
+        <DevTime>10</DevTime>
+        <Innovation>20</Innovation>
+        <Usability>25</Usability>
+        <Stability>10</Stability>
+        <CodeArt>0.8</CodeArt>
+		<Dependency Software="Memory">SPD</Dependency>
+	</Feature>
+	<Feature Forced="FALSE" Vital="TRUE">
+        <Name>SIMM</Name>
+        <Category>Physical</Category>
+        <Description>Single In-line Memory Module</Description>
+        <Unlock>1983</Unlock>
+        <DevTime>4</DevTime>
+        <Innovation>0</Innovation>
+        <Usability>5</Usability>
+        <Stability>5</Stability>
+        <CodeArt>0.9</CodeArt>
+    </Feature>
+	<Feature From="SIMM" Forced="FALSE" Vital="TRUE">
+        <Name>DIMM 100-pin</Name>
+        <Category>Physical</Category>
+        <Description>DIMM for SDRAM</Description>
+        <Unlock>1993</Unlock>
+        <DevTime>4</DevTime>
+        <Innovation>0</Innovation>
+        <Usability>6</Usability>
+        <Stability>6</Stability>
+        <CodeArt>0.9</CodeArt>
+    </Feature>
+	<Feature From="DIMM 100-pin" Forced="FALSE" Vital="TRUE">
+        <Name>DIMM 184-pin</Name>
+        <Category>Physical</Category>
+        <Description>DIMM for DDR</Description>
+        <Unlock>1996</Unlock>
+        <DevTime>4</DevTime>
+        <Innovation>0</Innovation>
+        <Usability>6</Usability>
+        <Stability>6</Stability>
+        <CodeArt>0.9</CodeArt>
+    </Feature>
+	<Feature From="DIMM 184-pin" Forced="FALSE" Vital="TRUE">
+        <Name>DIMM 240-pin</Name>
+        <Category>Physical</Category>
+        <Description>DIMM for DDR2 & DDR3</Description>
+        <Unlock>2003</Unlock>
+        <DevTime>3</DevTime>
+        <Innovation>2</Innovation>
+        <Usability>8</Usability>
+        <Stability>8</Stability>
+        <CodeArt>0.8</CodeArt>
+    </Feature>
+	<Feature From="DIMM 240-pin" Forced="FALSE" Vital="TRUE">
+        <Name>DIMM 288-pin</Name>
+        <Category>Physical</Category>
+        <Description>DIMM for DDR4 & DDR5</Description>
+        <Unlock>2014</Unlock>
+        <DevTime>5</DevTime>
+        <Innovation>3</Innovation>
+        <Usability>9</Usability>
+        <Stability>9</Stability>
+        <CodeArt>0.7</CodeArt>
+    </Feature>
+	<Feature Forced="FALSE" Vital="FALSE">
+        <Name>Heatsink</Name>
+        <Category>Physical</Category>
+        <Description>Giant block of copper</Description>
+        <Unlock>1996</Unlock>
+        <DevTime>3</DevTime>
+        <Innovation>0</Innovation>
+        <Usability>0</Usability>
+        <Stability>20</Stability>
+        <CodeArt>0.8</CodeArt>
+    </Feature>
+    <Feature From="Heatsink" Forced="FALSE" Vital="FALSE">
+        <Name>Heatpipes</Name>
+        <Category>Physical</Category>
+        <Description>A more intricated block of copper</Description>
+        <Unlock>2003</Unlock>
+        <DevTime>9</DevTime>
+        <Innovation>20</Innovation>
+        <Usability>0</Usability>
+        <Stability>20</Stability>
+        <CodeArt>0.7</CodeArt>
+    </Feature>
+  </Features>
+</SoftwareType>

@@ -295,7 +295,7 @@
       <Server>0.05</Server>
     </Feature>
     <Feature Forced="TRUE">
-      <Name>RAM Slots</Name>
+      <Name>RAM Slots (DRAM)</Name>
       <Category>Physical</Category>
       <Description>Somewhere to shove the memory. (coming soon)</Description>
       <Unlock>0</Unlock>
@@ -305,10 +305,32 @@
       <Stability>1</Stability>
       <CodeArt>0.8</CodeArt>
     </Feature>
-    <Feature From="RAM Slots" Vital="TRUE">
-      <Name>DDR2</Name>
+    <Feature From="RAM Slots (DRAM)" Vital="TRUE">
+      <Name>SDRAM</Name>
+      <Category>Physical</Category>
+      <Description>Synchronous dynamic random-access memory.</Description>
+      <Unlock>1993</Unlock>
+      <DevTime>8</DevTime>
+      <Innovation>3</Innovation>
+      <Usability>2</Usability>
+      <Stability>1</Stability>
+      <CodeArt>0.9</CodeArt>
+    </Feature>
+    <Feature From="SDRAM" Vital="TRUE">
+      <Name>DDR</Name>
       <Category>Physical</Category>
       <Description>Waaaaay faster!</Description>
+      <Unlock>1996</Unlock>
+      <DevTime>7</DevTime>
+      <Innovation>5</Innovation>
+      <Usability>3</Usability>
+      <Stability>1</Stability>
+      <CodeArt>0.8</CodeArt>
+    </Feature>
+    <Feature From="DDR" Vital="TRUE">
+      <Name>DDR2</Name>
+      <Category>Physical</Category>
+      <Description>Waaaaaaaaay faster!</Description>
       <Unlock>2003</Unlock>
       <DevTime>5</DevTime>
       <Innovation>4</Innovation>
@@ -359,6 +381,28 @@
       <Usability>8</Usability>
       <Stability>2</Stability>
       <CodeArt>0.6</CodeArt>
+    </Feature>
+    <Feature Vital="TRUE">
+      <Name>AGP</Name>
+      <Category>Physical</Category>
+      <Description>A bus dedicated to graphics adapters.</Description>
+      <Unlock>1997</Unlock>
+      <DevTime>3</DevTime>
+      <Innovation>6</Innovation>
+      <Usability>12</Usability>
+      <Stability>2</Stability>
+      <CodeArt>0.6</CodeArt>
+    </Feature>
+    <Feature From="AGP" Vital="TRUE">
+      <Name>AGP x8</Name>
+      <Category>Physical</Category>
+      <Description>A bus dedicated to graphics adapters x8.</Description>
+      <Unlock>2002</Unlock>
+      <DevTime>4</DevTime>
+      <Innovation>6</Innovation>
+      <Usability>12</Usability>
+      <Stability>3</Stability>
+      <CodeArt>0.7</CodeArt>
     </Feature>
     <Feature Vital="TRUE">
       <Name>PCI Express</Name>
