@@ -1,7 +1,7 @@
 <SoftwareType>
   <Name>Monitor</Name>
   <Category>Hardware</Category>
-  <Description>Chances are you bought a cmoputer to see something... visually, you might need this.  Sort of required for 2D or 3D... or even Text-Based interfaces.</Description>
+  <Description>Chances are you bought a computer to see something... visually, you might need this.  Sort of required for 2D or 3D... or even Text-Based interfaces.</Description>
   <Categories>
     <Category Name="Default">
       <Description>Still needs some balancing (v0.9+)</Description>
@@ -24,7 +24,7 @@
     <Feature Forced="TRUE">
       <Name>Cathode Tube CRT</Name>
       <Category>Physical</Category>
-      <Description>A lot of tubes bombarding screen surface with electrons, sounds cool, quality is not</Description>
+      <Description>A lot of tubes bombarding the screen surface with electrons, sounds cool, quality is not</Description>
       <Unlock>0</Unlock>
       <DevTime>6</DevTime>
       <Innovation>1</Innovation>
@@ -57,7 +57,7 @@
     <Feature Vital="TRUE">
       <Name>Two color display</Name>
       <Category>System</Category>
-      <Description>1 pixel tales up 1 bit of memory, economic, but you certainly shouldnt expect rainbows</Description>
+      <Description>1 pixel takes up 1 bit of memory, economic, but you certainly shouldn't expect rainbows</Description>
       <Unlock>1980</Unlock>
       <DevTime>6</DevTime>
       <Innovation>3</Innovation>
